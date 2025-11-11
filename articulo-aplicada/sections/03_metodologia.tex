@@ -1,0 +1,13 @@
+\section{Metodología de investigación aplicada}
+\subsection{Enfoque de desarrollo}
+Para la gestión del proyecto se utilizó una metodología ágil inspirada en Scrum, con iteraciones semanales y priorización de funcionalidades. Los requerimientos funcionales del SRS incluyeron: inicio de sesión (RF1), visualización de horarios de maestros o cursos (RF2), gestión de maestros (RF3), gestión de cursos (RF4), gestión de asignaturas (RF5) y gestión de horarios (RF6). Estos se especificaron mediante historias de usuario siguiendo el modelo INVEST. Requerimientos no funcionales: seguridad en el acceso al sistema (RNF1), cifrado de datos sensibles (RNF2), tiempos de respuesta del sistema (RNF3), compatibilidad con múltiples dispositivos (RNF4), soporte técnico y documentación (RNF5), y cumplimiento de normativas legales (RNF6).
+
+La arquitectura seleccionada fue modular, con backend en Java con Spring Boot, frontend web y móvil en React Native. Esto permite separación de responsabilidades.
+
+Desarrollo del backend: Patrón MVC, controladores REST para CRUD, servicios de negocio y repositorios JPA. Autenticación con JWT. Gestión de entidades como maestros, cursos, asignaturas y horarios.
+
+Desarrollo de la aplicación web: Interfaz para gestión de entidades y horarios, responsiva.
+
+Desarrollo de la aplicación móvil: Consulta de horarios en Android.
+
+Pruebas: Unitarias, manuales y de integración. Base de datos MySQL.

@@ -1,0 +1,58 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/estudio sobre metodologias de desarrollo y su impacto en la productividad.png}
+    \caption{Estudio sobre metodologías de desarrollo y su impacto en la productividad}
+    \label{fig:estudio}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/practica de lenguaje de programacion java y nuevas tecnologias.png}
+    \caption{Practicante en lenguaje de programación JAVA y nuevas tecnologias}
+    \label{fig:java}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/analisis prospectivo de la industria de desarrollo de software en colombia.png}
+    \caption{Análisis prospectivo de la industria de desarrollo de software en Colombia}
+    \label{fig:analisis}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/una revision comparativa de la literatura acerca de metadologias tradicionales y modernas de desarrolladores de software.png}
+    \caption{Una revisión comparativa de la literatura acerca de metodologías tradicionales y modernas de desarrollo de software}
+    \label{fig:revision}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/tecnologias frontend y backend en tendencia.png}
+    \caption{Tecnologías Front-end y Back-end en Tendencia}
+    \label{fig:tecnologias}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{graphics/Especificando una arquitectura de software.png}
+    \caption{Especificando una arquitectura de software}
+    \label{fig:arquitectura}
+\end{figure*}

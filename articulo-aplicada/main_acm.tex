@@ -1,0 +1,73 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\input{includes/preamble_common}
+\input{includes/preamble_acm}
+
+\AtBeginDocument{\providecommand\BibTeX{{\sc Bib}\TeX}}
+
+\title[SGH]{SGH: Sistema de Gestión de Horarios}
+
+\author{Juan Pablo Saavedra Chambo}
+\affiliation{%
+  \institution{Servicio Nacional de Aprendizaje (SENA), Regional Huila, Centro de la Industria, la Empresa y los Servicios (CIES), Ficha 2899747}
+  \city{Neiva}
+  \country{Colombia}}
+\email{jpsaavedra32@soy.sena.edu.co}
+
+\author{Jesus Ariel González Bonilla}
+\affiliation{%
+  \institution{Servicio Nacional de Aprendizaje (SENA), Regional Huila}
+  \city{Neiva}
+  \country{Colombia}}
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\keywords{Gestión de horarios, Metodologías ágiles, Historias de usuario, Arquitectura modular, Spring Boot, Next.js, React Native, Aplicación web, Aplicación móvil}
+
+\begin{document}
+\maketitle
+
+\input{sections/01_introduccion}
+\input{sections/02_relacionados}
+\input{sections/03_metodologia}
+\input{sections/04_implementacion}
+\input{sections/05_resultados}
+\input{sections/06_discusion}
+\input{sections/07_conclusiones}
+
+\section{Referencias}
+\begin{enumerate}
+\item Amodeo, E. (2013). Principios de diseño de APIs REST. Leanpub.
+\item Lazuardy, M. F. S., \& Anggraini, D. (2022). Modern Front End Web Architectures with React.Js and Next.Js. International Research Journal of Advanced Engineering and Science, 7(1), 132-141.
+\item Macías Vera, E. V. (2021). Estudio comparativo de los frameworks del desarrollo móvil "Flutter" y "React Native". Repositorio Nacional CEDIA.
+\item Martín, H. (s.f.). Memoria TFM Héctor Martín. [Documento interno].
+\item REACT. (2021). Rastreo de contactos en tiempo real y monitoreo de riesgos mediante rastreo móvil con privacidad mejorada. IEEE Xplore.
+\item Somi, M. (2021). User Interface Development of a Modern Web Application. [Tesis].
+\item Torres-Berru, Y., et al. (2020). Migración de un monolito a una arquitectura basada en microservicios. Dominio de las Ciencias, 6(2), 763-781.
+\item Ye, X. P. (2022). Diseño e implantación de un sistema de autenticación multiplataforma para React y React Native. Universidad Politécnica de Madrid.
+\item Desarrollo de un sistema de seguimiento de aplicaciones móviles basado en la nube para funciones de distribución logística de salida. (2025). Journal of Logistics Technology, 15(3), 50-60.
+\item Tecnologías Front-end y Back-end en Tendencia. (2017). Recuperado de https://repository.ustaae8f-4b01-a066-849fcb70e15f
+\item Especificando una arquitectura de software. (2020). Recuperado de https://revistas.udistrital.ed3
+\item Practicante en lenguaje de programación JAVA y nuevas tecnologias. (2025). Recuperado de https://repositorio.utp.edu.co/entities/publication/192d53ab-1ac8-4829-ab8f-2639b995d120
+\item Análisis prospectivo de la industria de desarrollo de software en Colombia. (2020). Recuperado de https://revistas.poligran.edu.co/index.php/puntodevista/article/view/1415
+\item Una revisión comparativa de la literatura acerca de metodologías tradicionales y modernas de desarrollo de software. (2019). Recuperado de https://revistas.pascualbravo.edu.c6
+\item Estudio sobre metodologías de desarrollo y su impacto en la productividad. (2020). Recuperado de https://revistas.udistrital.edu.co/index.php/tia/article/view/13364
+\end{enumerate}
+
+Ejemplo de petición POST para crear un curso:
+\begin{verbatim}
+POST /courses
+Content-Type: application/json
+Authorization: Bearer <token>
+{
+  "courseName": "1A",
+  "gradeDirectorId": 123
+}
+\end{verbatim}
+Respuesta: 200 OK con cuerpo \{"status": "OK", "message": "Curso creado correctamente"\}.
+
+\input{sections/A1_apendices}
+
+\end{document}
