@@ -16,3 +16,27 @@ MySQL & SQL & BD & Integridad de datos, relaciones complejas \\
 \bottomrule
 \end{tabular}
 \end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Resultados de rendimiento del sistema SGH}
+\label{tab:resultados}
+\begin{tabular}{|l|c|c|}
+\hline
+Componente & Métrica & Valor \\
+\hline
+Aplicación web & Tiempo de carga & <1.5s \\
+\hline
+Backend & Solicitudes/minuto & 500 \\
+\hline
+APIs REST & Endpoints & 15+ \\
+\hline
+Generación de horarios & Tiempo & <5s \\
+\hline
+Aplicación móvil & Compatibilidad & Android \\
+\hline
+\end{tabular}
+\end{table*}

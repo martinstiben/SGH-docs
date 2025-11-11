@@ -333,25 +333,19 @@ INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT sections/02_relacionados.tex
-INPUT ./graphics/estructura-metodologica.png
-INPUT ./graphics/estructura-metodologica.png
-INPUT ./graphics/estructura-metodologica.png
 OUTPUT build/main_acm.xdv
-INPUT ./graphics/historia de usuario.png
-INPUT ./graphics/historia de usuario.png
-INPUT ./graphics/historia de usuario.png
-INPUT ./graphics/java-nuevas-tecnologias.png
-INPUT ./graphics/java-nuevas-tecnologias.png
-INPUT ./graphics/java-nuevas-tecnologias.png
-INPUT ./graphics/bases-de-datos-sql-y.nosql.png
-INPUT ./graphics/bases-de-datos-sql-y.nosql.png
-INPUT ./graphics/bases-de-datos-sql-y.nosql.png
-INPUT ./graphics/apis restfull.png
-INPUT ./graphics/apis restfull.png
-INPUT ./graphics/apis restfull.png
-INPUT ./graphics/docker.png
-INPUT ./graphics/docker.png
-INPUT ./graphics/docker.png
+INPUT ./graphics/uno.png
+INPUT ./graphics/uno.png
+INPUT ./graphics/uno.png
+INPUT ./graphics/dos.png
+INPUT ./graphics/dos.png
+INPUT ./graphics/dos.png
+INPUT ./graphics/tres.png
+INPUT ./graphics/tres.png
+INPUT ./graphics/tres.png
+INPUT ./graphics/cuatro.png
+INPUT ./graphics/cuatro.png
+INPUT ./graphics/cuatro.png
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex

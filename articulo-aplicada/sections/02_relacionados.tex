@@ -1,91 +1,58 @@
-\section{Marco teórico y trabajos relacionados}
-\subsection{Gestión de Horarios Académicos y Algoritmos de Optimización}
-Imagina que eres un director de colegio y tienes que armar el horario de clases para cientos de estudiantes y profesores. Antes, esto se hacía con papel y lápiz, anotando manualmente quién da qué clase, cuándo y dónde, lo que tomaba días y generaba errores como superposiciones o aulas ocupadas al mismo tiempo. Hoy, sistemas como SGH automatizan esto usando algoritmos que resuelven estos conflictos de manera inteligente.
+\section{Marco teórico}
+\subsection{Sistemas de Gestión de Horarios Académicos}
+Un sistema de gestión de horarios académicos es una herramienta esencial en instituciones educativas, diseñada para optimizar la asignación de recursos limitados como profesores, aulas y horarios de clases. Estos sistemas integran datos heterogéneos, incluyendo la disponibilidad de profesores, restricciones curriculares, capacidades de aulas y preferencias de estudiantes, aplicando algoritmos de optimización combinatoria para resolver conflictos y generar horarios viables.
 
-Un sistema de gestión de horarios académicos, como SGH, combina herramientas simples para registrar cursos, asignaturas, profesores y sus horarios disponibles, con algoritmos que generan horarios evitando choques. Es como un rompecabezas gigante donde cada pieza (clase, profesor, aula) debe encajar sin solaparse. En la práctica, soluciones similares usan algoritmos de optimización para resolver estos problemas, demostrando que es posible hacer esto de forma eficiente en entornos educativos \cite{saltos2022}. Comparado con métodos manuales tradicionales, que dependen de la intuición humana y son propensos a errores, SGH ofrece una alternativa automatizada que ahorra tiempo y reduce frustraciones.
+En la literatura, se destacan casos de éxito en educación superior donde plataformas automatizadas han reducido significativamente el tiempo de planificación manual, permitiendo a los administradores enfocarse en tareas pedagógicas \cite{desarrollo2025}. Por ejemplo, en entornos logísticos similares, aplicaciones web y backend han demostrado eficacia en la optimización de recursos, adaptándose a cambios dinámicos como cancelaciones o reprogramaciones \cite{macias2021}.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{graphics/estructura-metodologica.png}
-\caption{Estructura metodológica para la gestión de horarios académicos.}
-\label{fig:estructura_metodologica}
-\end{figure}
+La evolución de estos sistemas ha sido impulsada por la necesidad de manejar datasets crecientes y restricciones multifactoriales. Estudios comparativos muestran que algoritmos heurísticos, como backtracking o programación lineal, son comunes para resolver el problema de asignación de horarios, que es NP-completo en su forma general \cite{torres2020}. Además, la integración con datos en tiempo real, como actualizaciones de disponibilidad, requiere arquitecturas capaces de procesar eventos asíncronos, lo que ha llevado a la adopción de patrones de mensajería y APIs eficientes.
 
-\subsection{Especificación de Requerimientos en Entornos Ágiles}
-Cuando desarrollas software, necesitas saber exactamente qué quieres construir. En enfoques tradicionales, esto se hace con documentos largos y detallados que describen cada función paso a paso, como un manual de instrucciones. Pero en entornos ágiles, como el usado en SGH, se prefiere algo más flexible: historias de usuario.
+\subsection{Arquitecturas de Software: Monolito vs Microservicios}
+Cuando la escala de un sistema de gestión de horarios crece—ya sea por el número de usuarios, la complejidad de los datos o la frecuencia de actualizaciones—La arquitectura subyacente se vuelve crítica. Historicamente, muchos sistemas educativos comenzaron como monolitos, donde toda la lógica de aplicación reside en una sola unidad desplegable. Sin embargo, experiencias documentadas, como la migración de sistemas de transporte público a microservicios, demuestran que dividir la aplicación en servicios pequeños e independientes mejora la escalabilidad horizontal, reduce tiempos de respuesta y facilita el mantenimiento \cite{torres2020}. En un monolito, cambios en una parte del sistema pueden afectar al conjunto, mientras que en microservicios, cada servicio puede evolucionar de forma autónoma, permitiendo despliegues selectivos y recuperación de fallos granular.
 
-Las historias de usuario son como pequeñas anécdotas que cuentan qué necesita el usuario. Según Izaurralde (2013), los requerimientos se dividen en funcionales (lo que hace el sistema) y no funcionales (como rapidez o seguridad). La ingeniería de requerimientos implica recopilar, analizar y validar estas necesidades, asegurando que sean correctas, completas y fáciles de cambiar si algo cambia.
+En el contexto de SGH, se adopta un enfoque híbrido: un monolito modular en Spring Boot que simula microservicios lógicamente separados, permitiendo una futura transición sin refactorizaciones masivas. Esta decisión equilibra simplicidad en el desarrollo inicial con potencial de escalabilidad, alineándose con prácticas recomendadas para proyectos académicos de mediana escala \cite{torres2020}.
 
-En SGH, usamos historias de usuario porque permiten adaptar el sistema a medida que aprendemos más sobre las necesidades reales de los usuarios, en lugar de atarnos a un plan rígido desde el inicio. Comparado con especificaciones tradicionales, que pueden ser abrumadoras y difíciles de actualizar, las historias de usuario hacen el proceso más conversacional y humano, facilitando la colaboración entre desarrolladores y usuarios.
+\subsection{Tecnologías Frontend: Next.js y Tailwind CSS}
+El frontend web juega un rol pivotal en la usabilidad de sistemas como SGH, donde interfaces intuitivas son clave para administradores y profesores. Next.js, un framework basado en React, se destaca por su capacidad para renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG), lo que optimiza el rendimiento, mejora el SEO y reduce tiempos de carga iniciales. Comparativas entre frameworks JavaScript muestran que Next.js ofrece una curva de aprendizaje accesible para equipos familiarizados con React, con una comunidad robusta que acelera el desarrollo \cite{lazuardy2022}. En proyectos similares, Next.js ha sido utilizado para construir dashboards administrativos con navegación fluida y componentes reutilizables, demostrando su idoneidad para aplicaciones de gestión educativa.
+
+Complementando Next.js, Tailwind CSS proporciona un sistema de estilos utilitarios que permite diseños responsivos y modernos sin escribir CSS personalizado. Esta aproximación reduce el tiempo de desarrollo, mejora la consistencia visual y facilita la adaptación a dispositivos móviles. Experiencias en desarrollo web con Tailwind destacan su eficacia en la creación de interfaces limpias y accesibles, con soporte para temas oscuros y animaciones sutiles \cite{somi2021}. En el caso de SGH, la combinación de Next.js y Tailwind permite una interfaz web que responde rápidamente a interacciones del usuario, visualizando horarios en formatos como calendarios y tablas dinámicas.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/historia de usuario.png}
-\caption{Ejemplo de historia de usuario en entornos ágiles.}
-\label{fig:historia_usuario}
+\includegraphics[width=0.8\columnwidth]{graphics/uno.png}
+\caption{Modern Front End Web Architectures with React.Js and Next.Js.}
+\label{fig:lazuardy}
 \end{figure}
-
-\subsection{Metodologías Ágiles: Scrum en SGH}
-Scrum es como un juego de equipo donde divides el trabajo en rondas cortas llamadas sprints, cada una de unas semanas, para construir el software poco a poco. En SGH, adoptamos Scrum porque permite responder rápidamente a cambios, como cuando un profesor pide ajustar su disponibilidad.
-
-En Scrum, los requerimientos se especifican con historias de usuario, que son simples y enfocadas en el valor para el usuario \cite{izaurralde2013}. A diferencia de métodos tradicionales que requieren planear todo al detalle antes de empezar, Scrum permite empezar con lo básico y refinar en cada sprint mediante reuniones diarias y retrospectivas. Esto hace que el desarrollo sea más adaptable y menos estresante.
-
-Comparado con enfoques waterfall (donde todo se planea de una vez), Scrum en SGH es como construir una casa habitación por habitación en lugar de diseñar todo el plano primero: puedes ajustar si encuentras un problema, y el resultado final se siente más vivo y útil.
-
-\subsection{Tecnologías Backend: Java con Spring Boot}
-El corazón de SGH es su backend, construido con Java y Spring Boot. Java es como un lenguaje confiable y maduro, usado en muchas aplicaciones grandes porque es rápido, seguro y funciona en cualquier máquina. Spring Boot simplifica el desarrollo al proporcionar herramientas listas para usar, como manejar bases de datos o seguridad.
-
-En SGH, usamos JPA para conectar el código con la base de datos de forma automática, y Spring Security con JWT para autenticar usuarios de manera segura. Comparado con otros frameworks como Node.js o Python Django, Spring Boot ofrece más estabilidad para aplicaciones complejas, aunque puede ser un poco más pesado al inicio. Pero para un sistema como SGH, que maneja datos sensibles de horarios, esta robustez es clave.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/java-nuevas-tecnologias.png}
-\caption{Tecnologías Java y nuevas innovaciones en desarrollo backend.}
-\label{fig:java_tecnologias}
+\includegraphics[width=0.8\columnwidth]{graphics/dos.png}
+\caption{User Interface Development of a Modern Web Application.}
+\label{fig:somi}
 \end{figure}
 
-\subsection{Bases de Datos: MySQL en SGH}
-Las bases de datos son como el archivador digital donde guardas toda la información. MySQL es una opción popular porque es gratuita, rápida y fácil de usar, ideal para proyectos como SGH que necesitan almacenar relaciones complejas, como qué profesor da qué clase en qué aula \cite{lozano2018}.
+\subsection{Tecnologías Backend y Comunicación: Spring Boot y APIs REST}
+En el backend, Spring Boot emerge como una opción madura para desarrollar servicios robustos y escalables. Su integración con JPA para persistencia de datos, Spring Security para autenticación, y soporte nativo para APIs REST lo hace ideal para sistemas como SGH, donde la lógica de negocio incluye algoritmos de optimización y manejo de entidades complejas. Spring Boot facilita la configuración de microservicios modulares, con controladores para endpoints REST, servicios para lógica de negocio y repositorios para acceso a datos, promoviendo una arquitectura limpia y mantenible.
 
-MySQL surgió en los 90 como una evolución de sistemas más antiguos, y hoy es una herramienta clave para datos estructurados. Comparado con bases de datos no relacionales como MongoDB, que son más flexibles para datos irregulares pero pueden ser menos consistentes, MySQL garantiza que todo esté bien organizado con el modelo ACID \cite{saltos2022}. En SGH, optamos por MySQL porque nuestros datos (cursos, profesores, horarios) tienen relaciones claras que necesitan integridad, y lo ejecutamos en XAMPP para desarrollo local, con phpMyAdmin para gestionar todo sin complicaciones.
+La comunicación entre frontend y backend se basa en APIs REST, un protocolo estandarizado sobre HTTP que permite operaciones CRUD sobre recursos. Este enfoque desacopla clientes y servidores, facilitando evoluciones independientes y escalabilidad. En proyectos con React Native y Next.js, las APIs REST han probado su viabilidad para aplicaciones móviles y web, con baja sobrecarga y soporte para autenticación JWT y cifrado \cite{amodeo2013, macias2021}. En SGH, las APIs REST manejan solicitudes de creación, lectura, actualización y eliminación de cursos, profesores y horarios, asegurando interoperabilidad y facilidad de integración con futuros módulos.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/bases-de-datos-sql-y.nosql.png}
-\caption{Comparación entre bases de datos SQL y NoSQL.}
-\label{fig:bases_datos}
+\includegraphics[width=0.8\columnwidth]{graphics/tres.png}
+\caption{Principios de diseño de APIs REST.}
+\label{fig:amodeo}
 \end{figure}
 
-\subsection{Interfaces Web y Móviles: Frameworks para Android}
-SGH no es solo un sitio web; también tiene una app móvil para Android. Para lograr esto, usamos React Native, que permite desarrollar una app nativa para Android con un solo código base. En el frontend web, Next.js con Tailwind CSS crea interfaces modernas y responsivas.
-
-Comparado con desarrollo nativo puro (escribir código específico para Android), React Native ahorra tiempo y dinero, aunque a veces requiere ajustes para un rendimiento óptimo. En SGH, esto significa que estudiantes y profesores pueden acceder a sus horarios desde dispositivos Android, haciendo el sistema más accesible y práctico.
-
-\subsection{Arquitectura Modular y Microservicios}
-La arquitectura de SGH es modular, como construir con bloques Lego: cada parte (backend, frontend, móvil) es independiente, pero encaja perfectamente. Esto facilita mantener y expandir el sistema, como agregar nuevas funciones sin romper lo existente.
-
-Comparado con arquitecturas monolíticas (todo en un bloque grande), la modularidad en SGH permite actualizaciones más seguras y escalabilidad. La coexistencia de requerimientos tradicionales con historias de usuario asegura que tengamos lo mejor de ambos mundos: precisión y flexibilidad \cite{izaurralde2013}.
-
-\subsection{APIs RESTful y Autenticación JWT}
-Las APIs son como puentes que conectan las partes de SGH. Usamos RESTful para intercambiar datos de forma segura y eficiente, con JWT para autenticar usuarios sin guardar sesiones en el servidor \cite{cein2025}.
-
-Comparado con APIs más antiguas, REST es simple y escalable, ideal para apps móviles. En SGH, documentamos todo con Swagger para que sea fácil probar y entender, mejorando la colaboración entre equipos.
+\subsection{Tecnologías Móviles: React Native}
+Para acceso multiplataforma, React Native permite desarrollar aplicaciones móviles nativas usando JavaScript, compartiendo lógica con el frontend web. Estudios comparativos entre frameworks móviles, como Flutter y React Native, destacan la superioridad de este último en términos de comunidad y facilidad de integración con ecosistemas React \cite{macias2021}. En SGH, React Native se utiliza para una app móvil que consume las mismas APIs REST, ofreciendo funcionalidades como visualización de horarios y notificaciones, optimizada inicialmente para Android con potencial de extensión a iOS.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/apis restfull.png}
-\caption{Ejemplo de APIs RESTful en sistemas distribuidos.}
-\label{fig:apis_restful}
+\includegraphics[width=0.8\columnwidth]{graphics/cuatro.png}
+\caption{Estudio comparativo de los frameworks del desarrollo móvil.}
+\label{fig:macias}
 \end{figure}
 
-\subsection{Docker: Contenerización para Despliegue}
-Docker es como empaquetar SGH en una caja portable que funciona igual en cualquier máquina. Resuelve problemas de compatibilidad, reduciendo tiempos de despliegue de días a horas (Chamú, 2025).
+\subsection{Seguridad y Privacidad en Sistemas Educativos}
+La seguridad es un pilar fundamental en sistemas que manejan datos sensibles como información personal de estudiantes y profesores. Una autenticación coherente entre plataformas web y móvil, utilizando JWT para tokens seguros, es esencial; diseños unificados para React y React Native incluyen registro, login, recuperación de credenciales y manejo de tokens JWT \cite{ye2022}. Además, se recomienda control de acceso basado en roles, cifrado de comunicaciones vía HTTPS y cumplimiento de regulaciones como GDPR o leyes locales de protección de datos.
 
-Comparado con máquinas virtuales, que simulan computadoras completas, Docker es más ligero y eficiente, perfecto para orquestar servicios en SGH sin complicaciones.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{graphics/docker.png}
-\caption{Contenerización con Docker para despliegue eficiente.}
-\label{fig:docker}
-\end{figure}
+Más allá de lo técnico, principios de privacidad por diseño son cruciales en entornos educativos, donde el manejo ético de datos previene abusos. Aprendiendo de aplicaciones de rastreo de contactos, que incorporan enfoques de privacidad reforzada con consentimiento explícito y minimización de datos \cite{react2021}, SGH implementa medidas para asegurar que la gestión de horarios no comprometa la privacidad, como encriptación de datos en reposo y auditorías regulares.

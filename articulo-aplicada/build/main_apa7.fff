@@ -2,9 +2,9 @@
 \ifnextchar[{\eatarg}{}
 [h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/estructura-metodologica.png}
-\caption{Estructura metodológica para la gestión de horarios académicos.}
-\label{fig:estructura_metodologica}
+\includegraphics[width=0.8\columnwidth]{graphics/uno.png}
+\caption{Modern Front End Web Architectures with React.Js and Next.Js.}
+\label{fig:lazuardy}
 \end{figure*}
 \efloatseparator
  
@@ -12,9 +12,9 @@
 \ifnextchar[{\eatarg}{}
 [h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/historia de usuario.png}
-\caption{Ejemplo de historia de usuario en entornos ágiles.}
-\label{fig:historia_usuario}
+\includegraphics[width=0.8\columnwidth]{graphics/dos.png}
+\caption{User Interface Development of a Modern Web Application.}
+\label{fig:somi}
 \end{figure*}
 \efloatseparator
  
@@ -22,9 +22,9 @@
 \ifnextchar[{\eatarg}{}
 [h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/java-nuevas-tecnologias.png}
-\caption{Tecnologías Java y nuevas innovaciones en desarrollo backend.}
-\label{fig:java_tecnologias}
+\includegraphics[width=0.8\columnwidth]{graphics/tres.png}
+\caption{Principios de diseño de APIs REST.}
+\label{fig:amodeo}
 \end{figure*}
 \efloatseparator
  
@@ -32,27 +32,7 @@
 \ifnextchar[{\eatarg}{}
 [h]
 \centering
-\includegraphics[width=0.8\columnwidth]{graphics/bases-de-datos-sql-y.nosql.png}
-\caption{Comparación entre bases de datos SQL y NoSQL.}
-\label{fig:bases_datos}
-\end{figure*}
-\efloatseparator
- 
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{graphics/apis restfull.png}
-\caption{Ejemplo de APIs RESTful en sistemas distribuidos.}
-\label{fig:apis_restful}
-\end{figure*}
-\efloatseparator
- 
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{graphics/docker.png}
-\caption{Contenerización con Docker para despliegue eficiente.}
-\label{fig:docker}
+\includegraphics[width=0.8\columnwidth]{graphics/cuatro.png}
+\caption{Estudio comparativo de los frameworks del desarrollo móvil.}
+\label{fig:macias}
 \end{figure*}
