@@ -1,0 +1,27 @@
+@startuml
+' Subject Management (Create / Update)
+start
+:Receive request Create/Update Subject\n(subjectDTO);
+:Validate subjectDTO;
+
+if (Parameters valid?) then (Yes)
+  :validateUniqueName(subjectDTO.name);
+  if (Name is unique?) then (Yes)
+    :Save subject (INSERT / UPDATE subjects);
+    :Respond OK (Subject saved);
+    partition "Post-save actions" {
+      :Consult saved subject;
+      :Filter subjects;
+      :Return to control panel;
+    }
+    stop
+  else (No)
+    :Throw ConflictException;
+    :Respond 409 Conflict (Subject exists);
+    stop
+  endif
+else (No)
+  :Respond 400 Bad Request;
+  stop
+endif
+@enduml

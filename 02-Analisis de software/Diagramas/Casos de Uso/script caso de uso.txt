@@ -1,0 +1,98 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #DFF3F9
+  BorderColor black
+}
+
+actor Administrator
+
+rectangle "Academic Management System" {
+  package "Teachers Management" {
+    usecase "Register Teacher" as UC_RegisterTeacher
+    usecase "Update Teacher" as UC_UpdateTeacher
+    usecase "Delete Teacher" as UC_DeleteTeacher
+    usecase "Consult Teachers" as UC_Consult_Teachers
+    usecase "Filter Teachers" as UC_Filter_Teachers
+  }
+
+  package "Schedules Management" {
+    usecase "Manage Schedules" as UC_ManageSchedules
+    usecase "Register Schedule" as UC_RegisterSchedule
+    usecase "Update Schedule" as UC_UpdateSchedule
+    usecase "Delete Schedule" as UC_DeleteSchedules
+    usecase "Consult Schedules" as UC_Consult_Schedules
+    usecase "Filter Schedules" as UC_Filter_Schedules
+    UC_ManageSchedules .> UC_RegisterSchedule : <<extends>>
+    UC_ManageSchedules .> UC_UpdateSchedule : <<extends>>
+    UC_ManageSchedules .> UC_DeleteSchedules : <<extends>>
+  }
+
+  package "Subjects Management" {
+    usecase "Manage Subjects" as UC_ManageSubjects
+    usecase "Request Subject" as UC_RequestSubject
+    usecase "Delete Subject" as UC_DeleteSubjects
+    usecase "Consult Subjects" as UC_Consult_Subjects
+    usecase "Filter Subjects" as UC_Filter_Subjects
+    UC_ManageSubjects .> UC_RequestSubject : <<extends>>
+    UC_ManageSubjects .> UC_DeleteSubjects : <<extends>>
+  }
+
+  package "Courses Management" {
+    usecase "Manage Courses" as UC_ManageCourses
+    usecase "Register Course" as UC_RegisterCourse
+    usecase "Update Course" as UC_UpdateCourse
+    usecase "Delete Course" as UC_DeleteCourse
+    usecase "Consult Courses" as UC_Consult_Courses
+    usecase "Filter Courses" as UC_Filter_Courses
+    UC_ManageCourses .> UC_RegisterCourse : <<extends>>
+    UC_ManageCourses .> UC_UpdateCourse : <<extends>>
+    UC_ManageCourses .> UC_DeleteCourse : <<extends>>
+  }
+
+  package "Export" {
+    usecase "Export Schedules" as UC_ExportSchedules
+    usecase "Export to PDF" as UC_ExportPDF
+    usecase "Export to Excel" as UC_ExportExcel
+    usecase "Export to Image" as UC_ExportImage
+    UC_ExportSchedules .> UC_ExportPDF : <<extends>>
+    UC_ExportSchedules .> UC_ExportExcel : <<extends>>
+    UC_ExportSchedules .> UC_ExportImage : <<extends>>
+    usecase "Filter Export" as UC_Filter_Export
+    usecase "Consult Export" as UC_Consult_Export
+  }
+
+  usecase "Login" as UC_Login
+  usecase "Start" as UC_Start
+  usecase "Control Panel" as UC_ControlPanel
+  usecase "Logout" as UC_Logout
+}
+
+' Relations actor - use cases
+Administrator --> UC_Login
+Administrator --> UC_Start
+Administrator --> UC_ControlPanel
+Administrator --> UC_Logout
+
+' Module access
+Administrator --> UC_RegisterTeacher
+Administrator --> UC_UpdateTeacher
+Administrator --> UC_DeleteTeacher
+Administrator --> UC_ManageSchedules
+Administrator --> UC_ManageSubjects
+Administrator --> UC_ManageCourses
+Administrator --> UC_ExportSchedules
+
+' Global consult/filter actions (connected to admin)
+Administrator --> UC_Consult_Teachers
+Administrator --> UC_Filter_Teachers
+Administrator --> UC_Consult_Schedules
+Administrator --> UC_Filter_Schedules
+Administrator --> UC_Consult_Subjects
+Administrator --> UC_Filter_Subjects
+Administrator --> UC_Consult_Courses
+Administrator --> UC_Filter_Courses
+Administrator --> UC_Filter_Export
+Administrator --> UC_Consult_Export
+@enduml

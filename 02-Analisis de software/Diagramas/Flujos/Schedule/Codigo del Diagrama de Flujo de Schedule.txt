@@ -1,0 +1,28 @@
+@startuml
+' Schedule Generation Flow
+start
+:Receive request Generate Schedule\n(ScheduleRequestDTO);
+:Validate request parameters;
+
+if (Parameters valid?) then (Yes)
+  partition "For each date in date range" {
+    repeat
+      :find courses and teachers for date;
+      :validate availability for teachers and rooms;
+      if (Conflicts found?) then (Yes)
+        :apply conflict resolution strategy;
+      endif
+      :save generated schedules for date;
+    repeat while (more dates)
+  }
+  :Respond OK (Schedule generated);
+  partition "Post-actions" {
+    :Export schedules (optional);
+    :Return to control panel;
+  }
+  stop
+else (No)
+  :Respond 400 Bad Request;
+  stop
+endif
+@enduml

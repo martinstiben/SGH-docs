@@ -1,0 +1,39 @@
+@startuml
+' Teacher Management (Create / Update)
+start
+:Receive request Create/Update Teacher\n(teacherDTO);
+:Validate teacherDTO;
+
+if (Parameters valid?) then (Yes)
+  if (teacherDTO.hasAssignedSubjects?) then (Yes)
+    partition "For each assignedSubject in teacherDTO" {
+      repeat
+        :findBySubjectId(assignedSubjectId);
+        note right: SELECT subjects WHERE id = ...
+        :findTeacherSubject(teacherId, subjectId);
+        note right: SELECT teacher_subjects WHERE teacher_id = ... AND subject_id = ...
+        if (Relation exists?) then (Yes)
+          :reuse existing relation;
+        else (No)
+          :create new TeacherSubject;
+          :INSERT teacher_subjects;
+        endif
+      repeat while (more assignedSubject entries?)
+    }
+  endif
+
+  :Save teacher (INSERT / UPDATE teachers);
+  :Respond OK (Teacher saved);
+
+  partition "Post-save actions" {
+    :Consult saved teacher;
+    :Filter teachers;
+    :Return to control panel;
+  }
+
+  stop
+else (No)
+  :Respond Error 400 Bad Request;
+  stop
+endif
+@enduml

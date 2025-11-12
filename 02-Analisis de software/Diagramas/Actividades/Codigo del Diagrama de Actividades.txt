@@ -1,0 +1,43 @@
+@startuml
+|Administrator|
+start
+:Start;
+:Login;
+if (Are credentials valid?) then (Yes)
+  :Show Control Panel;
+  fork
+    :Open Teachers Management;
+    :Register Teacher;
+    :Update Teacher;
+    :Delete Teacher;
+    :Consult;
+    :Filter;
+  fork again
+    :Open Schedules Management;
+    :Register Schedule;
+    :Update Schedule;
+    :Delete Schedule;
+    :Consult;
+    :Filter;
+  fork again
+    :Open Courses Management;
+    :Register Course;
+    :Update Course;
+    :Delete Course;
+    :Consult;
+    :Filter;
+  fork again
+    :Open Subjects Management;
+    :Register Subject;
+    :Update Subject;
+    :Delete Subject;
+    :Consult;
+    :Filter;
+  end fork
+  :Logout;
+  stop
+else (No)
+  :Show error message;
+  stop
+endif
+@enduml

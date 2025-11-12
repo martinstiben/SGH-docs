@@ -1,0 +1,42 @@
+Horarios SQL
+
+
+-- Tabla de usuarios
+CREATE TABLE horarios_users (
+    user_id INT PRIMARY KEY,
+    user_name VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Tabla de cursos
+CREATE TABLE horarios_courses (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(255) NOT NULL
+);
+
+-- Tabla de materias
+CREATE TABLE horarios_subjects (
+    subject_id INT PRIMARY KEY,
+    subject_name VARCHAR(255) NOT NULL
+);
+
+-- Tabla de docentes
+CREATE TABLE horarios_teachers (
+    teacher_id INT PRIMARY KEY,
+    teacher_name VARCHAR(255) NOT NULL
+);
+
+-- Tabla de horarios
+CREATE TABLE horarios_schedule (
+    id INT PRIMARY KEY,
+    schedule_name VARCHAR(255) NOT NULL,
+    day VARCHAR(20) NOT NULL,
+    start_time TIME(6) NOT NULL,
+    end_time TIME(6) NOT NULL,
+    course_id INT NOT NULL,
+    subject_id INT NOT NULL,
+    teacher_id INT NOT NULL,
+    FOREIGN KEY (course_id) REFERENCES horarios_courses(course_id),
+    FOREIGN KEY (subject_id) REFERENCES horarios_subjects(subject_id),
+    FOREIGN KEY (teacher_id) REFERENCES horarios_teachers(teacher_id)
+);

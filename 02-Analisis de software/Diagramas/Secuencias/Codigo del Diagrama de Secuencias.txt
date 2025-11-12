@@ -1,0 +1,164 @@
+@startuml
+' Sequence diagram (cleaned)
+actor User
+participant "Frontend\n(App / Web)" as Frontend
+participant "API Gateway" as Gateway
+participant "Controller" as Controller
+participant "Service" as Service
+participant "Repository" as Repo
+database "Database" as DB
+
+note left of Gateway
+  Non-functional requirements (RNF) from SRS:
+  - RNF-1: Access security — encrypt sensitive data; lock after 5 failed attempts.
+  - RNF-2: Sensitive data encryption — encrypt personal data in transit and at rest.
+  - RNF-3: Response times — system should respond in ≈3s; 90% of responses <2.5s.
+  - RNF-4: Multi-device compatibility — responsive UI for PC / tablet / mobile.
+  - RNF-5: Support & documentation — docs available; support response <24h.
+  - RNF-6: Legal compliance — user consent, data deletion and audit capability.
+end note
+
+== Subjects (Create / Update) ==
+User -> Frontend : POST /subjects\n(subjectDTO)
+Frontend -> Gateway : POST /subjects (subjectDTO)
+Gateway -> Controller : createOrUpdateSubject(subjectDTO)
+Controller -> Service : createOrUpdate(subjectDTO)
+Service -> Service : validateUniqueName()
+alt Unique name
+    Service -> Repo : save(subject)
+    Repo -> DB : INSERT / UPDATE subjects
+    DB --> Repo : OK
+    Repo --> Service : savedSubject
+    Service --> Controller : SubjectDTO
+    Controller --> Gateway : 200 OK (JSON)
+    Gateway --> Frontend : Success - subject saved
+else Duplicate name
+    Service -> Controller : validation result = duplicate
+    Controller --> Gateway : 409 Conflict (JSON)
+    Gateway --> Frontend : Error - subject already exists
+end
+
+== Teachers (Create / Update) ==
+User -> Frontend : POST /teachers\n(teacherDTO)
+Frontend -> Gateway : POST /teachers (teacherDTO)
+Gateway -> Controller : createOrUpdateTeacher(teacherDTO)
+Controller -> Service : createOrUpdate(teacherDTO)
+Service -> Repo : save(teacher)
+Repo -> DB : INSERT / UPDATE teachers
+DB --> Repo : OK
+alt Teacher has assigned subjects
+    Service -> Repo : findTeacherSubject(teacherId, subjectId)
+    Repo -> DB : SELECT teacher_subjects WHERE ...
+    DB --> Repo : relation found?
+    alt Relation exists
+        note right: reuse existing relation
+    else Relation missing
+        Service -> Repo : saveTeacherSubject(...)
+        Repo -> DB : INSERT teacher_subjects
+        DB --> Repo : OK
+    end
+end
+Repo --> Service : savedTeacher
+Service --> Controller : TeacherDTO
+Controller --> Gateway : 200 OK (JSON)
+Gateway --> Frontend : Success - teacher saved
+
+== Courses (Create / Update) ==
+User -> Frontend : POST /courses\n(courseDTO)
+Frontend -> Gateway : POST /courses (courseDTO)
+Gateway -> Controller : createOrUpdateCourse(courseDTO)
+Controller -> Service : createOrUpdate(courseDTO)
+Service -> Service : resolveTeacherSubject()
+alt teacherSubject by ID
+    Service -> Repo : findById(teacherSubjectId)
+    Repo -> DB : SELECT teacher_subjects
+else teacher+subject resolution
+    Service -> Repo : findByTeacherAndSubject(teacherId, subjectId)
+    Repo -> DB : SELECT teacher_subjects
+    alt Relation missing
+        Service -> Repo : save(new TeacherSubject)
+        Repo -> DB : INSERT teacher_subjects
+        DB --> Repo : OK
+    end
+end
+Service -> Repo : save(course)
+Repo -> DB : INSERT / UPDATE courses
+DB --> Repo : OK
+Repo --> Service : CourseDTO
+Service --> Controller : CourseDTO
+Controller --> Gateway : 200 OK (JSON)
+Gateway --> Frontend : Success - course saved
+
+== Schedule Generation ==
+User -> Frontend : POST /schedules/generate\n(ScheduleRequestDTO)
+Frontend -> Gateway : POST /schedules/generate
+Gateway -> Controller : generateSchedule(requestDTO, username)
+Controller -> Service : generate(requestDTO, username)
+Service -> Service : validateParameters()
+alt Parameters valid
+    loop For each date in range
+        Service -> Service : generateDaySchedules(date)
+        Service -> Repo : findCoursesAndTeachers(...)
+        Repo -> DB : SELECT courses, teachers, existing schedules
+        DB --> Repo : rows
+        Service -> Service : validateAvailability()
+        Service -> Repo : saveAll(schedules)
+        Repo -> DB : INSERT multiple schedules
+        DB --> Repo : OK
+    end
+    Service --> Controller : ScheduleGenerationResultDTO
+    Controller --> Gateway : 200 OK (JSON)
+    Gateway --> Frontend : Generation completed
+else Parameters invalid
+    Service -> Controller : validation result = invalid
+    Controller --> Gateway : 400 Bad Request (JSON)
+    Gateway --> Frontend : Error - invalid parameters
+end
+
+== Export / Consult / Filter / Logout ==
+User -> Frontend : GET /schedules/export?type=pdf&id=...
+Frontend -> Gateway : GET /schedules/export
+Gateway -> Controller : exportSchedules(id, type)
+Controller -> Service : exportToFormat(id, type)
+Service -> Repo : findSchedulesWithDetails(id)
+Repo -> DB : SELECT schedules JOIN courses, teachers, subjects
+DB --> Repo : full result set
+Service -> Service : generateDocument(PDF/Excel/Image)
+Service -> Service : convertToBytes()
+Service --> Controller : byte[] file
+Controller --> Gateway : Response with file
+Gateway --> Frontend : file for download
+Frontend -> User : automatic download
+
+' Consult (example)
+User -> Frontend : GET /courses/{id}
+Frontend -> Gateway : GET /courses/{id}
+Gateway -> Controller : getCourse(id)
+Controller -> Service : findCourseById(id)
+Service -> Repo : findById(course)
+Repo -> DB : SELECT courses WHERE id = ...
+DB --> Repo : course data
+Service --> Controller : CourseDTO
+Controller --> Gateway : 200 OK
+Gateway --> Frontend : course data shown
+
+' Filter (example)
+User -> Frontend : GET /courses?filter=grade&value=10
+Frontend -> Gateway : GET /courses?filter=...
+Gateway -> Controller : listCourses(filter)
+Controller -> Service : findByFilter(filter)
+Service -> Repo : SELECT courses WHERE ...
+Repo -> DB : results
+Repo --> Service : list
+Service --> Controller : listDTO
+Controller --> Gateway : 200 OK
+Gateway --> Frontend : list JSON
+
+User -> Frontend : POST /logout
+Frontend -> Gateway : POST /logout
+Gateway -> Controller : logout()
+Controller -> Service : invalidateSession(token)
+Service --> Controller : OK
+Controller --> Gateway : 200 OK (logged out)
+Gateway --> Frontend : logged out
+@enduml

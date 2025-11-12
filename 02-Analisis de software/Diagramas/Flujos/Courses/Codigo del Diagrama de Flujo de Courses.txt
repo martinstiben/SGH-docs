@@ -1,0 +1,49 @@
+@startuml
+' Course Management (Create / Update) - cleaned arrows and correct control flow
+start
+:Receive request Create/Update Course\n(courseDTO);
+:Validate courseDTO;
+
+if (Parameters valid?) then (Yes)
+  :Resolve teacher-subject associations;
+
+  partition "For each teacherSubject in courseDTO" {
+    repeat
+      :Has teacherSubject ID?;
+      if (Yes) then
+        :findById(teacherSubjectId);
+        note right: SELECT teacher_subjects WHERE id = ...
+      else
+        :findByTeacherAndSubject(teacherId, subjectId);
+        note right: SELECT teacher_subjects WHERE teacher_id = ... AND subject_id = ...
+        if (Relation exists?) then (Yes)
+          :use existing relation;
+        else (No)
+          :create new TeacherSubject;
+          :INSERT teacher_subjects;
+        endif
+      endif
+    repeat while (more teacherSubject entries?)
+  }
+
+  if (courseDTO.hasGradeDirector?) then (Yes)
+    :findById(gradeDirectorId);
+    note right: SELECT teachers WHERE id = gradeDirectorId
+    :assign grade director;
+  endif
+
+  :Save course (INSERT / UPDATE courses);
+  :Respond OK (Course saved);
+
+  partition "Post-save actions" {
+    :Consult saved course;
+    :Filter courses (search);
+    :Return to control panel;
+  }
+
+  stop
+else (No)
+  :Respond Error 400 Bad Request;
+  stop
+endif
+@enduml
