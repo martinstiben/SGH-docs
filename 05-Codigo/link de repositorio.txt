@@ -1,3 +1,3 @@
 link de repositorio:
 
-https://github.com/martinstiben/SGH.git
+https://github.com/martinstiben/SGH-api.git
