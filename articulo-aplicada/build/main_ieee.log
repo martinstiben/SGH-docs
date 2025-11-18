@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  11 NOV 2025 21:23
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.18)  18 NOV 2025 14:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **main_ieee.tex
 (./main_ieee.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
 (/opt/texlive/texdir/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -82,7 +82,7 @@ LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
 \@IEEEtranrubishbin=\box54
 ) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/b
 abel/babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count286
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -106,7 +106,7 @@ on input line 2083.
 \bbl@dirlevel=\count287
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4295.
+(babel)             from babel-es.ini. Reported on input line 4298.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks18
@@ -125,7 +125,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/fontspec/fontspec.sty (/opt/texlive
 /texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/texlive/texdir/
 texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-10-24 L3 programming layer (loader) 
+Package: expl3 2025-11-06 L3 programming layer (loader) 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count289
@@ -475,17 +475,22 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 \lst@lineno=\count354
 \lst@maxwidth=\dimen272
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
 \c@lstnumber=\count355
 \lst@skipnumbers=\count356
 \lst@framebox=\box69
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2025/11/14 1.11a listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
-==> First Aid for listings.sty applied!
+Package: listings 2025/11/14 1.11a (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11a (Carsten Heinz)
+    so I'm assuming it got fixed.
 ) (./includes/preamble_ieee.tex (/opt/texlive/texdir/texmf-dist/tex/latex/bibla
 tex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
@@ -718,7 +723,7 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2025-10-24 L3 programming layer (loader) 
+(biblatex)             2025-11-06 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
@@ -936,7 +941,7 @@ is estático
  []
 
 
-Underfull \vbox (badness 4048) has occurred while \output is active []
+Underfull \vbox (badness 1320) has occurred while \output is active []
 
 (./tables/frameworks_comparison.tex
 Underfull \hbox (badness 2334) in paragraph at lines 10--11
@@ -975,7 +980,7 @@ LaTeX Info: Redefining \% on input line 22.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
  ***********
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -987,12 +992,12 @@ Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31746 strings out of 468179
- 672731 string characters out of 5435043
- 1593808 words of memory out of 5000000
- 60120 multiletter control sequences out of 15000+600000
+ 31749 strings out of 468179
+ 672772 string characters out of 5435042
+ 1593904 words of memory out of 5000000
+ 60123 multiletter control sequences out of 15000+600000
  631180 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,83p,1180b,4850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (5 pages, 244344 bytes).
+Output written on build/main_ieee.xdv (5 pages, 244312 bytes).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  11 NOV 2025 21:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.18)  18 NOV 2025 14:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,16 +6,17 @@ entering extended mode
 **main_acm.tex
 (./main_acm.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
 (/opt/texlive/texdir/texmf-dist/tex/latex/acmart/acmart.cls
 Document Class: acmart 2025/08/27 v2.16 Typesetting articles for the Associatio
 n for Computing Machinery
 (/opt/texlive/texdir/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/opt/texlive/t
 exdir/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
+\XKV@tempb@toks=\toks19
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count271
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -54,7 +55,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
 (/opt/texlive/texdir/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \ex@=\dimen150
 )) (/opt/texlive/texdir/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -92,21 +93,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count281
 \dspbrk@lvl=\count282
-\tag@help=\toks20
+\tag@help=\toks21
 \row@=\count283
 \column@=\count284
 \maxfields@=\count285
-\andhelp@=\toks21
+\andhelp@=\toks22
 \eqnshift@=\dimen153
 \alignsep@=\dimen154
 \tagshift@=\dimen155
 \tagwidth@=\dimen156
 \totwidth@=\dimen157
 \lineht@=\dimen158
-\@envbody=\toks22
+\@envbody=\toks23
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
@@ -136,15 +137,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \captionindent=\dimen159
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
 \thm@preskip=\skip56
 \thm@postskip=\skip57
 \thm@headsep=\skip58
-\dth@everypar=\toks29
+\dth@everypar=\toks30
 )
 LaTeX Info: Redefining \markboth on input line 283.
 (/opt/texlive/texdir/texmf-dist/tex/latex/microtype/microtype.sty
@@ -153,12 +154,12 @@ Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count294
 )
-\MT@toks=\toks30
+\MT@toks=\toks31
 \MT@tempbox=\box56
 \MT@count=\count295
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks31
+\MT@prot@toks=\toks32
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen160
@@ -313,7 +314,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip62
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
 Package: hyperxmp 2024/03/17 v5.13 Store hyperref metadata in XMP format
-\hyxmp@aep@toks=\toks32
+\hyxmp@aep@toks=\toks33
 (/opt/texlive/texdir/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/base/ifthen.sty
@@ -370,7 +371,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen186
 \Gm@layouthoffset=\dimen187
 \Gm@layoutvoffset=\dimen188
-\Gm@dimlist=\toks33
+\Gm@dimlist=\toks34
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/ncctools/manyfoot.sty
 Package: manyfoot 2019/08/03 v1.11 Many Footnote Levels Package (NCC)
 (/opt/texlive/texdir/texmf-dist/tex/latex/ncctools/nccfoots.sty
@@ -386,7 +387,7 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/opt
 /texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-10-24 L3 programming layer (loader) 
+Package: expl3 2025-11-06 L3 programming layer (loader) 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count321
@@ -1651,12 +1652,12 @@ Package caption Info: hyperref package is loaded.
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count340
-\float@exts=\toks34
+\float@exts=\toks35
 \float@box=\box58
-\@float@everytoks=\toks35
+\@float@everytoks=\toks36
 \@floatcapt=\box59
 )
-\@float@every@sidebar=\toks36
+\@float@every@sidebar=\toks37
 \c@sidebar=\count341
 \fulltextwidth=\dimen257
 \@ACM@labelwidth=\dimen258
@@ -1697,10 +1698,10 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip79
 \f@nch@widthC=\skip80
 \f@nch@widthR=\skip81
-\@temptokenb=\toks37
+\@temptokenb=\toks38
 ) Special comment 'acks') (./includes/preamble_common.tex (/opt/texlive/texdir/
 texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count345
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -1728,10 +1729,10 @@ on input line 2083.
 \bbl@dirlevel=\count346
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4295.
+(babel)             from babel-es.ini. Reported on input line 4298.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks38
+\es@quottoks=\toks39
 \es@quotdepth=\count347
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
@@ -1750,7 +1751,7 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@qlevel=\count351
 \csq@maxlvl=\count352
 \csq@tshold=\count353
-\csq@ltx@everypar=\toks39
+\csq@ltx@everypar=\toks40
 (/opt/texlive/texdir/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -1802,16 +1803,16 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen266
 \ar@mcellbox=\box72
 \extrarowheight=\dimen267
-\NC@list=\toks40
+\NC@list=\toks41
 \extratabsurround=\skip82
 \backup@length=\skip83
 \ar@cellbox=\box73
 )) (/opt/texlive/texdir/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks41
+\enitkv@toks@=\toks42
 \labelindent=\skip84
 \enit@outerparindent=\dimen268
-\enit@toks=\toks42
+\enit@toks=\toks43
 \enit@inbox=\box74
 \enit@count@id=\count370
 \enitdp@description=\count371
@@ -1834,7 +1835,7 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count372
 \lst@gtempboxa=\box75
-\lst@token=\toks43
+\lst@token=\toks44
 \lst@length=\count373
 \lst@currlwidth=\dimen269
 \lst@column=\count374
@@ -1845,17 +1846,22 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 \lst@lineno=\count377
 \lst@maxwidth=\dimen272
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
 \c@lstnumber=\count378
 \lst@skipnumbers=\count379
 \lst@framebox=\box76
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2025/11/14 1.11a listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
-==> First Aid for listings.sty applied!
+Package: listings 2025/11/14 1.11a (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11a (Carsten Heinz)
+    so I'm assuming it got fixed.
 ) (./includes/preamble_acm.tex)
 
 Class acmart Warning: Do not put several addresses in the same \email macro! on
@@ -2147,18 +2153,18 @@ LaTeX Info: Redefining \% on input line 16.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `main_acm.out' has not changed.
 (rerunfilecheck)             Checksum: 47356B9311CD14787748FEC04079FA45;4624.
  ) 
 Here is how much of TeX's memory you used:
- 41813 strings out of 468179
- 853720 string characters out of 5435043
- 1387168 words of memory out of 5000000
- 69879 multiletter control sequences out of 15000+600000
+ 41817 strings out of 468179
+ 853775 string characters out of 5435042
+ 1387254 words of memory out of 5000000
+ 69883 multiletter control sequences out of 15000+600000
  634537 words of font info for 140 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,13n,131p,1144b,32925s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,13n,131p,1144b,32927s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on build/main_acm.xdv (5 pages, 274544 bytes).
