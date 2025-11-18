@@ -18,8 +18,8 @@ services:
     tty: true
     command:
       - bash
-      - -lc
-      - bash tools/build.sh
+      - -c
+      - sed -i 's/\r//g' tools/build.sh && bash tools/build.sh
 
 volumes:
   miktex-data:

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  11 NOV 2025 23:17
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.18)  18 NOV 2025 14:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **main_apa7.tex
 (./main_apa7.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
 (/opt/texlive/texdir/texmf-dist/tex/latex/apa7/apa7.cls
 Document Class: apa7 2022/07/25 v2.16 APA formatting (7th edition)
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
@@ -629,7 +629,7 @@ d (jdm)
 \@ef@fffopen=\count335
 )) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/
 babel/babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count336
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -653,7 +653,7 @@ on input line 2083.
 \bbl@dirlevel=\count337
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4295.
+(babel)             from babel-es.ini. Reported on input line 4298.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks32
@@ -670,7 +670,7 @@ LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontspec/fontspec.sty (/opt/texlive/t
 exdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/texlive/texdir/te
 xmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-10-24 L3 programming layer (loader) 
+Package: expl3 2025-11-06 L3 programming layer (loader) 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count339
@@ -832,17 +832,22 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 \lst@lineno=\count384
 \lst@maxwidth=\dimen313
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
 \c@lstnumber=\count385
 \lst@skipnumbers=\count386
 \lst@framebox=\box80
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2025/11/14 1.11a listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
-==> First Aid for listings.sty applied!
+Package: listings 2025/11/14 1.11a (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11a (Carsten Heinz)
+    so I'm assuming it got fixed.
 ) (./includes/preamble_apa7.tex (/opt/texlive/texdir/texmf-dist/tex/latex/bibla
 tex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
@@ -1094,7 +1099,7 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2025-10-24 L3 programming layer (loader) 
+(biblatex)             2025-11-06 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
@@ -1389,7 +1394,7 @@ LaTeX Info: Redefining \% on input line 12.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
  ***********
 
 LaTeX Warning: There were undefined references.
@@ -1406,10 +1411,10 @@ Package logreq Info: Writing requests to 'main_apa7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43381 strings out of 468179
- 923503 string characters out of 5435043
- 1884227 words of memory out of 5000000
- 71514 multiletter control sequences out of 15000+600000
+ 43384 strings out of 468179
+ 923544 string characters out of 5435042
+ 1884323 words of memory out of 5000000
+ 71517 multiletter control sequences out of 15000+600000
  660122 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,12n,118p,1191b,4557s stack positions out of 10000i,1000n,20000p,200000b,200000s
