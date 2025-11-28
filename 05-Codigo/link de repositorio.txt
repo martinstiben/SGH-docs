@@ -1,3 +1,7 @@
-link de repositorio:
+link de repositorios:
 
 https://github.com/martinstiben/SGH-api.git
+https://github.com/martinstiben/SGH-portal.git
+https://github.com/martinstiben/SGH-app.git
+https://github.com/martinstiben/SGH-docs.git
+https://github.com/martinstiben/SGH-BaseDeDatos-db.git
