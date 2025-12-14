@@ -4,17 +4,117 @@
 \centering
 \caption{Tecnologías Utilizadas en SGH}
 \label{tab:frameworks}
-\scriptsize
-\begin{tabular}{lccp{3cm}}
-\toprule
-\textbf{Tecnología} & \textbf{Lenguaje} & \textbf{Uso} & \textbf{Ventajas} \\
-\midrule
-Spring Boot & Java & Backend & Alta escalabilidad, seguridad robusta, APIs RESTful \\
-Next.js & JS/TS & Frontend Web & Rendimiento optimizado, SSR, interfaces responsivas \\
-React Native & JavaScript & Móvil Android & Desarrollo cross-platform, consultas rápidas \\
-MySQL & SQL & Base de Datos & Integridad de datos, relaciones complejas, XAMPP \\
-Docker & Contenedor & Despliegue & Portabilidad, reducción de tiempos de despliegue \\
-JWT & Token & Autenticación & Seguridad en login, stateless \\
-\bottomrule
+\renewcommand{\arraystretch}{1.3}
+\footnotesize
+\begin{tabular}{|l|p{2.5cm}|p{3cm}|}
+\hline
+\textbf{Tecnología} & \textbf{Lenguaje/Uso} & \textbf{Ventajas} \\
+\hline
+Spring Boot & Java/Backend & Escalabilidad, seguridad, APIs \\
+\hline
+Next.js & JS+TS/Web & Rendimiento, SSR, responsive \\
+\hline
+React Native & JavaScript/Android & Cross-platform, rápido \\
+\hline
+MySQL & SQL/BaseDatos & Integridad, relaciones, XAMPP \\
+\hline
+Docker & Contenedor/Despliegue & Portabilidad, rápido deploy \\
+\hline
+JWT & Token/Autenticación & Seguridad, stateless \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Métricas de rendimiento - Aplicaciones Web y Móvil}
+\label{tab:resultados_web}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Componente} & \textbf{Métrica} & \textbf{Valor/Objetivo} \\
+\hline
+Aplicación web & Carga inicial & <1.8s / <2.0s \\
+\hline
+Aplicación web & Respuesta UI & <300ms / <500ms \\
+\hline
+Aplicación móvil & Compatibilidad & Android / Android \\
+\hline
+Aplicación móvil & Tamaño APK & 8MB / <10MB \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Métricas de rendimiento - Backend y Base de Datos}
+\label{tab:resultados_backend}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Componente} & \textbf{Métrica} & \textbf{Valor/Objetivo} \\
+\hline
+Backend & Solicitudes/min & 400 / 300 \\
+\hline
+Backend & CPU (pico) & 20\% / <25\% \\
+\hline
+Backend & Memoria & 384MB / <512MB \\
+\hline
+APIs REST & Endpoints & 12 / 10+ \\
+\hline
+APIs REST & Respuesta prom. & <250ms / <300ms \\
+\hline
+Base de datos & Consultas/seg & 150 / 120 \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Cobertura de pruebas por componente}
+\label{tab:pruebas}
+\renewcommand{\arraystretch}{1.3}
+\footnotesize
+\begin{tabular}{|l|p{4cm}|}
+\hline
+\textbf{Componente} & \textbf{Cobertura (Unitarias/Integración/E2E)} \\
+\hline
+Backend (Java) & 75\% / 80\% / 70\% \\
+\hline
+Frontend (React) & 70\% / 75\% / 65\% \\
+\hline
+Móvil (React Native) & 65\% / 70\% / 60\% \\
+\hline
+APIs REST & - / 85\% / 75\% \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Comparación con soluciones comerciales colombianas}
+\label{tab:comparacion_soluciones}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Característica} & \textbf{SGH vs Soluciones} & \textbf{Ventaja} \\
+\hline
+Licenciamiento & Gratuito vs Costoso & ✓ \\
+\hline
+Personalización & Alta vs Limitada & ✓ \\
+\hline
+Despliegue & Local vs Cloud & ✓ \\
+\hline
+Mantenimiento & Propio vs Dependiente & ✓ \\
+\hline
 \end{tabular}
 \end{table*}

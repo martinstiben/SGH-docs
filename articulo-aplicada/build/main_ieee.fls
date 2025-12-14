@@ -261,6 +261,7 @@ INPUT ./sections/01_introduccion.tex
 INPUT ./sections/01_introduccion.tex
 INPUT ./sections/01_introduccion.tex
 INPUT sections/01_introduccion.tex
+OUTPUT build/main_ieee.xdv
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
@@ -269,7 +270,6 @@ INPUT sections/02_relacionados.tex
 INPUT ./graphics/estudio sobre metodologias de desarrollo y su impacto en la productividad.png
 INPUT ./graphics/estudio sobre metodologias de desarrollo y su impacto en la productividad.png
 INPUT ./graphics/estudio sobre metodologias de desarrollo y su impacto en la productividad.png
-OUTPUT build/main_ieee.xdv
 INPUT ./graphics/practica de lenguaje de programacion java y nuevas tecnologias.png
 INPUT ./graphics/practica de lenguaje de programacion java y nuevas tecnologias.png
 INPUT ./graphics/practica de lenguaje de programacion java y nuevas tecnologias.png

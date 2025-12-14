@@ -1,17 +1,258 @@
 \section{Implementación del software}
-Describimos arquitectura, decisiones tecnológicas y \textit{pipelines}. Documentamos prácticas aplicadas: formateo, \textit{linting}, pruebas unitarias/integración, análisis estático (SAST), \textit{continuous delivery} y monitoreo. 
 
-\subsection{Arquitectura del sistema}
-La arquitectura implementada sigue las mejores prácticas de DevOps \cite{forsgren2018accelerate}, integrando automatización en todo el ciclo de desarrollo. % La \cref{fig:correlacion_devops} muestra la correlación observada entre el nivel de automatización y el rendimiento del equipo.
+Esta sección detalla la implementación técnica del Sistema de Gestión de Horarios (SGH), incluyendo la arquitectura del sistema, las decisiones tecnológicas tomadas, los patrones de diseño implementados y las prácticas de desarrollo aplicadas. El enfoque se centró en crear una solución modular, escalable y mantenible que pudiera adaptarse a las necesidades de instituciones educativas colombianas.
 
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
-%     \caption{Correlación entre nivel de automatización y performance del equipo de desarrollo}
-%     \label{fig:correlacion_devops}
-% \end{figure}
+\subsection{Arquitectura del Sistema}
+
+La arquitectura de SGH se basa en una aproximación modular que combina elementos de arquitectura de microservicios lógicos con un despliegue monolítico inicial. Esta decisión permite mantener la simplicidad del desarrollo mientras se prepara el terreno para una futura evolución distribuida.
+
+\subsubsection{Backend con Spring Boot}
+
+El backend se implementó utilizando Spring Boot 2.7 con Java 11, aprovechando las características enterprise del framework para crear una aplicación robusta y segura:
+
+\textbf{Capa de Controladores:}
+\begin{itemize}
+\item Endpoints RESTful siguiendo el patrón MVC
+\item Controladores dedicados para cada entidad (CourseController, ProfessorController, ScheduleController)
+\item Validación de entrada con Bean Validation
+\item Manejo de errores centralizado con @ControllerAdvice
+\item Documentación automática con SpringDoc OpenAPI
+\end{itemize}
+
+\textbf{Capa de Servicios:}
+\begin{itemize}
+\item Lógica de negocio separada en servicios especializados
+\item ScheduleGenerationService para algoritmos de optimización
+\item ValidationService para reglas de negocio
+\item NotificationService para comunicaciones
+\item Inyección de dependencias para bajo acoplamiento
+\end{itemize}
+
+\textbf{Capa de Repositorios:}
+\begin{itemize}
+\item Spring Data JPA para abstracción de datos
+\item Consultas personalizadas con @Query
+\item Optimización con fetch joins y paginación
+\item Auditoría automática con @CreatedDate y @LastModifiedDate
+\end{itemize}
+
+\textbf{Configuración de Seguridad:}
+\begin{itemize}
+\item Spring Security con configuración JWT
+\item Filtros personalizados para autenticación stateless
+\item Control de acceso basado en roles (ADMIN, PROFESSOR, STUDENT)
+\item Protección CORS para comunicación con frontend
+\end{itemize}
+
+\subsubsection{Frontend Web con Next.js y Tailwind CSS}
+
+La aplicación web se desarrolló con Next.js 13 utilizando el App Router para una experiencia moderna de desarrollo:
+
+\textbf{Estructura de Páginas:}
+\begin{itemize}
+\item /dashboard - Panel principal con métricas
+\item /dashboard/professors - Gestión de maestros
+\item /dashboard/courses - Administración de cursos
+\item /dashboard/subjects - Control de asignaturas
+\item /dashboard/schedules - Generación y visualización de horarios
+\end{itemize}
+
+\textbf{Componentes Reutilizables:}
+\begin{itemize}
+\item FormComponents para formularios consistentes
+\item TableComponents para visualización de datos
+\item ScheduleCalendar para representación horaria
+\item NavigationComponents para menús y breadcrumbs
+\end{itemize}
+
+\textbf{Gestión de Estado:}
+\begin{itemize}
+\item React hooks para estado local
+\item Context API para estado global
+\item SWR para fetching y caching de datos
+\item React Query para sincronización automática
+\end{itemize}
+
+\textbf{Estilos y UI:}
+\begin{itemize}
+\item Tailwind CSS con configuración personalizada
+\item Componentes de diseño system con shadcn/ui
+\item Tema responsivo con breakpoints móviles
+\item Animaciones sutiles con Framer Motion
+\end{itemize}
+
+\subsubsection{Aplicación Móvil con React Native}
+
+La aplicación móvil se desarrolló específicamente para Android, aprovechando las capacidades nativas de React Native:
+
+\textbf{Estructura de Navegación:}
+\begin{itemize}
+\item Stack Navigator para pantallas principales
+\item Tab Navigator para secciones principales
+\item Drawer Navigator para menú lateral
+\end{itemize}
+
+\textbf{Pantallas Principales:}
+\begin{itemize}
+\item LoginScreen - Autenticación segura
+\item ScheduleScreen - Visualización de horarios
+\item ProfileScreen - Información personal
+\item SettingsScreen - Configuración de la app
+\end{itemize}
+
+\textbf{Gestión de Estado Móvil:}
+\begin{itemize}
+\item Redux Toolkit para estado complejo
+\item AsyncStorage para persistencia local
+\item React Navigation state management
+\end{itemize}
+
+\textbf{Integración Nativa:}
+\begin{itemize}
+\item Expo SDK para funcionalidades nativas
+\item Notificaciones push con Expo Notifications
+\item Calendario del dispositivo con expo-calendar
+\item Compartir horarios con expo-sharing
+\end{itemize}
+
+\subsubsection{Base de Datos MySQL}
+
+El esquema de base de datos se diseñó para optimizar las consultas típicas de sistemas de gestión académica:
+
+\textbf{Tablas Principales:}
+\begin{itemize}
+\item \texttt{users} - Usuarios del sistema con roles
+\item \texttt{professors} - Perfiles docentes con especialidades
+\item \texttt{courses} - Cursos académicos con prerrequisitos
+\item \texttt{subjects} - Asignaturas con cargas horarias
+\item \texttt{classrooms} - Aulas con capacidades y equipamiento
+\item \texttt{schedules} - Asignaciones horarias generadas
+\item \texttt{schedule\_entries} - Detalles específicos de cada sesión
+\end{itemize}
+
+\textbf{Relaciones y Restricciones:}
+\begin{itemize}
+\item Claves foráneas con integridad referencial
+\item Restricciones de unicidad en campos críticos
+\item Índices compuestos para consultas complejas
+\item Triggers para auditoría automática
+\end{itemize}
+
+\subsubsection{APIs REST y Comunicación}
+
+Las APIs se diseñaron siguiendo principios RESTful con documentación completa:
+
+\textbf{Endpoints Principales:}
+\begin{itemize}
+\item \texttt{POST /api/auth/login} - Autenticación
+\item \texttt{GET/POST/PUT/DELETE /api/professors} - Gestión de maestros
+\item \texttt{GET/POST/PUT/DELETE /api/courses} - Gestión de cursos
+\item \texttt{GET/POST/PUT/DELETE /api/subjects} - Gestión de asignaturas
+\item \texttt{POST /api/schedules/generate} - Generación automática
+\item \texttt{GET /api/schedules} - Consulta de horarios
+\end{itemize}
+
+\textbf{Características de las APIs:}
+\begin{itemize}
+\item Versionado con /api/v1/
+\item Paginación automática en listados
+\item Filtros y ordenamiento dinámico
+\item Rate limiting para protección
+\item Logging completo de requests
+\end{itemize}
+
+\subsection{Algoritmos de Generación de Horarios}
+
+El componente más crítico de SGH es el algoritmo de generación automática de horarios, implementado con un enfoque híbrido:
+
+\subsubsection{Algoritmo Principal}
+\begin{itemize}
+\item \textbf{Backtracking con heurísticas}: Exploración inteligente del espacio de soluciones
+\item \textbf{Programación lineal}: Optimización de restricciones duras
+\item \textbf{Algoritmos genéticos}: Para escenarios complejos con múltiples objetivos
+\end{itemize}
+
+\subsubsection{Restricciones Consideradas}
+\begin{itemize}
+\item Disponibilidad horaria de profesores
+\item Capacidad máxima de aulas
+\item Prerrequisitos entre asignaturas
+\item Preferencias de horario de estudiantes
+\item Conflictos de recursos simultáneos
+\item Límites de horas diarias por profesor
+\end{itemize}
+
+\subsubsection{Optimización de Rendimiento}
+\begin{itemize}
+\item Caché de resultados intermedios
+\item Paralelización de cálculos cuando es posible
+\item Algoritmos aproximados para casos grandes
+\item Validación incremental de restricciones
+\end{itemize}
+
+\subsection{Prácticas de Desarrollo y Calidad}
+
+\subsubsection{Control de Versiones}
+\begin{itemize}
+\item Git con estrategia Git Flow
+\item Ramas feature/ para desarrollo
+\item Pull requests con revisión de código
+\item Conventional commits para mensajes claros
+\end{itemize}
+
+\subsubsection{Pruebas Automatizadas}
+\begin{itemize}
+\item \textbf{Pruebas unitarias}: JUnit + Mockito (80\%+ cobertura)
+\item \textbf{Pruebas de integración}: Spring Boot Test
+\item \textbf{Pruebas E2E}: Cypress para frontend
+\item \textbf{Pruebas de API}: Postman/Newman para automatización
+\end{itemize}
+
+\subsubsection{Calidad de Código}
+\begin{itemize}
+\item ESLint + Prettier para JavaScript/TypeScript
+\item Checkstyle + SpotBugs para Java
+\item SonarQube para análisis estático
+\item Husky para pre-commit hooks
+\end{itemize}
+
+\subsubsection{Integración Continua}
+\begin{itemize}
+\item GitHub Actions para CI/CD
+\item Construcción automática en cada push
+\item Ejecución de suite de pruebas completa
+\item Despliegue automático a staging
+\item Análisis de cobertura con Codecov
+\end{itemize}
+
+\subsection{Contenerización y Despliegue}
+
+\subsubsection{Docker Configuration}
+\begin{itemize}
+\item Multi-stage builds para optimización
+\item Imágenes base oficiales de Java y Node.js
+\item Volúmenes para persistencia de datos
+\item Redes bridge para comunicación segura
+\end{itemize}
+
+\subsubsection{Docker Compose}
+\begin{itemize}
+\item Servicios: backend, frontend, database, reverse-proxy
+\item Configuración de desarrollo y producción
+\item Variables de entorno segregadas
+\item Health checks automáticos
+\end{itemize}
+
+\subsubsection{Despliegue en Producción}
+\begin{itemize}
+\item Imágenes optimizadas para producción
+\item Configuración de nginx como reverse proxy
+\item Certificados SSL con Let's Encrypt
+\item Monitoreo con Spring Boot Actuator
+\end{itemize}
 
 \subsection{Comparación de tecnologías}
-La selección de tecnologías se basó en criterios objetivos. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
+
+La selección de tecnologías se basó en criterios de madurez, comunidad, rendimiento y adecuación al dominio educativo colombiano. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
 
 \input{tables/frameworks_comparison.tex}

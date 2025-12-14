@@ -1,13 +1,210 @@
 \section{Metodología de investigación aplicada}
-\subsection{Enfoque de desarrollo}
-Para la gestión del proyecto se utilizó una metodología ágil inspirada en Scrum, con iteraciones semanales y priorización de funcionalidades. Los requerimientos funcionales del SRS incluyeron: inicio de sesión (RF1), visualización de horarios de maestros o cursos (RF2), gestión de maestros (RF3), gestión de cursos (RF4), gestión de asignaturas (RF5) y gestión de horarios (RF6). Estos se especificaron mediante historias de usuario siguiendo el modelo INVEST. Requerimientos no funcionales: seguridad en el acceso al sistema (RNF1), cifrado de datos sensibles (RNF2), tiempos de respuesta del sistema (RNF3), compatibilidad con múltiples dispositivos (RNF4), soporte técnico y documentación (RNF5), y cumplimiento de normativas legales (RNF6).
 
-La arquitectura seleccionada fue modular, con backend en Java con Spring Boot, frontend web y móvil en React Native. Esto permite separación de responsabilidades.
+El desarrollo del Sistema de Gestión de Horarios (SGH) siguió un enfoque metodológico riguroso que combina investigación aplicada con prácticas de desarrollo de software modernas. Esta sección detalla la metodología implementada, desde la especificación de requerimientos hasta la validación del sistema.
 
-Desarrollo del backend: Patrón MVC, controladores REST para CRUD, servicios de negocio y repositorios JPA. Autenticación con JWT. Gestión de entidades como maestros, cursos, asignaturas y horarios.
+\subsection{Enfoque de Desarrollo Ágil}
 
-Desarrollo de la aplicación web: Interfaz para gestión de entidades y horarios, responsiva.
+\subsubsection{Metodología Scrum Adaptada}
 
-Desarrollo de la aplicación móvil: Consulta de horarios en Android.
+El proyecto adoptó una metodología ágil inspirada en Scrum, adaptada al contexto académico y al equipo de desarrollo reducido. Esta aproximación permitió una entrega incremental de funcionalidades mientras mantenía la flexibilidad necesaria para ajustes basados en retroalimentación.
 
-Pruebas: Unitarias, manuales y de integración. Base de datos MySQL.
+\begin{itemize}
+\item \textbf{Sprints semanales}: Iteraciones de una semana para desarrollo y entrega de funcionalidades
+\item \textbf{Daily stand-ups}: Reuniones diarias de 15 minutos para sincronización del equipo
+\item \textbf{Retrospectivas}: Sesiones al final de cada sprint para mejora continua
+\item \textbf{Product backlog}: Lista priorizada de funcionalidades y mejoras
+\end{itemize}
+
+\subsubsection{Especificación de Requerimientos}
+
+Los requerimientos se especificaron siguiendo un enfoque híbrido que combina elementos tradicionales con prácticas ágiles:
+
+\textbf{Requerimientos Funcionales (RF):}
+\begin{enumerate}
+\item \textbf{RF1 - Inicio de Sesión}: Autenticación segura con validación de credenciales y control de acceso basado en roles
+\item \textbf{RF2 - Visualización de Horarios}: Consulta de horarios por maestro, curso o asignatura con filtros avanzados
+\item \textbf{RF3 - Gestión de Maestros}: CRUD completo para profesores incluyendo asignaturas, disponibilidad y datos de contacto
+\item \textbf{RF4 - Gestión de Cursos}: Administración de cursos académicos con información detallada
+\item \textbf{RF5 - Gestión de Asignaturas}: Control de asignaturas con prerrequisitos y cargas horarias
+\item \textbf{RF6 - Gestión de Horarios}: Generación automática y manual de horarios con validación de conflictos
+\end{enumerate}
+
+\textbf{Requerimientos No Funcionales (RNF):}
+\begin{enumerate}
+\item \textbf{RNF1 - Seguridad}: Autenticación robusta y cifrado de datos sensibles
+\item \textbf{RNF2 - Rendimiento}: Tiempos de respuesta <3 segundos para operaciones críticas
+\item \textbf{RNF3 - Usabilidad}: Interfaz intuitiva accesible desde múltiples dispositivos
+\item \textbf{RNF4 - Compatibilidad}: Soporte para navegadores web modernos y Android
+\item \textbf{RNF5 - Mantenibilidad}: Código documentado y arquitectura modular
+\item \textbf{RNF6 - Escalabilidad}: Capacidad para crecer con la institución
+\end{enumerate}
+
+\subsubsection{Historias de Usuario INVEST}
+
+Los requerimientos funcionales se descompusieron en historias de usuario siguiendo el modelo INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable):
+
+\begin{itemize}
+\item \textbf{Como} administrador, \textbf{quiero} iniciar sesión de forma segura, \textbf{para} acceder al sistema de gestión
+\item \textbf{Como} profesor, \textbf{quiero} consultar mi horario semanal, \textbf{para} planificar mis actividades
+\item \textbf{Como} administrador, \textbf{quiero} gestionar maestros y sus asignaturas, \textbf{para} mantener información actualizada
+\item \textbf{Como} estudiante, \textbf{quiero} ver los cursos disponibles, \textbf{para} planificar mi matrícula
+\end{itemize}
+
+\subsection{Arquitectura del Sistema}
+
+\subsubsection{Diseño Arquitectónico Modular}
+
+La arquitectura seleccionada sigue principios de diseño modular con separación clara de responsabilidades:
+
+\begin{itemize}
+\item \textbf{Capa de Presentación}: Interfaces web y móvil para interacción con usuarios
+\item \textbf{Capa de Aplicación}: Lógica de negocio y procesamiento de reglas
+\item \textbf{Capa de Datos}: Persistencia y acceso a información
+\item \textbf{Capa de Integración}: APIs y comunicación entre componentes
+\end{itemize}
+
+\subsubsection{Tecnologías Seleccionadas}
+
+\textbf{Backend - Java con Spring Boot:}
+\begin{itemize}
+\item Framework maduro con amplio soporte comunitario
+\item Inyección de dependencias y configuración automática
+\item Integración nativa con JPA y Hibernate
+\item Seguridad enterprise con Spring Security
+\end{itemize}
+
+\textbf{Frontend Web - Next.js con Tailwind CSS:}
+\begin{itemize}
+\item Server-Side Rendering para mejor SEO y rendimiento
+\item Componentes reutilizables con React
+\item Estilos utilitarios para desarrollo rápido
+\item Responsive design para múltiples dispositivos
+\end{itemize}
+
+\textbf{Aplicación Móvil - React Native:}
+\begin{itemize}
+\item Desarrollo cross-platform con código compartido
+\item Componentes nativos para experiencia Android fluida
+\item Integración con APIs REST del backend
+\item Navegación intuitiva con React Navigation
+\end{itemize}
+
+\textbf{Base de Datos - MySQL:}
+\begin{itemize}
+\item Modelo relacional para integridad de datos
+\item Consultas SQL optimizadas para horarios
+\item Transacciones ACID para consistencia
+\item Índices para rendimiento en consultas complejas
+\end{itemize}
+
+\subsection{Proceso de Desarrollo Detallado}
+
+\subsubsection{Fase de Backend}
+
+El desarrollo del backend siguió el patrón MVC con capas claramente definidas:
+
+\textbf{Controladores REST:}
+\begin{itemize}
+\item Endpoints para operaciones CRUD en todas las entidades
+\item Validación de entrada y manejo de errores
+\item Documentación automática con OpenAPI/Swagger
+\item Paginación y filtros para consultas eficientes
+\end{itemize}
+
+\textbf{Servicios de Negocio:}
+\begin{itemize}
+\item Lógica de generación automática de horarios
+\item Validación de restricciones y conflictos
+\item Cálculos de disponibilidad y asignaciones
+\item Integración con algoritmos de optimización
+\end{itemize}
+
+\textbf{Repositorios JPA:}
+\begin{itemize}
+\item Mapeo objeto-relacional automático
+\item Consultas personalizadas con JPQL
+\item Optimización de consultas con fetch joins
+\item Manejo de transacciones declarativas
+\end{itemize}
+
+\textbf{Seguridad y Autenticación:}
+\begin{itemize}
+\item JWT para tokens stateless
+\item Control de acceso basado en roles
+\item Cifrado de contraseñas con BCrypt
+\item Protección contra ataques comunes (CSRF, XSS)
+\end{itemize}
+
+\subsubsection{Fase de Frontend Web}
+
+La aplicación web se desarrolló con énfasis en la experiencia de usuario:
+
+\begin{itemize}
+\item \textbf{Dashboard administrativo}: Panel con métricas y accesos directos
+\item \textbf{Formularios reactivos}: Validación en tiempo real y feedback visual
+\item \textbf{Visualización de horarios}: Calendarios interactivos y tablas dinámicas
+\item \textbf{Interfaz responsiva}: Adaptable a desktop, tablet y móvil
+\item \textbf{Navegación intuitiva}: Breadcrumbs y menús contextuales
+\end{itemize}
+
+\subsubsection{Fase de Aplicación Móvil}
+
+La app móvil se enfocó en funcionalidades esenciales para Android:
+
+\begin{itemize}
+\item \textbf{Login seguro}: Autenticación con JWT y almacenamiento local
+\item \textbf{Consulta de horarios}: Visualización personalizada por usuario
+\item \textbf{Sincronización offline}: Cache local para acceso sin conexión
+\item \textbf{Notificaciones push}: Alertas de cambios en horarios
+\item \textbf{Interfaz nativa}: Optimizada para experiencia Android
+\end{itemize}
+
+\subsection{Estrategia de Pruebas y Validación}
+
+\subsubsection{Pruebas Unitarias}
+\begin{itemize}
+\item Cobertura del 80\%+ en clases de negocio
+\item Mockito para mocking de dependencias
+\item JUnit 5 con assertions expresivas
+\item Pruebas de edge cases y validaciones
+\end{itemize}
+
+\subsubsection{Pruebas de Integración}
+\begin{itemize}
+\item Validación de APIs REST completas
+\item Pruebas de base de datos con datos de prueba
+\item Verificación de flujos end-to-end
+\item Testing de seguridad y autenticación
+\end{itemize}
+
+\subsubsection{Pruebas Manuales}
+\begin{itemize}
+\item Validación de interfaz de usuario
+\item Testing de usabilidad con usuarios finales
+\item Verificación de compatibilidad cross-browser
+\item Pruebas de rendimiento y carga
+\end{itemize}
+
+\subsubsection{Base de Datos y Despliegue}
+
+El sistema utiliza MySQL con un esquema optimizado para consultas de horarios:
+
+\begin{itemize}
+\item \textbf{Entidades principales}: maestros, cursos, asignaturas, horarios, usuarios
+\item \textbf{Relaciones}: Claves foráneas con integridad referencial
+\item \textbf{Índices}: Optimizados para búsquedas por fecha, profesor y aula
+\item \textbf{Migraciones}: Scripts SQL versionados para evolución del esquema
+\end{itemize}
+
+\subsubsection{Contenerización y Despliegue}
+
+Docker facilita el despliegue consistente:
+
+\begin{itemize}
+\item \textbf{Imágenes}: Backend, frontend y base de datos contenerizados
+\item \textbf{Orquestación}: Docker Compose para desarrollo local
+\item \textbf{Volúmenes}: Persistencia de datos y configuración
+\item \textbf{Redes}: Comunicación segura entre contenedores
+\end{itemize}
+
+Esta metodología integral garantiza que SGH no solo cumpla con los requerimientos funcionales y no funcionales, sino que también sea mantenible, escalable y preparado para evolución futura.

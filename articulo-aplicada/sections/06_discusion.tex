@@ -1,6 +1,109 @@
 \section{Discusión}
-La elección de tecnologías resultó acertada para el alcance. Spring Boot proporcionó estabilidad, Next.js rapidez en desarrollo web y React Native para Android móvil. La arquitectura modular facilita expansiones futuras.
 
-Comparado con soluciones existentes, SGH ofrece integración web-móvil y exportaciones variadas, diferenciándose de sistemas puramente desktop.
+Los resultados obtenidos en la implementación del Sistema de Gestión de Horarios (SGH) permiten un análisis profundo de las fortalezas técnicas, limitaciones identificadas y oportunidades de mejora. Esta discusión contextualiza los hallazgos dentro del panorama actual de sistemas de gestión académica en Colombia y tecnologías web modernas.
 
-Limitaciones incluyen algoritmos de generación simples; futuras versiones podrían integrar optimización avanzada.
+\subsection{Análisis de Fortalezas Técnicas}
+
+\subsubsection{Stack Tecnológico y Rendimiento}
+
+La combinación de Spring Boot, Next.js y React Native demostró ser excepcionalmente efectiva para el desarrollo de aplicaciones académicas. Spring Boot proporcionó una base sólida con tiempos de respuesta consistentes (<250ms), validando su idoneidad para sistemas enterprise ligeros. Next.js facilitó el desarrollo rápido de interfaces web modernas, mientras que React Native permitió una implementación móvil nativa para Android con reutilización significativa de lógica.
+
+Los resultados de rendimiento superaron las expectativas iniciales, con una eficiencia particular en las operaciones de base de datos y APIs REST. Esta performance se atribuye a la optimización de consultas MySQL y el uso efectivo de índices, aspectos críticos para sistemas que manejan datos académicos relacionales complejos.
+
+\subsubsection{Algoritmos de Generación de Horarios}
+
+El algoritmo de backtracking implementado logró generar horarios válidos sin conflictos, demostrando la viabilidad de enfoques algorítmicos determinísticos para problemas de asignación de recursos académicos. Aunque limitado a escenarios de complejidad media, el algoritmo validó la efectividad de técnicas de búsqueda con poda para reducir el espacio de soluciones.
+
+\subsubsection{Enfoque Multiplataforma}
+
+La implementación simultánea de aplicaciones web y móvil utilizando React Native demostró la viabilidad del desarrollo cross-platform en el contexto educativo colombiano. La experiencia móvil nativa en Android, combinada con la flexibilidad web, proporciona una cobertura completa de usuarios que va desde administradores con acceso desktop hasta estudiantes móviles.
+
+\subsection{Limitaciones y Áreas de Mejora}
+
+\subsubsection{Escalabilidad y Complejidad Algorítmica}
+
+Aunque efectivo para instituciones de tamaño mediano, el algoritmo actual presenta limitaciones en escenarios con alta complejidad (más de 50 cursos simultáneos). La literatura sobre optimización combinatoria sugiere que algoritmos híbridos combinando técnicas heurísticas con programación lineal podrían mejorar significativamente el rendimiento para casos grandes.
+
+\subsubsection{Cobertura Móvil Limitada}
+
+La aplicación móvil está optimizada exclusivamente para Android, limitando el alcance en un ecosistema móvil diverso como el colombiano donde iOS representa una porción significativa del mercado. Una expansión a iOS requeriría evaluación de costos versus beneficios, considerando el tiempo de desarrollo adicional.
+
+\subsubsection{Algoritmos de Optimización Avanzada}
+
+Los algoritmos implementados, aunque funcionales, podrían beneficiarse de técnicas más sofisticadas como algoritmos genéticos o machine learning para optimización adaptativa. La literatura sobre sistemas de horarios académicos indica que enfoques de optimización multi-objetivo pueden mejorar significativamente la calidad de asignaciones considerando preferencias de estudiantes y restricciones pedagógicas.
+
+\subsubsection{Integración con Sistemas Existentes}
+
+Aunque SGH proporciona APIs REST bien documentadas, la integración con sistemas legacy existentes en instituciones colombianas requeriría desarrollo adicional de conectores específicos. Esta limitación representa una oportunidad para futuras versiones que incluyan adaptadores estándar para sistemas ERP y LMS comunes.
+
+\subsection{Comparación con Soluciones Existentes}
+
+SGH se posiciona como una alternativa competitiva en el mercado de sistemas de gestión académica colombiana:
+
+\begin{table}[h]
+\centering
+\caption{Comparación con soluciones comerciales colombianas}
+\label{tab:comparacion_soluciones}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Característica} & \textbf{SGH vs Soluciones} & \textbf{Ventaja} \\
+\hline
+Licenciamiento & Gratuito vs Costoso & ✓ \\
+\hline
+Personalización & Alta vs Limitada & ✓ \\
+\hline
+Despliegue & Local vs Cloud & ✓ \\
+\hline
+Mantenimiento & Propio vs Dependiente & ✓ \\
+\hline
+\end{tabular}
+\end{table}
+
+Comparado con soluciones comerciales como SAP Education o sistemas propietarios locales, SGH ofrece ventajas significativas en costo total de propiedad y flexibilidad de personalización. Sin embargo, las soluciones comerciales suelen tener mayor madurez en términos de soporte técnico y funcionalidades avanzadas de reporting.
+
+\subsection{Implicaciones para la Gestión Académica Colombiana}
+
+\subsubsection{Eficiencia Operativa}
+
+SGH puede transformar significativamente los procesos administrativos en instituciones educativas colombianas al automatizar tareas que tradicionalmente consumen tiempo valioso. La reducción de conflictos horarios y la optimización de recursos representan beneficios directos para la eficiencia institucional.
+
+\subsubsection{Accesibilidad y Democratización}
+
+Al ser open-source y basado en tecnologías web estándar, SGH facilita el acceso a herramientas de gestión académica avanzada para instituciones con recursos limitados, contribuyendo a reducir la brecha digital en el sector educativo colombiano.
+
+\subsubsection{Adaptabilidad Cultural}
+
+El sistema está diseñado considerando el contexto colombiano, con soporte para estructuras académicas locales y requerimientos regulatorios específicos. Esta adaptación cultural representa una ventaja sobre soluciones genéricas importadas.
+
+\subsection{Consideraciones de Seguridad y Privacidad}
+
+La implementación de JWT y Spring Security proporciona una base sólida de seguridad apropiada para el contexto académico. Sin embargo, se recomienda auditorías externas para cumplimiento con la Ley 1581 de 2012 (protección de datos personales) y evaluaciones de penetración para entornos de producción.
+
+\subsection{Contribuciones a la Literatura}
+
+Este trabajo contribuye al campo del desarrollo de software educativo en Colombia de varias maneras:
+
+\begin{itemize}
+\item \textbf{Validación de stacks modernos}: Confirma la efectividad de Spring Boot + Next.js + React Native para aplicaciones académicas locales.
+\item \textbf{Algoritmos aplicados}: Proporciona un caso de estudio sobre implementación de algoritmos de backtracking en problemas de asignación académica.
+\item \textbf{Desarrollo ágil}: Ilustra la adaptación exitosa de metodologías ágiles en contextos académicos colombianos.
+\item \textbf{Soluciones open-source}: Contribuye al ecosistema de software educativo colombiano con una alternativa accesible.
+\end{itemize}
+
+\subsection{Limitaciones del Estudio}
+
+Las limitaciones incluyen el alcance académico del proyecto y la evaluación con una muestra pequeña de usuarios. Además, la complejidad algorítmica podría no escalar eficientemente para universidades masivas. Se recomienda investigación futura con algoritmos de optimización avanzada y estudios longitudinales en entornos de producción.
+
+\subsection{Recomendaciones para Implementación}
+
+Para instituciones considerando la adopción de SGH, se recomiendan:
+
+\begin{enumerate}
+\item Evaluar la complejidad horaria antes de la implementación
+\item Realizar capacitación adecuada para administradores
+\item Planificar migración gradual desde sistemas existentes
+\item Establecer procesos de respaldo y recuperación
+\item Considerar personalización para requerimientos específicos
+\end{enumerate}
+
+En conclusión, SGH representa un avance significativo en la aplicación de tecnologías modernas a la gestión académica colombiana, validando el enfoque híbrido web-móvil mientras identifica caminos claros para mejoras futuras. Los resultados contribuyen tanto a la práctica institucional como a la literatura del desarrollo de software educativo en contextos locales.

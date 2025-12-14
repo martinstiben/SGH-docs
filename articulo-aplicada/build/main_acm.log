@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.18)  18 NOV 2025 14:36
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 01:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **main_acm.tex
 (./main_acm.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2025-11-14>
 (/opt/texlive/texdir/texmf-dist/tex/latex/acmart/acmart.cls
 Document Class: acmart 2025/08/27 v2.16 Typesetting articles for the Associatio
 n for Computing Machinery
@@ -387,7 +387,7 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/opt
 /texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-06 L3 programming layer (loader) 
+Package: expl3 2025-11-14 L3 programming layer (loader) 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count321
@@ -1701,7 +1701,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \@temptokenb=\toks38
 ) Special comment 'acks') (./includes/preamble_common.tex (/opt/texlive/texdir/
 texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count345
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -1846,24 +1846,24 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 \lst@lineno=\count377
 \lst@maxwidth=\dimen272
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count378
 \lst@skipnumbers=\count379
 \lst@framebox=\box76
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2025/11/14 1.11a listings configuration
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2025/11/14 1.11a (Carsten Heinz)
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/11/14 1.11a (Carsten Heinz)
+        2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 ) (./includes/preamble_acm.tex)
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 29.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 31.
 
 \c@theorem=\count380
 (/opt/texlive/texdir/texmf-dist/tex/latex/preprint/balance.sty
@@ -1875,83 +1875,78 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-(build/main_acm.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 12.
-)
+(build/main_acm.aux)
 \openout1 = `main_acm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 29.
+(Font)              scaled to size 7.0pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 7.26596pt on input line 29.
+(Font)              scaled to size 7.26596pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 5.18997pt on input line 29.
+(Font)              scaled to size 5.18997pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 7.2666pt on input line 29.
+(Font)              scaled to size 7.2666pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 5.19043pt on input line 29.
+(Font)              scaled to size 5.19043pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 7.26521pt on input line 29.
+(Font)              scaled to size 7.26521pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 5.18944pt on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+(Font)              scaled to size 5.18944pt on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 29.
+(Font)              scaled to size 9.0pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 7.47354pt on input line 29.
+(Font)              scaled to size 7.47354pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 5.60515pt on input line 29.
+(Font)              scaled to size 5.60515pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 9.34277pt on input line 29.
+(Font)              scaled to size 9.34277pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 7.47421pt on input line 29.
+(Font)              scaled to size 7.47421pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 5.60565pt on input line 29.
+(Font)              scaled to size 5.60565pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 9.34099pt on input line 29.
+(Font)              scaled to size 9.34099pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 7.47278pt on input line 29.
+(Font)              scaled to size 7.47278pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 5.60458pt on input line 29.
-LaTeX Info: Redefining \microtypecontext on input line 29.
-Package microtype Info: Applying patch `item' on input line 29.
-Package microtype Info: Applying patch `toc' on input line 29.
-Package microtype Info: Applying patch `eqnum' on input line 29.
-Package microtype Info: Applying patch `footnote' on input line 29.
-Package microtype Info: Applying patch `verbatim' on input line 29.
-LaTeX Info: Redefining \microtypesetup on input line 29.
+(Font)              scaled to size 5.60458pt on input line 31.
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
+Package microtype Info: Applying patch `verbatim' on input line 31.
+LaTeX Info: Redefining \microtypesetup on input line 31.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1961,10 +1956,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinLibertine' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring OFF on input line 29.
-(build/main_acm.out) (build/main_acm.out)
+Package hyperref Info: Link coloring OFF on input line 31.
 \@outlinefile=\write4
 \openout4 = `main_acm.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2004,8 +2001,10 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 31.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/translations/translations-basic-dicti
 onary-spanish.trsl
@@ -2013,32 +2012,58 @@ File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 29.
+or `spanish'. on input line 31.
 \c@lstlisting=\count381
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 30.
+(Font)              scaled to size 17.28pt on input line 32.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 30.
+(Font)              scaled to size 17.28pt on input line 32.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinBiolinum' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 30.
+(Font)              scaled to size 17.28pt on input line 32.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 30.
+(Font)              scaled to size 10.0pt on input line 32.
+
+./main_acm.tex:32: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \maketitle
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./main_acm.tex:32: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \maketitle
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 10.37994pt on input line 30.
+(Font)              scaled to size 10.37994pt on input line 32.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusMath-Regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 10.38086pt on input line 30.
+(Font)              scaled to size 10.38086pt on input line 32.
 LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 10.37888pt on input line 30.
+(Font)              scaled to size 10.37888pt on input line 32.
 (/opt/texlive/texdir/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -2049,15 +2074,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 32.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 30.
-(./sections/00_abstract.tex) (./sections/01_introduccion.tex) (./sections/02_re
-lacionados.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              scaled to size 10.95pt on input line 32.
+(./sections/00_abstract.tex) (./sections/01_introduccion.tex
+Overfull \hbox (4.62376pt too wide) in paragraph at lines 38--39
+[]\TU/LinLibertine(0)/b/n/9 Contenerización\TU/LinLibertine(0)/m/n/9 : Docker p
+ara despliegue consistente y por-
+ []
 
 
-Package natbib Warning: Citation `saltos2022' on page 1 undefined on input line
+Underfull \vbox (badness 1342) has occurred while \output is active []
+
+(/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-utf32be.def
+File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
+) [1.1
+
+]) (./sections/02_relacionados.tex
+
+Package natbib Warning: Citation `saltos2022' on page 2 undefined on input line
  5.
 
 File: graphics/estudio sobre metodologias de desarrollo y su impacto en la prod
@@ -2067,9 +2104,9 @@ idad.png>
 
 Class acmart Warning: A possible image without description on input line 12.
 
-[1.1
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: graphics/practica de lenguaje de programacion java y nuevas tecnologias.p
 ng Graphic file (type bmp)
 <graphics/practica de lenguaje de programacion java y nuevas tecnologias.png>
@@ -2087,9 +2124,11 @@ ombia.png>
 
 Class acmart Warning: A possible image without description on input line 38.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 38.
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 38.
+[2.2]
 File: graphics/una revision comparativa de la literatura acerca de metadologias
  tradicionales y modernas de desarrolladores de software.png Graphic file (type
  bmp)
@@ -2098,9 +2137,6 @@ icionales y modernas de desarrolladores de software.png>
 
 Class acmart Warning: A possible image without description on input line 45.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: graphics/tecnologias frontend y backend en tendencia.png Graphic file (ty
 pe bmp)
 <graphics/tecnologias frontend y backend en tendencia.png>
@@ -2108,25 +2144,18 @@ pe bmp)
 Class acmart Warning: A possible image without description on input line 61.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `lozano2018' on page 2 undefined on input line
+Package natbib Warning: Citation `lozano2018' on page 3 undefined on input line
  66.
 
 
-Package natbib Warning: Citation `saltos2022' on page 2 undefined on input line
+Package natbib Warning: Citation `saltos2022' on page 3 undefined on input line
  68.
 
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 69.
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 69.
-[2.2]
 
 Package natbib Warning: Citation `izaurralde2013' on page 3 undefined on input 
 line 78.
 
+[3.3]
 File: graphics/Especificando una arquitectura de software.png Graphic file (typ
 e bmp)
 <graphics/Especificando una arquitectura de software.png>
@@ -2134,79 +2163,141 @@ e bmp)
 Class acmart Warning: A possible image without description on input line 85.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `cein2025' on page 3 undefined on input line 9
+Package natbib Warning: Citation `cein2025' on page 4 undefined on input line 9
 0.
 
-) (./sections/03_metodologia.tex) (./sections/04_implementacion.tex
-Overfull \hbox (3.96474pt too wide) in paragraph at lines 2--3
-[]\TU/LinLibertine(0)/m/n/9 Describimos arquitectura, decisiones tecnológicas y
- \TU/LinLibertine(0)/m/it/9 pipelines\TU/LinLibertine(0)/m/n/9 . Do-
+) (./sections/03_metodologia.tex
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 9.
+[4.4]
+Overfull \hbox (8.11552pt too wide) in paragraph at lines 68--70
+ \TU/LinBiolinum(0)/m/it/9 3.2.2. Tecnologías Seleccionadas.[] \TU/LinLibertine
+(0)/b/n/9 Backend - Java con Spring Boot: 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[3.3]
-
-Package natbib Warning: Citation `forsgren2018accelerate' on page 4 undefined o
-n input line 5.
-
-(./tables/frameworks_comparison.tex
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 5.
-LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(1)/m/n' will be
-(Font)              scaled to size 6.22797pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 6.22852pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 6.22733pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 8.
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-[]|\TU/LinLibertine(0)/m/n/6 Integridad de datos, relaciones
+Overfull \hbox (7.0808pt too wide) in paragraph at lines 156--157
+[]\TU/LinLibertine(0)/b/n/9 Consulta de horarios\TU/LinLibertine(0)/m/n/9 : Vis
+ualización personalizada por usua-
  []
 
-)) (./sections/05_resultados.tex) (./sections/06_discusion.tex
-Overfull \hbox (3.757pt too wide) in paragraph at lines 2--3
-[]\TU/LinLibertine(0)/m/n/9 La elección de tecnologías resultó acertada para el
- alcance. Spring
- []
-
-) (./sections/07_conclusiones.tex)
-Overfull \hbox (16.0005pt too wide) in paragraph at lines 51--52
-\TU/LinLibertine(0)/m/n/9 cuperado de https://repository.ustaae8f-4b01-a066-849
-fcb70e15f 
- []
-
-
-Overfull \hbox (129.0345pt too wide) in paragraph at lines 53--54
-\TU/LinLibertine(0)/m/n/9 tecnologias. (2025). Recuperado de https://repositori
-o.utp.edu.co/entities/publication/192d53ab-
- []
-
-
-Overfull \hbox (191.93849pt too wide) in paragraph at lines 54--55
-\TU/LinLibertine(0)/m/n/9 re en Colombia. (2020). Recuperado de https://revista
-s.poligran.edu.co/index.php/puntodevista/article/view/1415 
- []
-
-
-Overfull \hbox (156.55647pt too wide) in paragraph at lines 56--57
-\TU/LinLibertine(0)/m/n/9 productividad. (2020). Recuperado de https://revistas
-.udistrital.edu.co/index.php/tia/article/view/13364 
+) (./sections/04_implementacion.tex [5.5]
+Overfull \hbox (2.7915pt too wide) in paragraph at lines 25--26
+[]\TU/LinLibertine(0)/m/n/9 ScheduleGenerationService para algoritmos de optimi
+zación 
  []
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `inconsolata' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+[6.6]
+Overfull \hbox (6.49203pt too wide) in paragraph at lines 148--149
+[]\TU/inconsolata(0)/m/n/9 GET/POST/PUT/DELETE /api/professors \TU/LinLibertine
+(0)/m/n/9 - Gestión de maes-
+ []
+
+
+Overfull \hbox (1.83678pt too wide) in paragraph at lines 170--171
+[]\TU/LinLibertine(0)/b/n/9 Backtracking con heurísticas\TU/LinLibertine(0)/m/n
+/9 : Exploración inteligente del
+ []
+
+
+LaTeX Warning: Reference `tab:frameworks' on page 1 undefined on input line 256
+.
+
+(./tables/frameworks_comparison.tex
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]|\TU/LinLibertine(0)/m/n/7 Integridad, relaciones,
+ []
+
+)) (./sections/05_resultados.tex [7.7]
+
+LaTeX Warning: Reference `tab:resultados_web' on page 1 undefined on input line
+ 7.
+
+
+LaTeX Warning: Reference `tab:resultados_backend' on page 1 undefined on input 
+line 7.
+
+[8.8]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[]|\TU/LinLibertine(0)/b/n/7 Cobertura (Unita-
+ []
+
+) (./sections/06_discusion.tex
+Overfull \hbox (1.67998pt too wide) in paragraph at lines 15--16
+\TU/LinLibertine(0)/m/n/9 nísticos para problemas de asignación de recursos aca
+démicos. Aun-
+ []
+
+
+Overfull \hbox (2.79352pt too wide) in paragraph at lines 19--20
+ \TU/LinBiolinum(0)/m/it/9 6.1.3. Enfoque Multiplataforma.[] \TU/LinLibertine(0
+)/m/n/9 La implementación simultánea de
+ []
+
+[9.9]
+Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
+t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
+Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
+t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
+Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
+t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
+Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
+t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
+) (./sections/07_conclusiones.tex
+Overfull \hbox (3.45906pt too wide) in paragraph at lines 8--9
+\TU/LinLibertine(0)/m/n/9 efectividad del stack tecnológico elegido (Spring Boo
+t, Next.js, React
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[10.10]
+Overfull \hbox (8.2935pt too wide) in paragraph at lines 44--45
+[]\TU/LinLibertine(0)/m/n/9 Implementación de algoritmos de optimización híbrid
+os (back-
+ []
+
+
+Overfull \hbox (4.07251pt too wide) in paragraph at lines 55--56
+[]\TU/LinLibertine(0)/m/n/9 Creación de módulo de comunicación interna (foro/ac
+ademia
+ []
+
+) [11.11]
+Overfull \hbox (16.0005pt too wide) in paragraph at lines 53--54
+\TU/LinLibertine(0)/m/n/9 cuperado de https://repository.ustaae8f-4b01-a066-849
+fcb70e15f 
+ []
+
+
+Overfull \hbox (129.0345pt too wide) in paragraph at lines 55--56
+\TU/LinLibertine(0)/m/n/9 tecnologias. (2025). Recuperado de https://repositori
+o.utp.edu.co/entities/publication/192d53ab-
+ []
+
+
+Overfull \hbox (191.93849pt too wide) in paragraph at lines 56--57
+\TU/LinLibertine(0)/m/n/9 re en Colombia. (2020). Recuperado de https://revista
+s.poligran.edu.co/index.php/puntodevista/article/view/1415 
+ []
+
+
+Overfull \hbox (156.55647pt too wide) in paragraph at lines 58--59
+\TU/LinLibertine(0)/m/n/9 productividad. (2020). Recuperado de https://revistas
+.udistrital.edu.co/index.php/tia/article/view/13364 
+ []
+
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 5.4pt on input line 69.
-(./sections/A1_apendices.tex [4.4]
+(Font)              scaled to size 5.4pt on input line 71.
+(./sections/A1_apendices.tex
 Overfull \hbox (92.90248pt too wide) in paragraph at lines 16--17
 \TU/LinLibertine(0)/m/n/9 nologias. (2025). Recuperado de https://repositorio.u
 tp.edu.co/entities/publication/192d53ab-
@@ -2219,13 +2310,13 @@ oligran.edu.co/index.php/puntodevista/article/view/1415
  []
 
 )
-Overfull \hbox (131.20647pt too wide) in paragraph at lines 22--72
+Overfull \hbox (131.20647pt too wide) in paragraph at lines 22--74
 \TU/LinLibertine(0)/m/n/9 productividad. (2020). Recuperado de https://revistas
 .udistrital.edu.co/index.php/tia/article/view/13364
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--72
+Underfull \hbox (badness 10000) in paragraph at lines 22--74
 
  []
 
@@ -2247,28 +2338,45 @@ portant to optimize color contrast for the visually impaired. Taking these impo
 rtant steps when creating your papers will ensure that the widest possible audi
 ence can ingest your work..
 
-(/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-utf32be.def
-File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-) [5.5] (build/main_acm.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
+[12.12]
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 12).
+               Rerun to correct this.
+
+(build/main_acm.aux
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2025-11-14>
  ***********
-Package rerunfilecheck Info: File `main_acm.out' has not changed.
-(rerunfilecheck)             Checksum: 4A598B71A45C4A0014FB55426290D9E9;5277.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main_acm.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main_acm.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  444C77640E13E53285ABD0F9E6878DC0;13465.
  ) 
 Here is how much of TeX's memory you used:
- 41785 strings out of 468179
- 856767 string characters out of 5435042
- 1381254 words of memory out of 5000000
- 69847 multiletter control sequences out of 15000+600000
- 635628 words of font info for 147 fonts, out of 8000000 for 9000
+ 41794 strings out of 468179
+ 857049 string characters out of 5435043
+ 1385646 words of memory out of 5000000
+ 69865 multiletter control sequences out of 15000+600000
+ 634537 words of font info for 140 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,12n,131p,1190b,32924s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,131p,1005b,33009s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_acm.xdv (5 pages, 219272 bytes).
+Output written on build/main_acm.xdv (12 pages, 575544 bytes).

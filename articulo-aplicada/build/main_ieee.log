@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.18)  18 NOV 2025 14:36
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 01:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **main_ieee.tex
 (./main_ieee.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2025-11-14>
 (/opt/texlive/texdir/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -82,7 +82,7 @@ LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
 \@IEEEtranrubishbin=\box54
 ) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/b
 abel/babel.sty
-Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count286
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -125,7 +125,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/fontspec/fontspec.sty (/opt/texlive
 /texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/texlive/texdir/
 texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-06 L3 programming layer (loader) 
+Package: expl3 2025-11-14 L3 programming layer (loader) 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count289
@@ -475,21 +475,21 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 \lst@lineno=\count354
 \lst@maxwidth=\dimen272
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count355
 \lst@skipnumbers=\count356
 \lst@framebox=\box69
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2025/11/14 1.11a listings configuration
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2025/11/14 1.11a (Carsten Heinz)
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/11/14 1.11a (Carsten Heinz)
+        2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 ) (./includes/preamble_ieee.tex (/opt/texlive/texdir/texmf-dist/tex/latex/bibla
 tex/biblatex.sty
@@ -723,7 +723,7 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2025-11-06 L3 programming layer (loader) 
+(biblatex)             2025-11-14 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
@@ -734,10 +734,10 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 (build/main_ieee.aux
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 14.
+(babel)             Reported on input line 12.
 )
 \openout1 = `main_ieee.aux'.
 
@@ -872,171 +872,148 @@ Package biblatex Info: ... file 'main_ieee.bbl' found.
 (build/main_ieee.bbl)
 Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 19.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 19.
+(Font)              <11> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 19.
+(Font)              <7.69997> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 19.
+(Font)              <5.5> on input line 23.
 (/opt/texlive/texdir/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 19.
+(Font)              <5> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
+(Font)              <7> on input line 23.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (236.64128pt too wide) in paragraph at lines 19--19
- [] 
- []
+(./sections/00_abstract.tex) (./sections/01_introduccion.tex [1
 
 
-Overfull \hbox (236.64128pt too wide) in paragraph at lines 19--19
- [] 
- []
+]) (./sections/02_relacionados.tex
 
-
-Overfull \hbox (236.64128pt too wide) in paragraph at lines 19--19
- [] 
- []
-
-(./sections/00_abstract.tex) (./sections/01_introduccion.tex) (./sections/02_re
-lacionados.tex
-Underfull \vbox (badness 2538) has occurred while \output is active []
-
-
-LaTeX Warning: Citation 'saltos2022' on page 1 undefined on input line 5.
+LaTeX Warning: Citation 'saltos2022' on page 2 undefined on input line 5.
 
 File: graphics/estudio sobre metodologias de desarrollo y su impacto en la prod
 uctividad.png Graphic file (type bmp)
 <graphics/estudio sobre metodologias de desarrollo y su impacto en la productiv
 idad.png>
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
-[1
-
-
-]
 File: graphics/practica de lenguaje de programacion java y nuevas tecnologias.p
 ng Graphic file (type bmp)
 <graphics/practica de lenguaje de programacion java y nuevas tecnologias.png>
+[2]
 
-LaTeX Warning: Citation 'izaurralde2013' on page 2 undefined on input line 31.
+LaTeX Warning: Citation 'izaurralde2013' on page 3 undefined on input line 31.
 
 File: graphics/analisis prospectivo de la industria de desarrollo de software e
 n colombia.png Graphic file (type bmp)
 <graphics/analisis prospectivo de la industria de desarrollo de software en col
 ombia.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: graphics/una revision comparativa de la literatura acerca de metadologias
  tradicionales y modernas de desarrolladores de software.png Graphic file (type
  bmp)
 <graphics/una revision comparativa de la literatura acerca de metadologias trad
 icionales y modernas de desarrolladores de software.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
 File: graphics/tecnologias frontend y backend en tendencia.png Graphic file (ty
 pe bmp)
 <graphics/tecnologias frontend y backend en tendencia.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'lozano2018' on page 3 undefined on input line 66.
 
-
-LaTeX Warning: Citation 'lozano2018' on page 2 undefined on input line 66.
-
-[2]
 
 LaTeX Warning: Citation 'saltos2022' on page 3 undefined on input line 68.
 
+[3]
 
-LaTeX Warning: Citation 'izaurralde2013' on page 3 undefined on input line 78.
+LaTeX Warning: Citation 'izaurralde2013' on page 4 undefined on input line 78.
 
 File: graphics/Especificando una arquitectura de software.png Graphic file (typ
 e bmp)
 <graphics/Especificando una arquitectura de software.png>
 
+LaTeX Warning: Citation 'cein2025' on page 4 undefined on input line 90.
+
+) (./sections/03_metodologia.tex
+Underfull \hbox (badness 1681) in paragraph at lines 9--10
+ []\TU/lmr/m/it/10 1. Metodología Scrum Adaptada: [][][] \TU/ptm/bx/it/10 El pr
+oyecto
+ []
+
+[4] [5]) (./sections/04_implementacion.tex [6] [7] (./tables/frameworks_compari
+son.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[]|\TU/lmr/m/n/8 Escalabilidad,
+ []
+
+
+Overfull \hbox (2.39612pt too wide) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/8 JavaScript/Android| 
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 17--18
+[]|\TU/lmr/m/n/8 Integridad, relaciones,
+ []
+
+
+Overfull \hbox (15.41212pt too wide) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/8 Contenedor/Despliegue| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]|\TU/lmr/m/n/8 Portabilidad, rápido
+ []
+
+
+Overfull \hbox (6.73212pt too wide) in paragraph at lines 21--21
+[]|\TU/lmr/m/n/8 Token/Autenticación| 
+ []
+
+)) (./sections/05_resultados.tex
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation 'cein2025' on page 3 undefined on input line 90.
+Underfull \hbox (badness 1939) in paragraph at lines 58--59
+[]\TU/ptm/bx/it/10 Validación de credenciales contra base de datos
+ []
 
-) (./sections/03_metodologia.tex) (./sections/04_implementacion.tex [3]
-Underfull \hbox (badness 2310) in paragraph at lines 2--3
-\TU/lmr/m/it/10 pelines\TU/ptm/bx/it/10 . Documentamos prácticas aplicadas: for
-mateo,
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[]|\TU/lmr/bx/n/8 Cobertura (Unita-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 2--3
-\TU/lmr/m/it/10 linting\TU/ptm/bx/it/10 , pruebas unitarias/integración, anális
-is estático
+Underfull \hbox (badness 1748) in paragraph at lines 206--207
+[]\TU/lmr/bx/n/10 Comentarios principales\TU/ptm/bx/it/10 : Interfaz clara, ren
+di-
  []
 
+) (./sections/06_discusion.tex [9]
+Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
+x-text;!
+Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
+x-text;!
+Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
+x-text;!
+Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
+x-text;!
 
-LaTeX Warning: Citation 'forsgren2018accelerate' on page 4 undefined on input l
-ine 5.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./tables/frameworks_comparison.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-[]|\TU/lmr/m/n/7 Alta escalabilidad,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-[]|\TU/lmr/m/n/7 Rendimiento optimi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-\TU/lmr/m/n/7 zado, SSR, interfaces
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-[]|\TU/lmr/m/n/7 Desarrollo cross-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-\TU/lmr/m/n/7 platform, consultas
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-[]|\TU/lmr/m/n/7 Integridad de datos,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-\TU/lmr/m/n/7 relaciones complejas,
- []
-
-
-Underfull \hbox (badness 5417) in paragraph at lines 14--15
-[]|\TU/lmr/m/n/7 Portabilidad, reducción
- []
-
-
-Overfull \hbox (17.35442pt too wide) in paragraph at lines 6--18
- [][] 
- []
-
-)) (./sections/05_resultados.tex) (./sections/06_discusion.tex) (./sections/07_
-conclusiones.tex) (./sections/A1_apendices.tex
+[10]) (./sections/07_conclusiones.tex [11]) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 2).
 ** WARNING: Ignoring useless \section in Appendix (line 11).
 
@@ -1081,28 +1058,28 @@ Underfull \hbox (badness 7433) in paragraph at lines 20--21
  []
 
 )
-Underfull \hbox (badness 2142) in paragraph at lines 22--36
+Underfull \hbox (badness 2142) in paragraph at lines 22--40
 []\TU/ptm/bx/it/10 6. Estudio sobre metodologías de desarrollo y su
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 22--36
+Underfull \hbox (badness 1484) in paragraph at lines 22--40
 \TU/ptm/bx/it/10 impacto en la productividad. (2020). Recuperado de
  []
 
 
-Overfull \hbox (41.34pt too wide) in paragraph at lines 22--36
+Overfull \hbox (41.34pt too wide) in paragraph at lines 22--40
 \TU/ptm/bx/it/10 https://revistas.udistrital.edu.co/index.php/tia/article/view/
 13364
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--36
+Underfull \hbox (badness 10000) in paragraph at lines 22--40
 
  []
 
 
-LaTeX Warning: Empty bibliography on input line 37.
+LaTeX Warning: Empty bibliography on input line 41.
 
 
 ** Conference Paper **
@@ -1115,14 +1092,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (build/main_ieee.aux
-LaTeX Info: Redefining \sptext on input line 14.
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+[12] (build/main_ieee.aux
+LaTeX Info: Redefining \sptext on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2025-11-14>
  ***********
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1131,7 +1108,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 6765AB7BE0FAACB5693F11A919199EB5;4399.
+(rerunfilecheck)             Checksum: 3B9756F38B01D9522A7667AFABF844B6;24105.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_ieee
@@ -1142,12 +1119,12 @@ Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31699 strings out of 468179
- 674598 string characters out of 5435042
- 1588485 words of memory out of 5000000
- 60071 multiletter control sequences out of 15000+600000
+ 31741 strings out of 468179
+ 675363 string characters out of 5435043
+ 1615331 words of memory out of 5000000
+ 60113 multiletter control sequences out of 15000+600000
  631180 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,83p,1191b,4557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,83p,1006b,4511s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (4 pages, 168216 bytes).
+Output written on build/main_ieee.xdv (12 pages, 550836 bytes).

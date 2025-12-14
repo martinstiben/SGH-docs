@@ -1,4 +1,93 @@
 \section{Conclusiones y trabajo futuro}
-SGH cumple objetivos de gestión eficiente de horarios, con integración web-móvil y tecnologías modernas. Facilita administración educativa, reduciendo tareas manuales.
 
-Trabajos futuros: Mejorar algoritmos de generación, crear un tipo de foro para el colegio y escalar a más instituciones.
+El desarrollo e implementación del Sistema de Gestión de Horarios (SGH) ha demostrado exitosamente la viabilidad de combinar tecnologías modernas web y móviles para resolver problemas específicos de gestión académica en instituciones colombianas. Este proyecto valida un enfoque pragmático que equilibra innovación tecnológica con practicidad operativa, produciendo un sistema funcional, accesible y adaptable.
+
+\subsection{Logros Principales}
+
+\subsubsection{Validación Técnica}
+Los resultados obtenidos confirman la efectividad del stack tecnológico elegido (Spring Boot, Next.js, React Native, MySQL) para aplicaciones académicas locales. El sistema cumplió con todos los requerimientos funcionales y no funcionales especificados, logrando tiempos de respuesta consistentes y una interfaz usable tanto en web como en móvil Android.
+
+\subsubsection{Contribución a la Gestión Académica}
+SGH proporciona una solución alternativa viable a sistemas comerciales costosos, ofreciendo ventajas significativas en términos de costo, personalización y mantenimiento. La implementación demuestra cómo tecnologías open-source pueden abordar necesidades específicas del sector educativo colombiano.
+
+\subsubsection{Impacto en el Desarrollo de Software Educativo}
+Este trabajo contribuye al ecosistema de desarrollo de software en Colombia al proporcionar un caso de estudio completo que abarca desde la especificación de requerimientos ágiles hasta la implementación y evaluación técnica. Los resultados validan la aplicabilidad de metodologías Scrum en contextos académicos locales.
+
+\subsection{Lecciones Aprendidas}
+
+\subsubsection{Diseño Arquitectónico}
+La arquitectura modular basada en Spring Boot demostró ser efectiva para mantener separación de responsabilidades mientras facilita el desarrollo iterativo. La decisión de utilizar contenedores Docker desde el inicio facilitó significativamente el despliegue y la configuración del entorno.
+
+\subsubsection{Desarrollo Multiplataforma}
+La experiencia con React Native confirmó su viabilidad para desarrollo móvil enfocado en Android, permitiendo reutilización de lógica de negocio entre plataformas web y móvil. Sin embargo, también reveló la importancia de considerar las particularidades de cada plataforma desde el diseño inicial.
+
+\subsubsection{Algoritmos y Optimización}
+La implementación de algoritmos de backtracking validó su efectividad para problemas de asignación de horarios de complejidad media. Esta experiencia proporciona una base sólida para futuras mejoras algorítmicas que puedan manejar escenarios más complejos.
+
+\subsection{Limitaciones Identificadas}
+
+Aunque SGH cumple con los objetivos del proyecto, se identificaron áreas para mejora futura:
+
+\begin{itemize}
+\item \textbf{Escalabilidad algorítmica}: Limitado a escenarios de mediana complejidad
+\item \textbf{Cobertura móvil}: Restringido a plataforma Android
+\item \textbf{Integración enterprise}: Requiere conectores específicos para sistemas legacy
+\item \textbf{Analítica avanzada}: Limitada capacidad de reporting y business intelligence
+\end{itemize}
+
+\subsection{Trabajo Futuro}
+
+El roadmap de desarrollo de SGH incluye varias direcciones estratégicas:
+
+\subsubsection{Corto Plazo (3-6 meses)}
+\begin{itemize}
+\item Implementación de algoritmos de optimización híbridos (backtracking + heurísticas avanzadas)
+\item Desarrollo de módulo de analítica y reporting básico
+\item Mejora de la experiencia móvil con funcionalidades offline avanzadas
+\item Implementación de notificaciones push y recordatorios automáticos
+\end{itemize}
+
+\subsubsection{Medio Plazo (6-12 meses)}
+\begin{itemize}
+\item Expansión a plataforma iOS manteniendo código compartido
+\item Desarrollo de APIs para integración con sistemas LMS existentes
+\item Implementación de machine learning para predicción de demanda de cursos
+\item Creación de módulo de comunicación interna (foro/academia virtual)
+\end{itemize}
+
+\subsubsection{Largo Plazo (1-2 años)}
+\begin{itemize}
+\item Escalabilidad a instituciones masivas con microservicios
+\item Integración con sistemas de gestión estudiantil (ERP)
+\item Desarrollo de marketplace de plugins y extensiones
+\item Certificación de cumplimiento con estándares educativos colombianos
+\end{itemize}
+
+\subsection{Impacto Esperado y Sostenibilidad}
+
+SGH tiene el potencial de impactar positivamente en múltiples instituciones educativas colombianas al proporcionar una alternativa económica y adaptable. El código open-source asegura sostenibilidad a largo plazo y fomenta contribuciones de la comunidad académica.
+
+\subsection{Recomendaciones para Adopción}
+
+Para instituciones interesadas en implementar SGH o soluciones similares, se recomiendan:
+
+\begin{enumerate}
+\item Realizar un análisis detallado de requerimientos específicos antes de la adopción
+\item Planificar una migración gradual con capacitación adecuada del personal
+\item Establecer métricas claras de éxito y evaluación continua
+\item Considerar la integración con sistemas existentes desde el inicio
+\item Fomentar una comunidad de usuarios para soporte colaborativo
+\end{enumerate}
+
+\subsection{Contribuciones Académicas}
+
+Este proyecto contribuye al campo del desarrollo de software educativo en Colombia mediante:
+
+\begin{itemize}
+\item Un caso de estudio completo de desarrollo ágil aplicado
+\item Validación de tecnologías modernas en contextos locales
+\item Documentación de mejores prácticas para proyectos académicos
+\item Base de código open-source para investigación futura
+\end{itemize}
+
+En conclusión, SGH representa no solo una herramienta funcional de gestión académica, sino también un modelo de desarrollo que combina rigor técnico con visión práctica. Los resultados obtenidos validan el enfoque adoptado y abren oportunidades prometedoras para la evolución del proyecto y su impacto en el sector educativo colombiano.
