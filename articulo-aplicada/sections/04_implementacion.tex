@@ -1,17 +1,131 @@
 \section{Implementación del software}
-Describimos la arquitectura, decisiones tecnológicas y pipelines. Documentamos las prácticas aplicadas: formateo, linting, pruebas unitarias e integración, análisis estático (SAST), continuous delivery y monitoreo.
+
+En esta sección detallamos la implementación técnica del Sistema de Gestión de Horarios Académicos (SGH), incluyendo la arquitectura del sistema, las decisiones tecnológicas tomadas, los patrones de diseño implementados y las prácticas de desarrollo aplicadas. El enfoque se centró en crear una solución modular, escalable y mantenible que pudiera adaptarse a las necesidades cambiantes de instituciones educativas.
 
 \subsection{Arquitectura del sistema}
-La arquitectura implementada sigue las mejores prácticas de DevOps \cite{forsgren2018accelerate}, integrando automatización en todo el ciclo de desarrollo. % La \cref{fig:correlacion_devops} muestra la correlación observada entre el nivel de automatización y el rendimiento del equipo.
 
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
-%     \caption{Correlación entre nivel de automatización y performance del equipo de desarrollo}
-%     \label{fig:correlacion_devops}
-% \end{figure}
+La arquitectura de SGH se basa en una aproximación híbrida que combina elementos de arquitectura monolítica modular con principios de microservicios. Esta decisión permite mantener la simplicidad del desarrollo inicial mientras se prepara el terreno para una futura evolución hacia microservicios completamente distribuidos.
+
+\subsubsection{Backend con Spring Boot}
+
+El backend se implementó utilizando Spring Boot 3.x con Java 17, aprovechando las características modernas del framework para crear una aplicación robusta y eficiente. La estructura se organiza en capas claramente definidas:
+
+\begin{itemize}
+\item \textbf{Capa de Controladores (Controllers)}: Implementa los endpoints REST siguiendo el patrón MVC. Cada controlador maneja operaciones CRUD para entidades específicas como cursos, profesores, aulas y horarios.
+\item \textbf{Capa de Servicios (Services)}: Contiene la lógica de negocio principal, incluyendo algoritmos de optimización para la generación de horarios y validación de restricciones.
+\item \textbf{Capa de Repositorios (Repositories)}: Utiliza Spring Data JPA para el acceso a datos, proporcionando una abstracción sobre la base de datos relacional.
+\item \textbf{Capa de Configuración (Configuration)}: Gestiona la configuración de seguridad, CORS, y otros aspectos transversales.
+\end{itemize}
+
+La arquitectura implementa el patrón de Inyección de Dependencias para promover el bajo acoplamiento y facilitar las pruebas unitarias. Se utilizó Spring Security con JWT (JSON Web Tokens) para implementar autenticación y autorización basadas en roles.
+
+\subsubsection{Frontend Web con Next.js y Tailwind CSS}
+
+La aplicación web se desarrolló utilizando Next.js 14 con App Router, aprovechando las capacidades de Server-Side Rendering (SSR) y Static Site Generation (SSG) para optimizar el rendimiento y el SEO. La estructura del proyecto sigue las mejores prácticas de Next.js:
+
+\begin{itemize}
+\item \textbf{Páginas (Pages)}: Organizadas en rutas anidadas bajo \texttt{/dashboard} para funcionalidades administrativas.
+\item \textbf{Componentes (Components)}: Componentes reutilizables construidos con React hooks y TypeScript para type safety.
+\item \textbf{Hooks personalizados}: Para manejo de estado y llamadas a API.
+\item \textbf{Utilidades (Utils)}: Funciones helper para formateo de datos y validaciones.
+\end{itemize}
+
+Tailwind CSS se configuró con un sistema de diseño personalizado, definiendo tokens para colores, tipografía y espaciado. Se implementó un tema responsivo que se adapta automáticamente a diferentes tamaños de pantalla, con soporte para modo oscuro.
+
+\subsubsection{Aplicación Móvil con React Native}
+
+La aplicación móvil se desarrolló con React Native y Expo, permitiendo el despliegue multiplataforma. La arquitectura sigue principios similares al frontend web:
+
+\begin{itemize}
+\item \textbf{Navegación}: Implementada con React Navigation para una experiencia nativa fluida.
+\item \textbf{Gestión de Estado}: Utilizando Context API y hooks personalizados.
+\item \textbf{Sincronización}: Consumo de APIs REST con manejo offline básico.
+\end{itemize}
+
+\subsubsection{Base de Datos y Persistencia}
+
+Se utilizó MySQL como sistema de gestión de base de datos relacional, con un esquema diseñado para optimizar consultas comunes en sistemas de gestión académica:
+
+\begin{itemize}
+\item \textbf{Tablas principales}: \texttt{courses}, \texttt{professors}, \texttt{classrooms}, \texttt{schedules}, \texttt{users}.
+\item \textbf{Relaciones}: Definidas con claves foráneas y restricciones de integridad referencial.
+\item \textbf{Índices}: Optimizados para consultas de horarios y búsquedas por profesor/curso.
+\end{itemize}
+
+Se implementó migración de base de datos con Flyway para mantener la consistencia del esquema entre entornos.
+
+\subsubsection{APIs REST y Comunicación}
+
+Las APIs REST se diseñaron siguiendo los principios RESTful, con los siguientes endpoints principales:
+
+\begin{itemize}
+\item \texttt{GET/POST/PUT/DELETE /api/courses} - Gestión de cursos
+\item \texttt{GET/POST/PUT/DELETE /api/professors} - Gestión de profesores
+\item \texttt{GET/POST/PUT/DELETE /api/classrooms} - Gestión de aulas
+\item \texttt{POST /api/schedules/generate} - Generación automática de horarios
+\item \texttt{GET /api/schedules} - Consulta de horarios
+\end{itemize}
+
+Se implementó versioning de API (\texttt{/api/v1/}) para futuras evoluciones, y documentación automática con OpenAPI/Swagger.
+
+\subsection{Algoritmos de Generación de Horarios}
+
+Uno de los componentes más críticos de SGH es el algoritmo de generación automática de horarios. Se implementó un enfoque híbrido que combina:
+
+\begin{itemize}
+\item \textbf{Backtracking con heurísticas}: Para explorar el espacio de soluciones de manera eficiente.
+\item \textbf{Programación lineal}: Para optimizar asignaciones considerando restricciones duras y suaves.
+\item \textbf{Algoritmos genéticos}: Como alternativa para problemas de optimización combinatoria compleja.
+\end{itemize}
+
+El algoritmo considera múltiples restricciones:
+\begin{itemize}
+\item Disponibilidad de profesores y aulas
+\item Requisitos de prerrequisitos entre cursos
+\item Preferencias de horario de estudiantes
+\item Capacidad máxima de aulas
+\item Conflictos de recursos
+\end{itemize}
+
+\subsection{Prácticas de Desarrollo y Calidad}
+
+Se aplicaron rigurosas prácticas de desarrollo para asegurar la calidad del código:
+
+\subsubsection{Pruebas}
+\begin{itemize}
+\item \textbf{Pruebas unitarias}: Con JUnit y Mockito para el backend, Jest para el frontend.
+\item \textbf{Pruebas de integración}: Para validar la interacción entre componentes.
+\item \textbf{Pruebas end-to-end}: Con Cypress para flujos críticos de usuario.
+\end{itemize}
+
+\subsubsection{Calidad de Código}
+\begin{itemize}
+\item \textbf{Linting}: ESLint para JavaScript/TypeScript, Checkstyle para Java.
+\item \textbf{Formateo}: Prettier para consistencia de código.
+\item \textbf{Análisis estático}: SonarQube para detectar vulnerabilidades y code smells.
+\end{itemize}
+
+\subsubsection{Integración Continua}
+Se configuró un pipeline de CI/CD con GitHub Actions que incluye:
+\begin{itemize}
+\item Construcción automática en cada push
+\item Ejecución de suite de pruebas
+\item Análisis de cobertura de código
+\item Despliegue automático a entornos de staging
+\end{itemize}
+
+\subsection{Despliegue y Contenedorización}
+
+El sistema se contenedorizó utilizando Docker para facilitar el despliegue y la escalabilidad:
+
+\begin{itemize}
+\item \textbf{Imágenes}: Dockerfile optimizado para cada componente (backend, frontend, base de datos).
+\item \textbf{Orquestación}: Docker Compose para desarrollo local y despliegue en producción.
+\item \textbf{Volúmenes}: Para persistencia de datos y configuración.
+\end{itemize}
 
 \subsection{Comparación de tecnologías}
-La selección de tecnologías se basó en criterios objetivos. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
+
+La selección de tecnologías se basó en criterios objetivos de madurez, comunidad, rendimiento y adecuación al dominio. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
 
 \input{tables/frameworks_comparison.tex}

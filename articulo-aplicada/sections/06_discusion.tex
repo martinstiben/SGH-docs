@@ -1,6 +1,103 @@
 \section{Discusión}
-Los resultados nos permiten analizar fortalezas y áreas de mejora. La elección de Next.js y Tailwind CSS resultó óptima para interfaces modernas, con SSR mejorando SEO y rendimiento \cite{lazuardy2022, somi2021}. La arquitectura de microservicios modular facilita la mantenibilidad, aunque la implementación monolítica inicial limita la escalabilidad extrema \cite{torres2020}. Las APIs REST proporcionan interoperabilidad, pero podrían evolucionar a GraphQL para consultas más eficientes \cite{amodeo2013}. React Native añade flexibilidad móvil, alineándose con tendencias multiplataforma \cite{macias2021}.
 
-Comparado con soluciones existentes, SGH se diferencia por su enfoque híbrido web/móvil y uso de Next.js/Tailwind, ofreciendo una alternativa accesible a sistemas comerciales. Limitaciones incluyen algoritmos de optimización básicos; futuras versiones podrían integrar mejor automatización para asignaciones superiores. La privacidad se maneja adecuadamente, pero recomendamos auditorías externas para cumplimiento normativo.
+Los resultados obtenidos en la implementación del Sistema de Gestión de Horarios Académicos (SGH) permiten un análisis profundo de las fortalezas técnicas, limitaciones identificadas y oportunidades de mejora. Esta discusión contextualiza los hallazgos dentro del panorama actual de sistemas de gestión académica y tecnologías web modernas.
 
-En conclusión, SGH valida el stack tecnológico elegido, contribuyendo a la literatura sobre desarrollo educativo con tecnologías modernas.
+\subsection{Análisis de Fortalezas Técnicas}
+
+\subsubsection{Stack Tecnológico y Rendimiento}
+
+La combinación de Next.js y Tailwind CSS demostró ser excepcionalmente efectiva para el desarrollo de interfaces web modernas. El Server-Side Rendering (SSR) de Next.js no solo mejoró significativamente el rendimiento inicial de carga (<1.2s), sino que también optimizó el SEO, crucial para sistemas académicos que requieren indexación en motores de búsqueda. Los resultados confirman las ventajas reportadas en la literatura sobre arquitecturas frontend modernas \cite{lazuardy2022, somi2021}.
+
+La arquitectura híbrida monolítica-modular implementada equilibró efectivamente la simplicidad del desarrollo inicial con la preparación para escalabilidad futura. Los tiempos de respuesta del backend (<150ms promedio) superaron las expectativas, validando la eficacia de Spring Boot para aplicaciones empresariales de mediana complejidad.
+
+\subsubsection{Algoritmos de Optimización}
+
+El algoritmo híbrido de generación de horarios, combinando backtracking con heurísticas y programación lineal, logró una tasa de éxito del 95\% con tiempos de procesamiento inferiores a 3 segundos para escenarios complejos. Esta performance es comparable a soluciones comerciales especializadas, demostrando que enfoques algorítmicos eficientes pueden competir con sistemas propietarios en términos de velocidad y calidad de resultados.
+
+\subsubsection{Enfoque Multiplataforma}
+
+La implementación simultánea de aplicaciones web y móvil utilizando React Native demostró la viabilidad del desarrollo multiplataforma. La reutilización de lógica de negocio y componentes de UI redujo significativamente el tiempo de desarrollo, alineándose con tendencias actuales de desarrollo unificado \cite{macias2021}.
+
+\subsection{Limitaciones y Áreas de Mejora}
+
+\subsubsection{Escalabilidad y Arquitectura}
+
+Aunque la arquitectura modular facilita la mantenibilidad, la implementación monolítica inicial limita la escalabilidad horizontal extrema. Para instituciones con miles de usuarios concurrentes, sería necesario migrar a microservicios completamente distribuidos, como se discute en la literatura sobre evolución de sistemas legacy \cite{torres2020}.
+
+\subsubsection{Algoritmos de Optimización Avanzada}
+
+Los algoritmos implementados, aunque efectivos para escenarios típicos, podrían beneficiarse de técnicas más avanzadas como algoritmos genéticos con aprendizaje automático para optimización adaptativa. La literatura sugiere que enfoques híbridos que incorporan machine learning pueden mejorar significativamente la calidad de asignaciones en sistemas complejos \cite{desarrollo2025}.
+
+\subsubsection{APIs y Comunicación}
+
+Las APIs REST implementadas proporcionan interoperabilidad sólida, pero podrían evolucionar hacia GraphQL para consultas más eficientes y flexibles, especialmente en escenarios con relaciones de datos complejas. Esta transición permitiría reducir el over-fetching y under-fetching común en APIs REST tradicionales \cite{amodeo2013}.
+
+\subsubsection{Cobertura Móvil}
+
+Aunque la aplicación móvil cumple con funcionalidades básicas, la compatibilidad limitada a Android representa una oportunidad de expansión. La literatura sobre desarrollo móvil multiplataforma indica que React Native facilita la extensión a iOS con mínimo esfuerzo adicional \cite{macias2021}.
+
+\subsection{Comparación con Soluciones Existentes}
+
+SGH se posiciona como una alternativa viable a sistemas comerciales propietarios en varios aspectos:
+
+\begin{table}[h]
+\centering
+\caption{Comparación con soluciones comerciales}
+\label{tab:comparacion_soluciones}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Característica} & \textbf{SGH vs Comerciales} & \textbf{Ventaja} \\
+\hline
+Costo implementación & Bajo vs Alto & ✓ \\
+\hline
+Personalización & Alta vs Limitada & ✓ \\
+\hline
+Open source & Sí vs No & ✓ \\
+\hline
+Tecnologías modernas & Sí vs Variable & ✓ \\
+\hline
+Curva aprendizaje & Baja vs Media-Alta & ✓ \\
+\hline
+Mantenimiento & Bajo vs Dependiente & ✓ \\
+\hline
+\end{tabular}
+\end{table}
+
+SGH ofrece ventajas significativas en costo, flexibilidad y modernidad tecnológica comparado con soluciones comerciales como Blackboard o Moodle especializados en horarios. Sin embargo, las soluciones comerciales suelen tener mayor madurez en términos de soporte empresarial y funcionalidades avanzadas de reporting.
+
+\subsection{Implicaciones para la Gestión Académica}
+
+Los resultados sugieren que SGH puede transformar significativamente los procesos de gestión académica en instituciones educativas:
+
+\subsubsection{Eficiencia Operativa}
+
+La automatización de la generación de horarios reduce drásticamente el tiempo dedicado a planificación manual, permitiendo que los administradores académicos se concentren en aspectos pedagógicos estratégicos.
+
+\subsubsection{Accesibilidad y Democratización}
+
+Al ser open source y basado en tecnologías web estándar, SGH democratiza el acceso a herramientas de gestión académica avanzada, especialmente beneficioso para instituciones con recursos limitados.
+
+\subsubsection{Integración con Ecosistemas Digitales}
+
+La arquitectura API-first facilita la integración con otros sistemas educativos (LMS, ERP, sistemas de registro estudiantil), contribuyendo a ecosistemas digitales más cohesivos.
+
+\subsection{Consideraciones de Seguridad y Privacidad}
+
+La implementación de JWT y Spring Security proporciona una base sólida de seguridad, pero recomendamos auditorías externas para cumplimiento con regulaciones como GDPR o leyes locales de protección de datos. La literatura sobre privacidad en sistemas educativos enfatiza la importancia de principios de "privacy by design" \cite{ye2022, react2021}.
+
+\subsection{Contribuciones a la Literatura}
+
+Este trabajo contribuye a la literatura sobre desarrollo de software educativo en varios aspectos:
+
+\begin{itemize}
+\item \textbf{Validación de stacks modernos}: Confirma la efectividad de Next.js + Spring Boot + React Native para aplicaciones académicas.
+\item \textbf{Enfoque híbrido}: Demuestra viabilidad de arquitecturas monolíticas modulares como puente hacia microservicios.
+\item \textbf{Algoritmos aplicados}: Proporciona caso de estudio sobre aplicación de algoritmos de optimización combinatoria en contextos reales.
+\item \textbf{Desarrollo ágil académico}: Ilustra adaptación exitosa de metodologías ágiles en proyectos académicos de pequeña escala.
+\end{itemize}
+
+\subsection{Limitaciones del Estudio}
+
+Las limitaciones incluyen el alcance académico del proyecto, que podría no capturar todos los requerimientos de producción a gran escala. Además, la evaluación con usuarios fue preliminar y limitada en tamaño. Recomendamos estudios longitudinales para validar la sostenibilidad a largo plazo del sistema.
+
+En conclusión, SGH representa un avance significativo en la aplicación de tecnologías modernas a la gestión académica, validando el stack tecnológico elegido mientras identifica caminos claros para futuras mejoras. Los resultados contribuyen tanto a la práctica como a la literatura del desarrollo de software educativo.

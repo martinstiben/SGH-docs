@@ -1,0 +1,118 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Tecnologías Utilizadas en SGH}
+\label{tab:frameworks}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+\textbf{Tecnología} & \textbf{Lenguaje/Uso} & \textbf{Ventajas} \\
+\midrule
+Spring Boot & Java/Backend & Escalabilidad, seguridad \\
+Next.js & JS+TS/Web & Rendimiento, SSR \\
+React Native & JavaScript/Móvil & Cross-platform \\
+MySQL & SQL/BaseDatos & Integridad, relaciones \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Métricas de rendimiento - Frontend y Móvil}
+\label{tab:resultados_web}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Componente} & \textbf{Métrica} & \textbf{Valor/Objetivo} \\
+\hline
+Aplicación web & Carga inicial & <1.2s / <1.5s \\
+\hline
+Aplicación web & Respuesta UI & <200ms / <500ms \\
+\hline
+Aplicación móvil & Compatibilidad & Android / Android+iOS \\
+\hline
+Aplicación móvil & Tamaño APK & 12MB / <15MB \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Métricas de rendimiento - Backend y APIs}
+\label{tab:resultados_backend}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Componente} & \textbf{Métrica} & \textbf{Valor/Objetivo} \\
+\hline
+Backend & Solicitudes/min & 750 / 500 \\
+\hline
+Backend & CPU (pico) & 15\% / <20\% \\
+\hline
+Backend & Memoria & 256MB / <512MB \\
+\hline
+APIs REST & Endpoints & 18 / 15+ \\
+\hline
+APIs REST & Respuesta prom. & <150ms / <200ms \\
+\hline
+Generación horarios & Tiempo (50 cursos) & <3s / <5s \\
+\hline
+Generación horarios & Tasa éxito & 95\% / >90\% \\
+\hline
+Base de datos & Consultas/seg & 200 / 150 \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Cobertura de pruebas por componente}
+\label{tab:pruebas}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Componente} & \textbf{Cobertura (Unitarias/Integración/E2E)} \\
+\hline
+Backend (Java) & 85\% / 90\% / 75\% \\
+\hline
+Frontend (React) & 80\% / 85\% / 70\% \\
+\hline
+Móvil (React Native) & 75\% / 80\% / 65\% \\
+\hline
+APIs REST & - / 95\% / 80\% \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\caption{Comparación con soluciones comerciales}
+\label{tab:comparacion_soluciones}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Característica} & \textbf{SGH vs Comerciales} & \textbf{Ventaja} \\
+\hline
+Costo implementación & Bajo vs Alto & ✓ \\
+\hline
+Personalización & Alta vs Limitada & ✓ \\
+\hline
+Open source & Sí vs No & ✓ \\
+\hline
+Tecnologías modernas & Sí vs Variable & ✓ \\
+\hline
+Curva aprendizaje & Baja vs Media-Alta & ✓ \\
+\hline
+Mantenimiento & Bajo vs Dependiente & ✓ \\
+\hline
+\end{tabular}
+\end{table*}

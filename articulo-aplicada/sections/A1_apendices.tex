@@ -1,24 +1,377 @@
 \appendix
+
 \section{Descripción detallada de componentes del sistema SGH}
-Aplicación web (Next.js + Tailwind CSS): Interfaz principal para gestión, con páginas modulares y componentes reutilizables. Consume APIs REST para datos dinámicos.
 
-Backend (Spring Boot): Arquitectura modular con controladores, servicios y repositorios. Maneja lógica de negocio y persistencia.
+\subsection{Arquitectura General del Sistema}
 
-Aplicación móvil (React Native): Extensión móvil con navegación y sincronización.
+El Sistema de Gestión de Horarios Académicos (SGH) está compuesto por cuatro componentes principales que interactúan a través de APIs REST:
 
-Base de datos (MySQL): Esquema relacional para entidades académicas, con índices para rendimiento.
+\begin{enumerate}
+\item \textbf{Aplicación Web (Next.js + Tailwind CSS)}: Interfaz principal para gestión administrativa, con páginas modulares y componentes reutilizables. Consume APIs REST para operaciones CRUD y visualización de datos.
+\item \textbf{Backend (Spring Boot)}: Núcleo del sistema con arquitectura en capas (controladores, servicios, repositorios). Implementa lógica de negocio, algoritmos de optimización y persistencia de datos.
+\item \textbf{Aplicación Móvil (React Native)}: Extensión móvil para consulta y gestión básica de horarios, con sincronización en tiempo real.
+\item \textbf{Base de Datos (MySQL)}: Almacén relacional optimizado para consultas de horarios y entidades académicas.
+\end{enumerate}
 
-APIs REST: Endpoints documentados para interoperabilidad.
+\subsection{Especificaciones Técnicas Detalladas}
 
-\section{Ejemplo de endpoint REST}
-Ejemplo de petición POST para crear un curso:
+\subsubsection{Aplicación Web}
+\begin{itemize}
+\item \textbf{Framework}: Next.js 14 con App Router
+\item \textbf{Lenguaje}: TypeScript
+\item \textbf{Estilos}: Tailwind CSS con configuración personalizada
+\item \textbf{Estado}: React hooks + Context API
+\item \textbf{Routing}: Next.js App Router con layouts anidados
+\item \textbf{Componentes principales}:
+  \begin{itemize}
+  \item Dashboard: Panel con métricas y navegación
+  \item CourseManager: Gestión CRUD de cursos
+  \item ProfessorManager: Perfiles y disponibilidad
+  \item ClassroomManager: Inventario de aulas
+  \item ScheduleGenerator: Interfaz de optimización
+  \item CalendarView: Visualización interactiva
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Backend}
+\begin{itemize}
+\item \textbf{Framework}: Spring Boot 3.x
+\item \textbf{Lenguaje}: Java 17
+\item \textbf{Persistencia}: Spring Data JPA + Hibernate
+\item \textbf{Seguridad}: Spring Security + JWT
+\item \textbf{Documentación API}: OpenAPI/Swagger
+\item \textbf{Controladores principales}:
+  \begin{itemize}
+  \item CourseController: Gestión de cursos
+  \item ProfessorController: Gestión de profesores
+  \item ClassroomController: Gestión de aulas
+  \item ScheduleController: Generación y consulta de horarios
+  \item UserController: Autenticación y perfiles
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Base de Datos}
+\begin{itemize}
+\item \textbf{Motor}: MySQL 8.0
+\item \textbf{Esquema principal}:
+  \begin{itemize}
+  \item \texttt{users}: Usuarios del sistema (roles: admin, professor, student)
+  \item \texttt{courses}: Cursos académicos con prerrequisitos
+  \item \texttt{professors}: Perfiles docentes con disponibilidad
+  \item \texttt{classrooms}: Aulas con capacidad y equipamiento
+  \item \texttt{schedules}: Asignaciones horario generadas
+  \item \texttt{schedule\_entries}: Detalles de cada sesión
+  \end{itemize}
+\item \textbf{Índices optimizados}: Para consultas por fecha, profesor, curso y aula
+\item \textbf{Migraciones}: Flyway para control de versiones del esquema
+\end{itemize}
+
+\subsubsection{Aplicación Móvil}
+\begin{itemize}
+\item \textbf{Framework}: React Native + Expo
+\item \textbf{Navegación}: React Navigation
+\item \textbf{Estado}: Context API + hooks personalizados
+\item \textbf{Sincronización}: Axios para llamadas API
+\item \textbf{Almacenamiento local}: AsyncStorage para cache offline
+\item \textbf{Notificaciones}: Expo Notifications
+\end{itemize}
+
+\subsection{Ejemplos de Código y Endpoints}
+
+\subsubsection{Ejemplo de Endpoint REST - Creación de Curso}
 \begin{verbatim}
-POST /courses
+POST /api/v1/courses
 Content-Type: application/json
-Authorization: Bearer <token>
+Authorization: Bearer <jwt_token>
+
 {
-  "courseName": "1A",
-  "gradeDirectorId": 123
+  "name": "Matemáticas Avanzadas",
+  "code": "MAT-301",
+  "credits": 3,
+  "prerequisites": ["MAT-201"],
+  "professorId": 123,
+  "capacity": 30,
+  "schedulePreferences": {
+    "preferredDays": ["MONDAY", "WEDNESDAY"],
+    "preferredTimes": ["08:00", "10:00"]
+  }
 }
 \end{verbatim}
-Respuesta: 200 OK con cuerpo \{"status": "OK", "message": "Curso creado correctamente"\}.
+
+\textbf{Respuesta exitosa (201 Created):}
+\begin{verbatim}
+{
+  "id": 456,
+  "status": "CREATED",
+  "message": "Curso creado exitosamente",
+  "data": {
+    "courseId": 456,
+    "code": "MAT-301"
+  }
+}
+\end{verbatim}
+
+\subsubsection{Ejemplo de Endpoint REST - Generación de Horarios}
+\begin{verbatim}
+POST /api/v1/schedules/generate
+Content-Type: application/json
+Authorization: Bearer <jwt_token>
+
+{
+  "academicPeriod": "2024-1",
+  "optimizationCriteria": {
+    "minimizeConflicts": true,
+    "balanceWorkload": true,
+    "respectPreferences": true
+  },
+  "constraints": {
+    "maxHoursPerDay": 8,
+    "minBreakTime": 15,
+    "classroomAvailability": true
+  }
+}
+\end{verbatim}
+
+\subsubsection{Ejemplo de Componente React - Gestión de Cursos}
+\begin{verbatim}
+// components/CourseManager.tsx
+import React, { useState, useEffect } from 'react';
+import { Course } from '../types/course';
+
+interface CourseManagerProps {
+  onCourseSelect: (course: Course) => void;
+}
+
+export const CourseManager: React.FC<CourseManagerProps> = ({
+  onCourseSelect
+}) => {
+  const [courses, setCourses] = useState<Course[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchCourses();
+  }, []);
+
+  const fetchCourses = async () => {
+    try {
+      const response = await fetch('/api/courses');
+      const data = await response.json();
+      setCourses(data);
+    } catch (error) {
+      console.error('Error fetching courses:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) return <div>Cargando cursos...</div>;
+
+  return (
+    <div className="course-manager">
+      <h2>Gestión de Cursos</h2>
+      <div className="course-list">
+        {courses.map(course => (
+          <div
+            key={course.id}
+            className="course-item"
+            onClick={() => onCourseSelect(course)}
+          >
+            <h3>{course.name}</h3>
+            <p>Código: {course.code}</p>
+            <p>Créditos: {course.credits}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+\end{verbatim}
+
+\subsubsection{Ejemplo de Servicio Spring Boot - Generación de Horarios}
+\begin{verbatim}
+// service/ScheduleGenerationService.java
+@Service
+public class ScheduleGenerationService {
+
+    @Autowired
+    private CourseRepository courseRepository;
+
+    @Autowired
+    private ProfessorRepository professorRepository;
+
+    @Autowired
+    private ClassroomRepository classroomRepository;
+
+    public Schedule generateOptimalSchedule(
+            ScheduleRequest request) {
+
+        // 1. Recopilar datos de entrada
+        List<Course> courses = courseRepository
+            .findByAcademicPeriod(request.getAcademicPeriod());
+
+        List<Professor> professors = professorRepository
+            .findAvailableProfessors();
+
+        List<Classroom> classrooms = classroomRepository
+            .findAvailableClassrooms();
+
+        // 2. Aplicar algoritmo de optimización
+        ScheduleOptimizer optimizer = new HybridOptimizer(
+            request.getOptimizationCriteria(),
+            request.getConstraints()
+        );
+
+        Schedule optimizedSchedule = optimizer
+            .optimize(courses, professors, classrooms);
+
+        // 3. Validar restricciones
+        validateScheduleConstraints(optimizedSchedule);
+
+        // 4. Persistir resultado
+        return scheduleRepository.save(optimizedSchedule);
+    }
+
+    private void validateScheduleConstraints(Schedule schedule) {
+        // Implementar validaciones de negocio
+        // - Sin conflictos de profesor
+        // - Sin conflictos de aula
+        // - Respeta prerrequisitos
+        // - Cumple preferencias
+    }
+}
+\end{verbatim}
+
+\subsection{Diagramas Arquitectónicos}
+
+\subsubsection{Diagrama de Arquitectura General}
+\begin{verbatim}
+┌─────────────────┐    ┌─────────────────┐
+│   Web App       │    │   Mobile App    │
+│  (Next.js)      │    │ (React Native)  │
+└─────────┬───────┘    └─────────┬───────┘
+          │                      │
+          └──────────┬───────────┘
+                     │
+          ┌──────────▼──────────┐
+          │                     │
+          │    REST APIs        │
+          │  (Spring Boot)      │
+          │                     │
+          └──────────┬──────────┘
+                     │
+          ┌──────────▼──────────┐
+          │                     │
+          │   Database          │
+          │    (MySQL)          │
+          │                     │
+          └─────────────────────┘
+\end{verbatim}
+
+\subsubsection{Diagrama de Base de Datos}
+\begin{verbatim}
+┌─────────────┐     ┌─────────────┐
+│   courses   │◄────┤ professors  │
+├─────────────┤     ├─────────────┤
+│ id          │     │ id          │
+│ name        │     │ name        │
+│ code        │     │ email       │
+│ credits     │     │ department  │
+│ professor_id│     │ availability│
+└─────────────┘     └─────────────┘
+       ▲                   ▲
+       │                   │
+┌─────────────┐     ┌─────────────┐
+│  schedules  │◄────┤ classrooms  │
+├─────────────┤     ├─────────────┤
+│ id          │     │ id          │
+│ course_id   │     │ name        │
+│ professor_id│     │ capacity    │
+│ classroom_id│     │ equipment   │
+│ day         │     │ location    │
+│ start_time  │     └─────────────┘
+│ end_time    │
+└─────────────┘
+\end{verbatim}
+
+\subsection{Guía de Despliegue}
+
+\subsubsection{Prerrequisitos}
+\begin{itemize}
+\item Docker Desktop 4.0+
+\item Node.js 18+
+\item JDK 17+
+\item MySQL 8.0+
+\item 4GB RAM mínimo
+\end{itemize}
+
+\subsubsection{Pasos de Despliegue}
+\begin{enumerate}
+\item \textbf{Clonar repositorio}
+\begin{verbatim}
+git clone https://github.com/racinger/sgh.git
+cd sgh
+\end{verbatim}
+
+\item \textbf{Configurar variables de entorno}
+\begin{verbatim}
+cp .env.example .env
+# Editar .env con configuración específica
+\end{verbatim}
+
+\item \textbf{Construir imágenes Docker}
+\begin{verbatim}
+docker compose build
+\end{verbatim}
+
+\item \textbf{Iniciar servicios}
+\begin{verbatim}
+docker compose up -d
+\end{verbatim}
+
+\item \textbf{Verificar despliegue}
+\begin{verbatim}
+# Aplicación web: http://localhost:3000
+# API Docs: http://localhost:8080/swagger-ui.html
+# Base de datos: localhost:3306
+\end{verbatim}
+\end{enumerate}
+
+\subsubsection{Monitorización}
+\begin{itemize}
+\item Logs de aplicación: \texttt{docker compose logs -f}
+\item Métricas de rendimiento: Integradas en Spring Boot Actuator
+\item Health checks: \texttt{/actuator/health}
+\end{itemize}
+
+\subsection{Checklist de Reproducibilidad}
+
+\begin{table}[h]
+\centering
+\caption{Checklist para replicación del proyecto}
+\label{tab:checklist}
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{Componente} & \textbf{Status} & \textbf{Requisitos} \\
+\hline
+Repositorio & ☐ & Clonado desde GitHub \\
+\hline
+Dependencias & ☐ & Node.js 18+, JDK 17+, Docker \\
+\hline
+Base de datos & ☐ & MySQL 8.0 configurado \\
+\hline
+Backend & ☐ & Spring Boot puerto 8080 \\
+\hline
+Frontend & ☐ & Next.js construido \\
+\hline
+APIs & ☐ & Endpoints funcionales \\
+\hline
+Móvil & ☐ & APK Android generado \\
+\hline
+Pruebas & ☐ & Cobertura >80\% \\
+\hline
+Documentación & ☐ & README + API docs \\
+\hline
+\end{tabular}
+\end{table}
+
+Esta documentación detallada asegura que otros investigadores puedan replicar, extender o adaptar SGH para sus propios contextos académicos.

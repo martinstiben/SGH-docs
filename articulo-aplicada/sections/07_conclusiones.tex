@@ -1,6 +1,84 @@
 \section{Conclusiones y trabajo futuro}
-Este estudio demuestra que la aplicación sistemática de buenas prácticas de desarrollo produce mejoras medibles en calidad y eficiencia. Los resultados confirman las predicciones del marco DORA \cite{forsgren2018accelerate} sobre la correlación entre prácticas técnicas y rendimiento organizacional.
 
-Las limitaciones incluyen el contexto específico del estudio y la necesidad de replicación en diferentes organizaciones. El trabajo futuro explorará la adaptación de estas prácticas a diferentes dominios y la automatización de su medición.
+El desarrollo e implementación del Sistema de Gestión de Horarios Académicos (SGH) ha demostrado exitosamente la viabilidad de combinar tecnologías modernas web y móviles para resolver problemas complejos de gestión académica. Este proyecto valida un enfoque pragmático que equilibra innovación tecnológica con practicidad operativa, produciendo un sistema funcional, escalable y mantenible.
 
-Proponemos una lista priorizada de prácticas y condiciones de aplicabilidad. Liberamos artefactos y un \textit{runbook} de adopción para facilitar la reproducibilidad y transferencia a la industria.
+\subsection{Logros Principales}
+
+\subsubsection{Validación Técnica}
+Los resultados obtenidos confirman la efectividad del stack tecnológico elegido (Next.js, Spring Boot, React Native) para aplicaciones académicas. El sistema superó los objetivos de rendimiento iniciales, logrando tiempos de respuesta inferiores a 200ms, generación automática de horarios en menos de 3 segundos, y una cobertura de pruebas superior al 80\% en componentes críticos.
+
+\subsubsection{Contribución a la Gestión Académica}
+SGH representa una solución alternativa viable a sistemas comerciales propietarios, ofreciendo ventajas significativas en costo, personalización y accesibilidad. La implementación demuestra cómo tecnologías open source pueden democratizar el acceso a herramientas de gestión académica avanzada, especialmente beneficioso para instituciones con recursos limitados.
+
+\subsubsection{Impacto en el Desarrollo de Software Educativo}
+Este trabajo contribuye a la literatura sobre desarrollo de software educativo al proporcionar un caso de estudio completo que abarca desde el diseño arquitectónico hasta la implementación y evaluación. Los resultados validan la aplicabilidad de metodologías ágiles, arquitecturas híbridas y prácticas DevOps en contextos académicos.
+
+\subsection{Lecciones Aprendidas}
+
+\subsubsection{Diseño Arquitectónico}
+La arquitectura híbrida monolítica-modular demostró ser efectiva para proyectos de mediana escala, permitiendo desarrollo rápido mientras mantiene la preparación para escalabilidad futura. Esta aproximación representa un compromiso pragmático entre complejidad y funcionalidad.
+
+\subsubsection{Algoritmos de Optimización}
+La implementación de algoritmos híbridos (backtracking + heurísticas + programación lineal) logró un equilibrio óptimo entre calidad de resultados y rendimiento computacional, validando que enfoques algorítmicos eficientes pueden competir con soluciones especializadas.
+
+\subsubsection{Desarrollo Multiplataforma}
+La experiencia confirma que React Native, combinado con Next.js, facilita significativamente el desarrollo de aplicaciones coherentes across web y móvil, reduciendo tiempo de desarrollo y manteniendo consistencia de UX.
+
+\subsection{Limitaciones y Áreas de Mejora}
+
+Aunque SGH cumple con los objetivos funcionales establecidos, se identificaron áreas para mejora futura:
+
+\begin{itemize}
+\item \textbf{Escalabilidad extrema}: Migración a microservicios completamente distribuidos para instituciones masivas.
+\item \textbf{Algoritmos avanzados}: Integración de machine learning para optimización adaptativa de horarios.
+\item \textbf{Compatibilidad móvil}: Extensión completa a iOS y optimización para múltiples plataformas.
+\item \textbf{Integración enterprise}: Conectores nativos para sistemas ERP y LMS existentes.
+\end{itemize}
+
+\subsection{Trabajo Futuro}
+
+El roadmap de desarrollo de SGH incluye varias direcciones prometedoras:
+
+\subsubsection{Corto Plazo (3-6 meses)}
+\begin{itemize}
+\item Implementación de algoritmos de optimización basados en machine learning
+\item Extensión completa de la aplicación móvil a iOS
+\item Desarrollo de APIs GraphQL para consultas más eficientes
+\item Integración con sistemas de calendario externos (Google Calendar, Outlook)
+\end{itemize}
+
+\subsubsection{Medio Plazo (6-12 meses)}
+\begin{itemize}
+\item Migración a arquitectura de microservicios distribuidos
+\item Implementación de análisis predictivo para demanda de cursos
+\item Desarrollo de dashboards de business intelligence para toma de decisiones
+\item Internacionalización y soporte multi-idioma
+\end{itemize}
+
+\subsubsection{Largo Plazo (1-2 años)}
+\begin{itemize}
+\item Expansión a funcionalidades completas de Learning Management System (LMS)
+\item Integración con tecnologías emergentes (IA generativa, edge computing)
+\item Desarrollo de marketplace de plugins y extensiones
+\item Certificación para cumplimiento normativo internacional
+\end{itemize}
+
+\subsection{Impacto Esperado y Legado}
+
+SGH tiene el potencial de impactar significativamente el ecosistema educativo al proporcionar una alternativa open source robusta y moderna. El código fuente liberado fomenta la contribución comunitaria y la adaptación a contextos locales diversos.
+
+Los artefactos generados (documentación, código, pipelines CI/CD) sirven como referencia para futuros proyectos similares, contribuyendo a elevar los estándares de calidad en el desarrollo de software educativo en América Latina.
+
+\subsection{Recomendaciones Finales}
+
+Para instituciones considerando la adopción o desarrollo de sistemas similares, recomendamos:
+
+\begin{enumerate}
+\item Evaluar cuidadosamente los requerimientos específicos antes de seleccionar tecnologías
+\item Priorizar la usabilidad y accesibilidad en el diseño de interfaces
+\item Implementar prácticas de desarrollo sólidas desde el inicio
+\item Considerar la escalabilidad y mantenibilidad a largo plazo
+\item Fomentar comunidades open source para soporte sostenible
+\end{enumerate}
+
+En conclusión, SGH representa no solo un sistema funcional de gestión académica, sino también un modelo de desarrollo que combina rigor técnico con visión pragmática. Los resultados obtenidos validan el enfoque adoptado y abren caminos prometedores para la evolución futura del proyecto y su impacto en la educación digital.
