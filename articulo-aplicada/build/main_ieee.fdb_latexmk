@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber build/main_ieee"] 1765673870.29176 "build/main_ieee.bcf" "build/main_ieee.bbl" "build/main_ieee" 1765673887.72854 0
-  "bibliography/references.bib" 1765672608.01441 6592 6ec4398e69d0c647d4351aecae22bb03 ""
-  "build/main_ieee.bcf" 1765673886.98457 109322 dfe877405f4a44b81dd40e4508f33599 "xelatex"
+["biber build/main_ieee"] 1765749106.02948 "build/main_ieee.bcf" "build/main_ieee.bbl" "build/main_ieee" 1765749121.25532 0
+  "bibliography/references.bib" 1765748731.69568 6592 6ec4398e69d0c647d4351aecae22bb03 ""
+  "build/main_ieee.bcf" 1765749121.62328 109322 dfe877405f4a44b81dd40e4508f33599 "xelatex"
   (generated)
   "build/main_ieee.bbl"
   "build/main_ieee.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765673887.25145 "build/main_ieee.xdv" "build/main_ieee.pdf" "build/main_ieee" 1765673887.77733 0
-  "build/main_ieee.xdv" 1765673886.99093 553500 6855ed1ba5edf01fdd20ffd60407ed8e "xelatex"
+["xdvipdfmx"] 1765749120.79793 "build/main_ieee.xdv" "build/main_ieee.pdf" "build/main_ieee" 1765749121.28789 0
+  "build/main_ieee.xdv" 1765749121.62876 781348 a3cba9929c2e94b1190bccd8732c1d62 "xelatex"
   (generated)
   "build/main_ieee.pdf"
   (rewritten before read)
-["xelatex"] 1765673881.48134 "main_ieee.tex" "build/main_ieee.xdv" "main_ieee" 1765673887.73411 0
+["xelatex"] 1765749118.0105 "main_ieee.tex" "build/main_ieee.xdv" "main_ieee" 1765749121.26162 2
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -24,7 +24,7 @@
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1622145181 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
-  "/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty" 1763931111 146027 1682d39c5d9ff7866f7eb492613e0610 ""
+  "/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty" 1765486555 146654 eaac99efd6386094bb8a3980e34ec87b ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-es.ini" 1763931111 4303 c450545e79f0d9ac3027df4bd9b132d8 ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex" 1749585145 374 26aa36054295520df734dd14cd75addc ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def" 1763931111 17545 65cef42ab9c2daaf78164d8a93419bdc ""
@@ -114,29 +114,29 @@
   "/opt/texlive/texdir/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/texlive/texdir/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
-  "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1765297438 5947058 a180562e7d5be25a82f71bd1a1e1833a ""
+  "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1765747640 5947048 3cf5f24007e5282d7d10f5eec4a2a069 ""
   "/opt/texlive/texdir/texmf.cnf" 1759376174 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "build/main_ieee.aux" 1765673886.96622 19096 eea793797326d2eaf56e8b9fefca82fe "xelatex"
-  "build/main_ieee.bbl" 1765673871.45801 9433 30d3c1d45a0a07f9caacb83fb2a428eb "biber build/main_ieee"
-  "build/main_ieee.out" 1765673886.97713 19224 29685b5f6e63bf1cd310d33c60540f01 "xelatex"
-  "build/main_ieee.run.xml" 1765673886.99093 2485 0ba1907dbee54dff766aca4568862115 "xelatex"
+  "build/main_ieee.aux" 1765749121.60263 27446 58720b7b60c51f5767e1ccdcd584f9db "xelatex"
+  "build/main_ieee.bbl" 1765749107.56499 9433 30d3c1d45a0a07f9caacb83fb2a428eb "biber build/main_ieee"
+  "build/main_ieee.out" 1765749121.61468 30393 88e7f9f0823b16571897eae966906e17 "xelatex"
+  "build/main_ieee.run.xml" 1765749121.628 2485 0ba1907dbee54dff766aca4568862115 "xelatex"
   "graphics/cuatro.png" 1765672355.3955 53401 60cd7dac0174bfbf0b8a3c287fd602d2 ""
   "graphics/dos.png" 1765672355.39756 31296 066821dea32442dd265d10ee902b465a ""
   "graphics/tres.png" 1765672355.40042 56508 b3a49653283c1e5904d43aa379ee5903 ""
   "graphics/uno.png" 1765672355.40283 48548 34b0d072828db7020077e6550ce7ad94 ""
   "includes/preamble_common.tex" 1765672355.40686 1346 34206bd4f8f75894da6ced404ca11451 ""
   "includes/preamble_ieee.tex" 1765672355.40686 202 0be98cf9ee1ecc1f00657f96334bf49d ""
-  "main_ieee.tex" 1765673838.07701 1242 0326614a078e38592d6f882753149251 ""
-  "sections/00_abstract.tex" 1765672355.4194 1112 110f109e5bdfa4773f452e78acb6e24d ""
-  "sections/01_introduccion.tex" 1765672355.42201 3254 b635ce2871ffafcabf2d1abd143b51b2 ""
-  "sections/02_relacionados.tex" 1765672355.42557 8352 f3c56d929ab34f478ac66ce117336d23 ""
-  "sections/03_metodologia.tex" 1765672355.42757 5018 07c8aa0f18efe6dba4dddcb2c2f33272 ""
-  "sections/04_implementacion.tex" 1765672530.71978 7780 02ee59bad93939a3fec5cc3cd2fb386e ""
-  "sections/05_resultados.tex" 1765673083.98982 6297 39ff428fca0bebeec2e96be6887f6447 ""
-  "sections/06_discusion.tex" 1765673093.80897 7696 05a542d7d14394faef59909ad0318604 ""
-  "sections/07_conclusiones.tex" 1765672577.82762 5929 85dcdc311561833b78fadb18f990e8fa ""
-  "sections/A1_apendices.tex" 1765673337.15683 12583 cf6d586d4cb241b237310c942af3f713 ""
-  "tables/frameworks_comparison.tex" 1765673327.3702 470 2e0527fe7511a0daedf76b80c7a14f20 ""
+  "main_ieee.tex" 1765748731.7589 1242 0326614a078e38592d6f882753149251 ""
+  "sections/00_abstract.tex" 1765748731.76018 1112 110f109e5bdfa4773f452e78acb6e24d ""
+  "sections/01_introduccion.tex" 1765748731.76119 3254 b635ce2871ffafcabf2d1abd143b51b2 ""
+  "sections/02_relacionados.tex" 1765748825.97449 13606 a07d3ec28fe57a739943a5cbfd95d428 ""
+  "sections/03_metodologia.tex" 1765748731.76268 5018 07c8aa0f18efe6dba4dddcb2c2f33272 ""
+  "sections/04_implementacion.tex" 1765748933.71759 11802 0498522d919a65379865d48aa80c3efa ""
+  "sections/05_resultados.tex" 1765748731.76568 6297 39ff428fca0bebeec2e96be6887f6447 ""
+  "sections/06_discusion.tex" 1765748912.48867 12038 8ea8792c2b58f198ba2d69d4fa60b441 ""
+  "sections/07_conclusiones.tex" 1765748945.77048 11796 cec0f8a95f6a8ab6ad0b718082f08e52 ""
+  "sections/A1_apendices.tex" 1765749011.40021 19251 d67642c2956d54e3c36f437c12d8b647 ""
+  "tables/frameworks_comparison.tex" 1765748731.76988 470 2e0527fe7511a0daedf76b80c7a14f20 ""
   (generated)
   "build/main_ieee.aux"
   "build/main_ieee.bcf"

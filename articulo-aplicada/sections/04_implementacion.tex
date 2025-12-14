@@ -129,3 +129,136 @@ El sistema se contenedorizó utilizando Docker para facilitar el despliegue y la
 La selección de tecnologías se basó en criterios objetivos de madurez, comunidad, rendimiento y adecuación al dominio. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
 
 \input{tables/frameworks_comparison.tex}
+
+\subsection{Patrones de Diseño Avanzados}
+
+\subsubsection{Patrones Arquitectónicos}
+
+\textbf{Patron Layered Architecture:}
+\begin{itemize}
+\item Separación clara entre presentación, aplicación, dominio y infraestructura
+\item Dependencias unidireccionales entre capas
+\item Facilita testing y mantenibilidad
+\end{itemize}
+
+\textbf{Patron Hexagonal Architecture:}
+\begin{itemize}
+\item Inversión de dependencias para desacoplar el dominio
+\item Puertos y adaptadores para interfaces externas
+\item Facilita evolución tecnológica independiente
+\end{itemize}
+
+\textbf{Patron CQRS (Command Query Responsibility Segregation):}
+\begin{itemize}
+\item Separación de operaciones de lectura y escritura
+\item Optimización específica para cada tipo de operación
+\item Escalabilidad independiente de comandos y queries
+\end{itemize}
+
+\subsubsection{Patrones de Integración y Comunicación}
+
+\textbf{Patron Mediator:}
+\begin{itemize}
+\item Coordinación de interacciones entre componentes
+\item Reducción de dependencias directas entre módulos
+\item Centralización de lógica de comunicación
+\end{itemize}
+
+\textbf{Patron Repository:}
+\begin{itemize}
+\item Abstracción de acceso a datos
+\item Separación de lógica de negocio de persistencia
+\item Facilita testing con mocks de datos
+\end{itemize}
+
+\textbf{Patron Service Layer:}
+\begin{itemize}
+\item Encapsulación de lógica de negocio compleja
+\item Transacciones declarativas con @Transactional
+\item Manejo centralizado de excepciones
+\end{itemize}
+
+\subsubsection{Patrones de Concurrencia y Performance}
+
+\textbf{Patron Circuit Breaker:}
+\begin{itemize}
+\item Protección contra fallos en cascada
+\item Recuperación automática de servicios
+\item Métricas de salud de dependencias externas
+\end{itemize}
+
+\textbf{Patron Bulkhead:}
+\begin{itemize}
+\item Aislamiento de recursos por funcionalidad
+\item Prevención de agotamiento de recursos compartidos
+\item Pools de conexiones segregados
+\end{itemize}
+
+\textbf{Patron Cache-Aside:}
+\begin{itemize}
+\item Caché de datos frecuentemente accedidos
+\item Invalidación automática al modificar datos
+\item Redis como almacén de caché distribuido
+\end{itemize}
+
+\subsubsection{Patrones de Seguridad}
+
+\textbf{Patron Authentication Proxy:}
+\begin{itemize}
+\item Intercepción de requests para validación
+\item Control de acceso basado en roles
+\item Logging de accesos para auditoría
+\end{itemize}
+
+\textbf{Patron Secure Token:}
+\begin{itemize}
+\item Generación de JWT con claims personalizados
+\item Expiración automática de sesiones
+\item Refresh tokens para renovación segura
+\end{itemize}
+
+\textbf{Patron Input Validation:}
+\begin{itemize}
+\item Validación en múltiples capas (frontend/backend)
+\item Sanitización de datos de entrada
+\item Prevención de ataques de inyección
+\end{itemize}
+
+\subsubsection{Patrones de Testing y Calidad}
+
+\textbf{Patron Test Data Builder:}
+\begin{itemize}
+\item Construcción fluida de objetos de prueba
+\item Datos de prueba realistas y consistentes
+\item Reutilización en suites de testing
+\end{itemize}
+
+\textbf{Patron Mock Object:}
+\begin{itemize}
+\item Simulación de dependencias externas
+\item Testing aislado de unidades
+\item Verificación de interacciones
+\end{itemize}
+
+\textbf{Patron Test Fixture:}
+\begin{itemize}
+\item Configuración reutilizable de estado de prueba
+\item Setup/teardown automatizado
+\item Consistencia entre tests
+\end{itemize}
+
+\subsubsection{Patrones de Internacionalización y Localización}
+
+\textbf{Patron Resource Bundle:}
+\begin{itemize}
+\item Mensajes localizados por idioma y región
+\item Fallback automático a idioma base
+\item Actualización sin recompilación
+\end{itemize}
+
+\textbf{Patron Locale Context:}
+\begin{itemize}
+\item Contexto de localización por usuario/sesión
+\item Formatos adaptados a convenciones locales
+\item Soporte para múltiples zonas horarias
+\end{itemize}

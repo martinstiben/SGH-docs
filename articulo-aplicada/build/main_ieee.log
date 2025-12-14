@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 00:58
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.14)  14 DEC 2025 21:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -82,23 +82,23 @@ LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
 \@IEEEtranrubishbin=\box54
 ) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/b
 abel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count286
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+on input line 2101.
 \U@D=\dimen172
 \l@unhyphenated=\language90
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def)
@@ -106,7 +106,7 @@ on input line 2083.
 \bbl@dirlevel=\count287
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4298.
+(babel)             from babel-es.ini. Reported on input line 4320.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks18
@@ -921,10 +921,7 @@ File: graphics/cuatro.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sections/03_metodologia.tex [3]) (./sections/04_implementacion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[4]
+[3]) (./sections/03_metodologia.tex [4]) (./sections/04_implementacion.tex [5]
 Underfull \hbox (badness 2088) in paragraph at lines 47--48
  []\TU/lmr/m/it/10 4. Base de Datos y Persistencia: [][][] \TU/ptm/bx/it/10 Se 
 utilizó
@@ -941,17 +938,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 []\TU/lmr/bx/n/10 Linting\TU/ptm/bx/it/10 : ESLint para JavaScript/TypeScript,
  []
 
-[5] (./tables/frameworks_comparison.tex)) (./sections/05_resultados.tex
+(./tables/frameworks_comparison.tex) [6]) (./sections/05_resultados.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (1.37628pt too wide) in paragraph at lines 32--53
  [][] 
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
 Overfull \hbox (22.50412pt too wide) in paragraph at lines 108--121
  [][] 
  []
 
-[6]) (./sections/06_discusion.tex
+) (./sections/06_discusion.tex [8]
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
 x-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
@@ -964,18 +968,37 @@ Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=t
 x-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
 x-text;!
+[9]
+Overfull \hbox (1.08533pt too wide) in paragraph at lines 109--110
+ []\TU/lmr/m/it/10 1. Análisis de Costo-Beneficio: [][][] \TU/ptm/bx/it/10 SGH 
+presenta una
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7]) (./sections/07_conclusiones.tex [8]
+Underfull \hbox (badness 6445) in paragraph at lines 114--115
+[]\TU/lmr/bx/n/10 Costo de soluciones comerciales\TU/ptm/bx/it/10 : $100.000-
+ []
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 138--139
+[]\TU/ptm/bx/it/10 Alianzas con instituciones educativas para co-
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 156--158
+ []\TU/lmr/m/it/10 4. Análisis de Riesgos Económicos: [][][] \TU/lmr/bx/n/10 Ri
+esgos
+ []
+
+[10]) (./sections/07_conclusiones.tex
 Underfull \hbox (badness 1360) in paragraph at lines 33--34
 []\TU/lmr/bx/n/10 Algoritmos avanzados\TU/ptm/bx/it/10 : Integración de machine
 
  []
 
-) (./sections/A1_apendices.tex
+[11] [12]) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 3).
-[9]
+[13]
 Overfull \hbox (15.75pt too wide) in paragraph at lines 188--188
 []\TU/lmtt/m/n/10 import React, { useState, useEffect } from 'react';[] 
  []
@@ -991,7 +1014,7 @@ Overfull \hbox (36.75pt too wide) in paragraph at lines 188--188
 []  \TU/lmtt/m/n/10 const [courses, setCourses] = useState<Course[]>([]);[] 
  []
 
-[10]
+
 Overfull \hbox (15.75pt too wide) in paragraph at lines 188--188
 []      \TU/lmtt/m/n/10 const response = await fetch('/api/courses');[] 
  []
@@ -1011,7 +1034,7 @@ Overfull \hbox (10.5pt too wide) in paragraph at lines 188--188
 []            \TU/lmtt/m/n/10 onClick={() => onCourseSelect(course)}[] 
  []
 
-
+[14]
 Overfull \hbox (21.0pt too wide) in paragraph at lines 242--242
 []    \TU/lmtt/m/n/10 private ProfessorRepository professorRepository;[] 
  []
@@ -1291,7 +1314,6 @@ Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ┘ (U+2518) in font [lmmono10-regular]:!
-[11]
 Missing character: There is no ┌ (U+250C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
@@ -1577,7 +1599,7 @@ Overfull \hbox (4.25pt too wide) in paragraph at lines 313--313
  []\TU/lmtt/m/n/10 git clone https://github.com/racinger/sgh.git[] 
  []
 
-
+[15]
 Overfull \hbox (25.25pt too wide) in paragraph at lines 336--336
  []\TU/lmtt/m/n/10 # API Docs: http://localhost:8080/swagger-ui.html[] 
  []
@@ -1600,10 +1622,34 @@ Missing character: There is no ☐ (U+2610) in font [lmroman8-regular]:mapping=t
 x-text;!
 Missing character: There is no ☐ (U+2610) in font [lmroman8-regular]:mapping=te
 x-text;!
+** WARNING: Ignoring useless \section in Appendix (line 379).
+** WARNING: Ignoring useless \section in Appendix (line 440).
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (97.31215pt too wide) in paragraph at lines 448--459
+ [][] 
+ []
 
+
+Overfull \hbox (84.4001pt too wide) in paragraph at lines 469--482
+ [][] 
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 507).
+[16]
+** WARNING: Ignoring useless \section in Appendix (line 522).
 )
+Runaway argument?
+{WCAG 2.1**: Directrices de Accesibilidad Web \end {itemize} 
+./main_ieee.tex:39: File ended while scanning use of \MT@prot@check@F@.
+<inserted text> 
+                \par 
+l.39 \input{sections/A1_apendices}
+                                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1615,7 +1661,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[12] (build/main_ieee.aux
+
+./main_ieee.tex:43: LaTeX Error: \begin{itemize} on input line 562 ended by \en
+d{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[17] (build/main_ieee.aux
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1628,18 +1688,22 @@ L3 programming layer <2025-11-14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 29685B5F6E63BF1CD310D33C60540F01;19224.
+(rerunfilecheck)             Checksum: 88E7F9F0823B16571897EAE966906E17;30393.
 Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 \openout1 = `main_ieee.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 562 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 31786 strings out of 468179
- 673371 string characters out of 5435043
- 1611240 words of memory out of 5000000
- 60160 multiletter control sequences out of 15000+600000
+ 31814 strings out of 468179
+ 673938 string characters out of 5435042
+ 1624181 words of memory out of 5000000
+ 60188 multiletter control sequences out of 15000+600000
  631180 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,83p,1272b,4848s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,83p,1272b,4978s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (12 pages, 553500 bytes).
+Output written on build/main_ieee.xdv (17 pages, 781348 bytes).

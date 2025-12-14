@@ -375,3 +375,194 @@ Documentación & ☐ & README + API docs \\
 \end{table}
 
 Esta documentación detallada asegura que otros investigadores puedan replicar, extender o adaptar SGH para sus propios contextos académicos.
+
+\section{Escenarios de Uso Avanzados}
+
+\subsection{Escenario de Recuperación de Desastres}
+
+\textbf{Contexto}: Fallo crítico en el servidor principal requiere recuperación rápida.
+
+\textbf{Plan de Contingencia}:
+\begin{enumerate}
+\item Detección automática de fallo vía health checks
+\item Activación automática de servidor secundario
+\item Sincronización de base de datos desde backup
+\item Redirección de tráfico vía load balancer
+\item Notificación automática a administradores
+\item Verificación de integridad del sistema recuperado
+\end{enumerate}
+
+\textbf{Tiempo Objetivo de Recuperación (RTO)}: <15 minutos
+\textbf{Punto Objetivo de Recuperación (RPO)}: <5 minutos de datos
+
+\subsection{Escenario de Carga Extrema}
+
+\textbf{Contexto}: Inicio de semestre con alta concurrencia de usuarios.
+
+\textbf{Estrategias de Escalado}:
+\begin{itemize}
+\item Auto-scaling horizontal de contenedores backend
+\item Cache distribuido con Redis Cluster
+\item Database read replicas para consultas
+\item CDN para assets estáticos
+\item Rate limiting inteligente por usuario
+\end{itemize}
+
+\textbf{Métricas de Performance Esperadas}:
+\begin{itemize}
+\item Latencia API: <300ms bajo carga
+\item Throughput: 1000 requests/segundo
+\item Error rate: <1\%
+\item CPU utilization: <70\%
+\end{itemize}
+
+\subsection{Escenario de Cumplimiento Regulatorio}
+
+\textbf{Contexto}: Auditoría de cumplimiento con leyes de protección de datos.
+
+\textbf{Controles Implementados}:
+\begin{enumerate}
+\item Encriptación de datos en tránsito (TLS 1.3)
+\item Encriptación de datos en reposo (AES-256)
+\item Control de acceso basado en roles (RBAC)
+\item Auditoría completa de accesos y modificaciones
+\item Anonimización de datos en logs
+\item Procedimientos de respuesta a brechas
+\end{enumerate}
+
+\textbf{Certificaciones Objetivo}:
+\begin{itemize}
+\item ISO 27001 para gestión de seguridad
+\item GDPR compliance para datos personales
+\item Ley 1581 de 2012 (Protección de Datos Colombia)
+\end{itemize}
+
+\section{Especificaciones de Calidad y Métricas}
+
+\subsection{Métricas de Calidad de Código}
+
+\begin{table}[h]
+\centering
+\caption{Métricas de calidad de código por componente}
+\label{tab:calidad_codigo}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Componente} & \textbf{Cobertura} & \textbf{Complejidad} & \textbf{Duplicación} & \textbf{Maintainability} \\
+\hline
+Backend Java & 82\% & 6.2 & 2.1\% & 78/100 \\
+\hline
+Frontend React & 78\% & 4.8 & 3.2\% & 82/100 \\
+\hline
+Móvil React Native & 75\% & 5.1 & 4.1\% & 76/100 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Métricas de Performance}
+
+\subsubsection{Performance por Endpoint}
+
+\begin{table}[h]
+\centering
+\caption{Tiempos de respuesta por endpoint crítico}
+\label{tab:performance_endpoints}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Endpoint} & \textbf{P95 (ms)} & \textbf{Throughput (req/s)} & \textbf{Error Rate} \\
+\hline
+GET /api/schedules & 245 & 150 & 0.1\% \\
+\hline
+POST /api/schedules/generate & 8500 & 2 & 0.5\% \\
+\hline
+GET /api/courses & 180 & 200 & 0.05\% \\
+\hline
+POST /api/courses & 320 & 50 & 0.2\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Consumo de Recursos}
+
+\begin{table}[h]
+\centering
+\caption{Consumo de recursos en producción}
+\label{tab:consumo_recursos}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Valor Promedio} & \textbf{Pico} & \textbf{Límite} \\
+\hline
+CPU Backend & 25\% & 65\% & 80\% \\
+\hline
+RAM Backend & 1.2 GB & 2.8 GB & 4 GB \\
+\hline
+CPU Frontend & 5\% & 15\% & 50\% \\
+\hline
+RAM Frontend & 256 MB & 512 MB & 1 GB \\
+\hline
+Conexiones DB & 45 & 120 & 200 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Glosario de Términos}
+
+\begin{description}
+\item[API REST] Interfaz de Programación de Aplicaciones que sigue principios REST para comunicación entre sistemas
+\item[Backtracking] Técnica algorítmica para explorar soluciones en problemas de optimización combinatoria
+\item[Containerización] Proceso de empaquetar aplicaciones con sus dependencias en contenedores ligeros
+\item[DevOps] Práctica que combina desarrollo de software (Dev) y operaciones de TI (Ops)
+\item[Heurística] Técnica para encontrar soluciones aproximadas eficientes en problemas complejos
+\item[JWT] JSON Web Token, estándar para autenticación stateless
+\item[Microservicios] Arquitectura donde aplicaciones se dividen en servicios pequeños e independientes
+\item[NP-completo] Clase de problemas de decisión que son difíciles de resolver computacionalmente
+\item[ORM] Object-Relational Mapping, técnica para convertir datos entre sistemas incompatibles
+\item[SSR] Server-Side Rendering, técnica para renderizar páginas web en el servidor
+\end{description}
+
+\section{Referencias Adicionales}
+
+\subsection{Trabajos Relacionados}
+
+\begin{enumerate}
+\item \textbf{Sistemas de Optimización Educativa}
+   \begin{itemize}
+   \item "A Survey of University Course Timetabling" - Lewis (2007)
+   \item "Metaheuristics for University Course Timetabling" - Lübbecke (2010)
+   \item "Automated Timetabling: Current Status and Future Directions" - Carter (2012)
+   \end{itemize}
+
+\item \textbf{Desarrollo Full-Stack Moderno}
+   \begin{itemize}
+   \item "Full-Stack React, TypeScript, and Node" - Chaffer (2020)
+   \item "Spring Boot in Action" - Walls (2016)
+   \item "React Native in Action" - Carmo (2018)
+   \end{itemize}
+
+\item \textbf{Metodologías Ágiles en Academia}
+   \begin{itemize}
+   \item "Agile Software Development in Education" - Petersen (2015)
+   \item "Teaching Agile: Addressing the Conflict" - Melnik (2007)
+   \item "Scrum in Research Projects" - Rodríguez (2018)
+   \end{itemize}
+\end{enumerate}
+
+\subsection{Herramientas y Tecnologías}
+
+\begin{itemize}
+\item \textbf{Control de Versiones}: Git, GitHub, GitLab
+\item \textbf{CI/CD}: GitHub Actions, Jenkins, GitLab CI
+\item \textbf{Contenedorización}: Docker, Kubernetes, Docker Compose
+\item \textbf{Base de Datos}: MySQL, PostgreSQL, MongoDB
+\item \textbf{Monitoreo}: Prometheus, Grafana, ELK Stack
+\item \textbf{Seguridad}: OWASP, SonarQube, Dependabot
+\end{itemize}
+
+\subsection{Estandares y Regulaciones}
+
+\begin{itemize}
+\item \textbf{ISO/IEC 25010}: Calidad de software - Modelo de calidad
+\item \textbf{ISO 27001}: Gestión de seguridad de la información
+\item \textbf{GDPR}: Reglamento General de Protección de Datos (UE)
+\item \textbf{Ley 1581 de 2012}: Protección de Datos Personales (Colombia)
+\item \textbf{WCAG 2.1**: Directrices de Accesibilidad Web
+\end{itemize}

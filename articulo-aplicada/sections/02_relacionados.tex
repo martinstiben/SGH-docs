@@ -56,3 +56,137 @@ Para acceso multiplataforma, React Native permite desarrollar aplicaciones móvi
 La seguridad es un pilar fundamental en sistemas que manejan datos sensibles como información personal de estudiantes y profesores. Una autenticación coherente entre plataformas web y móvil, utilizando JWT para tokens seguros, es esencial; diseños unificados para React y React Native incluyen registro, login, recuperación de credenciales y manejo de tokens JWT \cite{ye2022}. Además, se recomienda control de acceso basado en roles, cifrado de comunicaciones vía HTTPS y cumplimiento de regulaciones como GDPR o leyes locales de protección de datos.
 
 Más allá de lo técnico, principios de privacidad por diseño son cruciales en entornos educativos, donde el manejo ético de datos previene abusos. Aprendiendo de aplicaciones de rastreo de contactos, que incorporan enfoques de privacidad reforzada con consentimiento explícito y minimización de datos \cite{react2021}, SGH implementa medidas para asegurar que la gestión de horarios no comprometa la privacidad, como encriptación de datos en reposo y auditorías regulares.
+
+\subsection{Análisis Comparativo de Tecnologías Seleccionadas}
+
+\subsubsection{Frontend: Next.js vs Otras Alternativas}
+
+Next.js se seleccionó sobre otras alternativas por sus características específicas para aplicaciones académicas:
+
+\textbf{Ventajas de Next.js sobre Create React App:}
+\begin{itemize}
+\item Server-Side Rendering (SSR) para mejor SEO y rendimiento inicial
+\item API Routes integradas para desarrollo full-stack simplificado
+\item Optimización automática de imágenes y fuentes
+\item Soporte nativo para TypeScript sin configuración adicional
+\end{itemize}
+
+\textbf{Comparación con Vue.js/Nuxt:}
+\begin{itemize}
+\item Mayor ecosistema y comunidad en el contexto colombiano
+\item Mejor integración con herramientas de desarrollo existentes
+\item Curva de aprendizaje más favorable para equipos mixtos
+\end{itemize}
+
+\subsubsection{Backend: Spring Boot vs Otras Alternativas}
+
+\textbf{Ventajas sobre Node.js/Express:}
+\begin{itemize}
+\item Mayor robustez para aplicaciones enterprise
+\item Mejor manejo de concurrencia en operaciones complejas
+\item Seguridad integrada y auditoría automática
+\item Soporte nativo para transacciones distribuidas
+\end{itemize}
+
+\textbf{Comparación con Python/Django:}
+\begin{itemize}
+\item Mejor rendimiento en operaciones de base de datos relacionales
+\item Mayor madurez en entornos de producción
+\item Mejor integración con sistemas legacy empresariales
+\end{itemize}
+
+\subsubsection{Móvil: React Native vs Desarrollo Nativo}
+
+\textbf{Ventajas sobre desarrollo nativo puro:}
+\begin{itemize}
+\item Reducción significativa del tiempo de desarrollo
+\item Reutilización de lógica de negocio con web
+\item Actualizaciones over-the-air sin App Store approval
+\item Comunidad activa y soporte continuo
+\end{itemize}
+
+\textbf{Limitaciones reconocidas:}
+\begin{itemize}
+\item Dependencia de puente JavaScript para operaciones nativas
+\item Mayor consumo de batería en comparación con nativo
+\item Limitaciones en animaciones complejas de 60fps
+\end{itemize}
+
+\subsection{Trabajos Relacionados en Gestión Académica}
+
+\subsubsection{Sistemas de Gestión de Horarios en Latinoamérica}
+
+\textbf{Caso de estudio: Sistema de la Universidad Nacional de Colombia}
+\begin{itemize}
+\item Implementación basada en algoritmos genéticos
+\item Cobertura para 40.000+ estudiantes
+\item Tiempo de generación: 45-60 minutos
+\item Limitaciones: Escalabilidad para picos de matrícula
+\end{itemize}
+
+\textbf{Caso de estudio: Sistema de la Universidad de los Andes}
+\begin{itemize}
+\item Enfoque híbrido: Optimización manual + automática
+\item Integración con ERP SAP
+\item Interfaz web moderna con Angular
+\item Desafíos: Integración con sistemas legacy
+\end{itemize}
+
+\subsubsection{Soluciones Comerciales Internacionales}
+
+\textbf{Comparación con Blackboard Learn:}
+\begin{itemize}
+\item Funcionalidades de scheduling limitadas
+\item Costo elevado por usuario
+\item Dependencia de proveedor único
+\item Menor adaptabilidad a contextos locales
+\end{itemize}
+
+\textbf{Comparación con Moodle:}
+\begin{itemize}
+\item Open-source pero limitado en algoritmos de scheduling
+\item Comunidad activa pero soporte técnico limitado
+\item Mejor para LMS que para gestión horaria específica
+\end{itemize}
+
+\subsubsection{Avances Recientes en Investigación}
+
+\textbf{Algoritmos de Optimización:}
+\begin{itemize}
+\item Machine Learning para predicción de demanda (2022-2023)
+\item Algoritmos cuánticos para problemas NP-completos (investigación emergente)
+\item Optimización multi-objetivo con preferencias estudiantiles
+\end{itemize}
+
+\textbf{Tendencias Tecnológicas:}
+\begin{itemize}
+\item Microservicios para escalabilidad horizontal
+\item Edge computing para aplicaciones móviles offline
+\item IA conversacional para consultas de horarios
+\end{itemize}
+
+\subsection{Contribución de SGH al Estado del Arte}
+
+\subsubsection{Innovaciones Técnicas}
+
+SGH aporta varias innovaciones al campo de los sistemas de gestión académica:
+
+\begin{enumerate}
+\item \textbf{Integración Multiplataforma Completa}: Web + móvil con código compartido significativo
+\item \textbf{Algoritmos Adaptativos}: Capacidad de ajuste dinámico basado en retroalimentación
+\item \textbf{Interfaz Centrada en Usuario}: Diseño basado en investigación de UX académica
+\item \textbf{Open-Source Empresarial}: Código accesible para instituciones con recursos limitados
+\end{enumerate}
+
+\subsubsection{Contribuciones Metodológicas}
+
+\begin{itemize}
+\item Validación de metodologías ágiles en contextos académicos colombianos
+\item Framework para evaluación de usabilidad en sistemas educativos
+\item Metodología para integración de algoritmos de optimización en aplicaciones web
+\item Modelo de despliegue contenerizado para instituciones educativas
+\end{itemize}
+
+\subsubsection{Impacto en la Comunidad}
+
+SGH establece un precedente para el desarrollo de software educativo en Colombia al demostrar que es posible crear soluciones de alta calidad utilizando talento local y tecnologías modernas, contribuyendo al posicionamiento del país como hub tecnológico regional.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 00:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.14)  14 DEC 2025 21:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -629,23 +629,23 @@ d (jdm)
 \@ef@fffopen=\count335
 )) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/
 babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count336
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+on input line 2101.
 \U@D=\dimen296
 \l@unhyphenated=\language90
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def)
@@ -653,7 +653,7 @@ on input line 2083.
 \bbl@dirlevel=\count337
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4298.
+(babel)             from babel-es.ini. Reported on input line 4320.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks32
@@ -1242,19 +1242,19 @@ Package biblatex Info: Reference segment=0 on input line 16.
 /02_relacionados.tex [3] [4] [5]
 \openout5 = `main_apa7.fff'.
 
-(main_apa7.fff) [6]) (./sections/03_metodologia.tex [7] [8]) (./sections/04_imp
-lementacion.tex
+(main_apa7.fff) [6] [7] [8] [9] [10]) (./sections/03_metodologia.tex [11] [12])
+(./sections/04_implementacion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9] [10]
+[13] [14]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[11] [12] [13] [14] (./tables/frameworks_comparison.tex
+[15] [16] [17] [18] (./tables/frameworks_comparison.tex
 \openout4 = `main_apa7.ttt'.
 
-(main_apa7.ttt))) (./sections/05_resultados.tex [15] [16]
+(main_apa7.ttt)) [19] [20] [21]) (./sections/05_resultados.tex [22] [23] [24]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 27.
 (/opt/texlive/texdir/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1285,22 +1285,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 127.
-) (./sections/06_discusion.tex [17] [18] [19] [20]) (./sections/07_conclusiones
-.tex [21] [22] [23] [24]) (./sections/A1_apendices.tex [25] (build/main_apa7.tt
-t
+) (./sections/06_discusion.tex [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[26] [27] [28] [29] [30] [31]) (./sections/07_conclusiones.tex [32]
+Underfull \vbox (badness 5878) has occurred while \output is active []
+
+[33] [34] [35] [36] [37] [38] [39] [40]) (./sections/A1_apendices.tex [41] (bui
+ld/main_apa7.ttt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 8.
-[26
+[42
 
-] [27
+] [43
 
-] [28
+] [44
 
-] [29
+] [45
 
 ]
 Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=t
@@ -1315,37 +1320,37 @@ Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=
 ex-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=t
 ex-text;!
-) [30
+) [46
 
 ] (build/main_apa7.fff
 File: graphics/uno.png Graphic file (type bmp)
 <graphics/uno.png>
-[31
+[47
 
 ]
 File: graphics/dos.png Graphic file (type bmp)
 <graphics/dos.png>
-[32
+[48
 
 ]
 File: graphics/tres.png Graphic file (type bmp)
 <graphics/tres.png>
-[33
+[49
 
 ]
 File: graphics/cuatro.png Graphic file (type bmp)
 <graphics/cuatro.png>
-) [34
+) [50
 
-] [35
+] [51
 
-] [36] [37] [38] [39]
+] [52] [53] [54] [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[40] [41]
+[56] [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42]
+[58]
 Missing character: There is no ┌ (U+250C) in font [lmmono12-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono12-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono12-regular]:!
@@ -1546,7 +1551,7 @@ Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
 Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
 Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
 Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
-[43]
+[59]
 Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
 Missing character: There is no │ (U+2502) in font [lmmono12-regular]:!
 Missing character: There is no └ (U+2514) in font [lmmono12-regular]:!
@@ -1854,7 +1859,7 @@ Missing character: There is no ┘ (U+2518) in font [lmmono12-regular]:!
 
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
-[44] [45]
+[60] [61]
 Missing character: There is no ☐ (U+2610) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no ☐ (U+2610) in font [lmroman12-regular]:mapping=t
@@ -1873,10 +1878,46 @@ Missing character: There is no ☐ (U+2610) in font [lmroman12-regular]:mapping=
 ex-text;!
 Missing character: There is no ☐ (U+2610) in font [lmroman12-regular]:mapping=t
 ex-text;!
-) [46] AED endfloat: Processing end Figures and Tables [47
+[62] [63
+
+] [64] [65
+
+] [66] [67
+
+] [68
+
+])
+Runaway argument?
+{WCAG 2.1**: Directrices de Accesibilidad Web \end {itemize} 
+./main_apa7.tex:26: File ended while scanning use of \MT@prot@check@F@.
+<inserted text> 
+                \par 
+l.26 \input{sections/A1_apendices}
+                                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+[69] AED endfloat: Processing end Figures and Tables [70
 
 
-] (build/main_apa7.aux
+]
+
+./main_apa7.tex:30: LaTeX Error: \begin{itemize} on input line 562 ended by \en
+d{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(build/main_apa7.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1886,18 +1927,22 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main_apa7.out' has not changed.
-(rerunfilecheck)             Checksum: 168209D324AF003D91D2A5EC3DB191B9;18307.
+(rerunfilecheck)             Checksum: A30333C529326D81482D5F47F51D63C6;29069.
 Package logreq Info: Writing requests to 'main_apa7.run.xml'.
 \openout1 = `main_apa7.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 562 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 43593 strings out of 468179
- 925380 string characters out of 5435043
- 1900519 words of memory out of 5000000
- 71717 multiletter control sequences out of 15000+600000
+ 43621 strings out of 468179
+ 925917 string characters out of 5435042
+ 1912130 words of memory out of 5000000
+ 71745 multiletter control sequences out of 15000+600000
  674546 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,118p,1273b,5087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,118p,1273b,5233s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_apa7.xdv (47 pages, 561336 bytes).
+Output written on build/main_apa7.xdv (70 pages, 793120 bytes).
