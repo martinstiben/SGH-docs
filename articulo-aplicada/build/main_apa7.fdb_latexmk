@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber build/main_apa7"] 1765675686.2694 "build/main_apa7.bcf" "build/main_apa7.bbl" "build/main_apa7" 1765675707.39793 0
+["biber build/main_apa7"] 1765748607.82497 "build/main_apa7.bcf" "build/main_apa7.bbl" "build/main_apa7" 1765748629.8199 0
   "bibliography/references.bib" 1765674207.06759 1170 ff5d121916ced693f1dc040b34158b02 ""
-  "build/main_apa7.bcf" 1765675705.10099 134352 de09d40dc7c0c4393f0e967fa5cf75e6 "xelatex"
+  "build/main_apa7.bcf" 1765748628.46616 134352 de09d40dc7c0c4393f0e967fa5cf75e6 "xelatex"
   (generated)
   "build/main_apa7.bbl"
   "build/main_apa7.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765675706.55718 "build/main_apa7.xdv" "build/main_apa7.pdf" "build/main_apa7" 1765675707.44899 0
-  "build/main_apa7.xdv" 1765675705.11959 553740 6ed7987de9b13ba4008287b19f230626 "xelatex"
+["xdvipdfmx"] 1765748628.69666 "build/main_apa7.xdv" "build/main_apa7.pdf" "build/main_apa7" 1765748629.9649 0
+  "build/main_apa7.xdv" 1765748628.48213 794392 4735dcc6d6dd2e59cd6add65ea25e2a0 "xelatex"
   (generated)
   "build/main_apa7.pdf"
   (rewritten before read)
-["xelatex"] 1765675697.04842 "main_apa7.tex" "build/main_apa7.xdv" "main_apa7" 1765675707.40591 0
+["xelatex"] 1765748619.36889 "main_apa7.tex" "build/main_apa7.xdv" "main_apa7" 1765748629.84861 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -46,7 +46,7 @@
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm" 1254269338 11852 5a9022f105fd1ee2797df861e79ae9a0 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm" 1254269338 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1622145181 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
-  "/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty" 1763931111 146027 1682d39c5d9ff7866f7eb492613e0610 ""
+  "/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty" 1765486555 146654 eaac99efd6386094bb8a3980e34ec87b ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-es.ini" 1763931111 4303 c450545e79f0d9ac3027df4bd9b132d8 ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex" 1749585145 374 26aa36054295520df734dd14cd75addc ""
   "/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def" 1763931111 17545 65cef42ab9c2daaf78164d8a93419bdc ""
@@ -216,14 +216,14 @@
   "/opt/texlive/texdir/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/texlive/texdir/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
-  "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1765297438 5947058 a180562e7d5be25a82f71bd1a1e1833a ""
+  "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1765747640 5947048 3cf5f24007e5282d7d10f5eec4a2a069 ""
   "/opt/texlive/texdir/texmf.cnf" 1759376174 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "build/main_apa7.aux" 1765675705.04048 18639 ffde93cea34cf4ef52cb37ea599dbbda "xelatex"
-  "build/main_apa7.bbl" 1765675687.792 466 76d65a242ec496c9b4361af646ff12cb "biber build/main_apa7"
-  "build/main_apa7.fff" 1765675704.16451 1981 3ca44a977d2aeda652aa837c5264aa3f "xelatex"
-  "build/main_apa7.out" 1765675705.06766 23334 cd8b6b7ea1336f88f32982e06145ee2b "xelatex"
-  "build/main_apa7.run.xml" 1765675705.11607 2442 02563b919e103980c625eb191019e458 "xelatex"
-  "build/main_apa7.ttt" 1765675703.91337 2891 672e5b4db38e531b2b9d49d873acce3b "xelatex"
+  "build/main_apa7.aux" 1765748628.44012 24980 0dcc4fc3b7a4aabf1fbcd3c7ff8cf4e4 "xelatex"
+  "build/main_apa7.bbl" 1765748610.92142 466 76d65a242ec496c9b4361af646ff12cb "biber build/main_apa7"
+  "build/main_apa7.fff" 1765748627.47915 1981 3ca44a977d2aeda652aa837c5264aa3f "xelatex"
+  "build/main_apa7.out" 1765748628.45713 33840 bc5df4fe8d33b818e4e084ecfb640ea0 "xelatex"
+  "build/main_apa7.run.xml" 1765748628.46616 2442 02563b919e103980c625eb191019e458 "xelatex"
+  "build/main_apa7.ttt" 1765748627.32259 3520 8aca0a76e60bc10f88ec0e0140228588 "xelatex"
   "graphics/Especificando una arquitectura de software.png" 1765674207.11453 43791 13a97ed25083cf5ac5b508d15f2b20e4 ""
   "graphics/analisis prospectivo de la industria de desarrollo de software en colombia.png" 1765674207.11453 60052 384a95e0818b6f53e1376b460aebd527 ""
   "graphics/estudio sobre metodologias de desarrollo y su impacto en la productividad.png" 1765674207.11574 27132 1639782ce8287a68cff031329a015dc5 ""
@@ -233,15 +233,15 @@
   "includes/preamble_apa7.tex" 1765672355.40485 167 497900748c20b88558b28df2b5072f95 ""
   "includes/preamble_common.tex" 1765672355.40686 1346 34206bd4f8f75894da6ced404ca11451 ""
   "main_apa7.tex" 1765674207.11974 1211 7d643c8cb605bf6e5936d5e3514aad72 ""
-  "sections/00_abstract.tex" 1765674207.12174 904 4d0c57f43360552e0eccc512b38daab2 ""
-  "sections/01_introduccion.tex" 1765674314.53328 4548 6bef89706cd714034df369eb54980d47 ""
+  "sections/00_abstract.tex" 1765748194.23597 1755 cc3d05e88293a5778dfd65df4adef984 ""
+  "sections/01_introduccion.tex" 1765748311.84738 7989 aab8f6b21c2ef4657542890a8ba3f09c ""
   "sections/02_relacionados.tex" 1765674207.12275 9284 c98c03998e883fb813ba073e225d380b ""
-  "sections/03_metodologia.tex" 1765674337.56027 9411 fd7006789fc30619c77dee624725f6c5 ""
-  "sections/04_implementacion.tex" 1765674356.83974 9899 43fc486bd5b202d3d45a42ac221fcd96 ""
-  "sections/05_resultados.tex" 1765675609.89561 8100 3ea38243b2d78220269fbf05fef594b6 ""
-  "sections/06_discusion.tex" 1765674404.91051 8250 70a07742d707bff3fbcf33586e25525e ""
-  "sections/07_conclusiones.tex" 1765674419.58036 6094 5955ce5e9a4c5d3401315fc000ff026f ""
-  "sections/A1_apendices.tex" 1765674207.12642 1390 ea2c997d25d1b3f57044cd453aa5ae27 ""
+  "sections/03_metodologia.tex" 1765748451.61074 11677 49ed7169d2f1c173d56d3aaca4b26153 ""
+  "sections/04_implementacion.tex" 1765748499.64191 13547 fab9c13695e447e09c3d144039d10ec3 ""
+  "sections/05_resultados.tex" 1765748473.49929 11764 37d19462c54e671b7bb19aedbbbf15f9 ""
+  "sections/06_discusion.tex" 1765748323.85852 10219 59d11030b9de424b54564a2309e084ad ""
+  "sections/07_conclusiones.tex" 1765748339.99286 7983 23f1a4c8e59b1dd94c35b09073cdee54 ""
+  "sections/A1_apendices.tex" 1765748553.01235 9566 03c14f3297238a0b867c8bb01c5842e3 ""
   "tables/frameworks_comparison.tex" 1765675599.9954 704 c20ece0319e98c574f6fa13f5a658d91 ""
   (generated)
   "build/main_apa7.aux"

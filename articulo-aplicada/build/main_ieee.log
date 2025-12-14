@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 01:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.14)  14 DEC 2025 21:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -82,23 +82,23 @@ LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
 \@IEEEtranrubishbin=\box54
 ) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/b
 abel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count286
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+on input line 2101.
 \U@D=\dimen172
 \l@unhyphenated=\language90
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def)
@@ -106,7 +106,7 @@ on input line 2083.
 \bbl@dirlevel=\count287
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4298.
+(babel)             from babel-es.ini. Reported on input line 4320.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks18
@@ -898,9 +898,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (./sections/00_abstract.tex) (./sections/01_introduccion.tex [1
 
 
-]) (./sections/02_relacionados.tex
+]
+Underfull \hbox (badness 1552) in paragraph at lines 63--64
+[]\TU/lmr/bx/n/10 Inteligencia artificial aplicada\TU/ptm/bx/it/10 : Algoritmos
+ de
+ []
 
-LaTeX Warning: Citation 'saltos2022' on page 2 undefined on input line 5.
+) (./sections/02_relacionados.tex [2]
+
+LaTeX Warning: Citation 'saltos2022' on page 3 undefined on input line 5.
 
 File: graphics/estudio sobre metodologias de desarrollo y su impacto en la prod
 uctividad.png Graphic file (type bmp)
@@ -909,7 +915,6 @@ idad.png>
 File: graphics/practica de lenguaje de programacion java y nuevas tecnologias.p
 ng Graphic file (type bmp)
 <graphics/practica de lenguaje de programacion java y nuevas tecnologias.png>
-[2]
 
 LaTeX Warning: Citation 'izaurralde2013' on page 3 undefined on input line 31.
 
@@ -917,24 +922,30 @@ File: graphics/analisis prospectivo de la industria de desarrollo de software e
 n colombia.png Graphic file (type bmp)
 <graphics/analisis prospectivo de la industria de desarrollo de software en col
 ombia.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: graphics/una revision comparativa de la literatura acerca de metadologias
  tradicionales y modernas de desarrolladores de software.png Graphic file (type
  bmp)
 <graphics/una revision comparativa de la literatura acerca de metadologias trad
 icionales y modernas de desarrolladores de software.png>
 
-Underfull \vbox (badness 1571) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[3]
 File: graphics/tecnologias frontend y backend en tendencia.png Graphic file (ty
 pe bmp)
 <graphics/tecnologias frontend y backend en tendencia.png>
 
-LaTeX Warning: Citation 'lozano2018' on page 3 undefined on input line 66.
+LaTeX Warning: Citation 'lozano2018' on page 4 undefined on input line 66.
 
 
-LaTeX Warning: Citation 'saltos2022' on page 3 undefined on input line 68.
+Underfull \vbox (badness 1521) has occurred while \output is active []
 
-[3]
+
+LaTeX Warning: Citation 'saltos2022' on page 4 undefined on input line 68.
+
 
 LaTeX Warning: Citation 'izaurralde2013' on page 4 undefined on input line 78.
 
@@ -942,15 +953,18 @@ File: graphics/Especificando una arquitectura de software.png Graphic file (typ
 e bmp)
 <graphics/Especificando una arquitectura de software.png>
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 LaTeX Warning: Citation 'cein2025' on page 4 undefined on input line 90.
 
-) (./sections/03_metodologia.tex
+[4]) (./sections/03_metodologia.tex
 Underfull \hbox (badness 1681) in paragraph at lines 9--10
  []\TU/lmr/m/it/10 1. Metodología Scrum Adaptada: [][][] \TU/ptm/bx/it/10 El pr
 oyecto
  []
 
-[4] [5]) (./sections/04_implementacion.tex [6] [7] (./tables/frameworks_compari
+[5] [6]) (./sections/04_implementacion.tex [7] [8] (./tables/frameworks_compari
 son.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 []|\TU/lmr/m/n/8 Escalabilidad,
@@ -981,16 +995,12 @@ Overfull \hbox (6.73212pt too wide) in paragraph at lines 21--21
 []|\TU/lmr/m/n/8 Token/Autenticación| 
  []
 
-)) (./sections/05_resultados.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+) [9]) (./sections/05_resultados.tex
 Underfull \hbox (badness 1939) in paragraph at lines 58--59
 []\TU/ptm/bx/it/10 Validación de credenciales contra base de datos
  []
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 []|\TU/lmr/bx/n/8 Cobertura (Unita-
  []
@@ -1001,7 +1011,18 @@ Underfull \hbox (badness 1748) in paragraph at lines 206--207
 di-
  []
 
-) (./sections/06_discusion.tex [9]
+
+Overfull \hbox (61.45615pt too wide) in paragraph at lines 225--240
+ [][] 
+ []
+
+
+Overfull \hbox (1.64651pt too wide) in paragraph at lines 269--270
+ []\TU/lmr/m/it/10 1. Escalabilidad Demostrada: [][][] \TU/ptm/bx/it/10 Las pru
+ebas de carga
+ []
+
+[11]) (./sections/06_discusion.tex [12]
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
 x-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
@@ -1011,73 +1032,99 @@ x-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman8-regular]:mapping=te
 x-text;!
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 1577) in paragraph at lines 107--108
+[]\TU/ptm/bx/it/10 Optimización multi-objetivo considerando satisfac-
+ []
 
-[10]) (./sections/07_conclusiones.tex [11]) (./sections/A1_apendices.tex
+
+Overfull \hbox (0.88652pt too wide) in paragraph at lines 112--113
+ []\TU/lmr/m/it/10 3. Limitaciones de Evaluación: [][][] \TU/ptm/bx/it/10 La ev
+aluación pre-
+ []
+
+[13]) (./sections/07_conclusiones.tex [14]
+Underfull \hbox (badness 6575) in paragraph at lines 88--89
+[]\TU/ptm/bx/it/10 Colaboración academia-industria para soluciones
+ []
+
+) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 2).
-** WARNING: Ignoring useless \section in Appendix (line 11).
+[15]
+** WARNING: Ignoring useless \section in Appendix (line 54).
+** WARNING: Ignoring useless \section in Appendix (line 74).
+** WARNING: Ignoring useless \section in Appendix (line 92).
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\TU/ptm/bx/it/10 3. Practicante en lenguaje de programación
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 16--17
+Underfull \hbox (badness 3302) in paragraph at lines 97--98
 \TU/ptm/bx/it/10 JAVA y nuevas tecnologias. (2025). Recuperado de
  []
 
 
-Overfull \hbox (16.33pt too wide) in paragraph at lines 16--17
+Overfull \hbox (16.33pt too wide) in paragraph at lines 97--98
 \TU/ptm/bx/it/10 https://repositorio.utp.edu.co/entities/publication/192d53ab-
  []
 
 
-Underfull \hbox (badness 8000) in paragraph at lines 18--19
+Underfull \hbox (badness 8000) in paragraph at lines 99--100
 \TU/ptm/bx/it/10 de software en Colombia. (2020). Recuperado de
  []
 
 
-Overfull \hbox (77.01001pt too wide) in paragraph at lines 18--19
+Overfull \hbox (77.01001pt too wide) in paragraph at lines 99--100
 \TU/ptm/bx/it/10 https://revistas.poligran.edu.co/index.php/puntodevista/articl
 e/view/1415 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\TU/ptm/bx/it/10 5. Una revisión comparativa de la literatura
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \TU/ptm/bx/it/10 acerca de metodologías tradicionales y modernas
  []
 
 
-Underfull \hbox (badness 7433) in paragraph at lines 20--21
+Underfull \hbox (badness 7433) in paragraph at lines 101--102
 \TU/ptm/bx/it/10 de desarrollo de software. (2019). Recuperado de
  []
 
-)
-Underfull \hbox (badness 2142) in paragraph at lines 22--40
+
+Underfull \hbox (badness 2142) in paragraph at lines 103--104
 []\TU/ptm/bx/it/10 6. Estudio sobre metodologías de desarrollo y su
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 22--40
+Underfull \hbox (badness 1484) in paragraph at lines 103--104
 \TU/ptm/bx/it/10 impacto en la productividad. (2020). Recuperado de
  []
 
 
-Overfull \hbox (41.34pt too wide) in paragraph at lines 22--40
+Overfull \hbox (41.34pt too wide) in paragraph at lines 103--104
 \TU/ptm/bx/it/10 https://revistas.udistrital.edu.co/index.php/tia/article/view/
-13364
+13364 
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 113).
+[16]
+** WARNING: Ignoring useless \section in Appendix (line 230).
+File: graphics/Especificando una arquitectura de software.png Graphic file (typ
+e bmp)
+<graphics/Especificando una arquitectura de software.png>
+
+Overfull \hbox (160.80157pt too wide) in paragraph at lines 236--237
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--40
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
+)
 
 LaTeX Warning: Empty bibliography on input line 41.
 
@@ -1092,7 +1139,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[12] (build/main_ieee.aux
+[17] (build/main_ieee.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1108,7 +1155,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 3B9756F38B01D9522A7667AFABF844B6;24105.
+(rerunfilecheck)             Checksum: FFFA509C8ED51C6192D7384A68EF4F20;34954.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_ieee
@@ -1119,12 +1166,12 @@ Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31741 strings out of 468179
- 675363 string characters out of 5435043
- 1615331 words of memory out of 5000000
- 60113 multiletter control sequences out of 15000+600000
+ 31764 strings out of 468179
+ 675762 string characters out of 5435042
+ 1626868 words of memory out of 5000000
+ 60136 multiletter control sequences out of 15000+600000
  631180 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,83p,1006b,4511s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (12 pages, 550836 bytes).
+Output written on build/main_ieee.xdv (17 pages, 787512 bytes).

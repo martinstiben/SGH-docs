@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 01:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.14)  14 DEC 2025 21:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -629,23 +629,23 @@ d (jdm)
 \@ef@fffopen=\count335
 )) (./includes/preamble_common.tex (/opt/texlive/texdir/texmf-dist/tex/generic/
 babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count336
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+on input line 2101.
 \U@D=\dimen296
 \l@unhyphenated=\language90
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def)
@@ -653,7 +653,7 @@ on input line 2083.
 \bbl@dirlevel=\count337
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4298.
+(babel)             from babel-es.ini. Reported on input line 4320.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks32
@@ -1268,43 +1268,51 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 17.
 [1
 
-] (./sections/00_abstract.tex) [2] (./sections/01_introduccion.tex [3] [4]) (./
-sections/02_relacionados.tex
+] (./sections/00_abstract.tex) [2] (./sections/01_introduccion.tex [3] [4] [5] 
+[6]) (./sections/02_relacionados.tex
 
-LaTeX Warning: Citation 'saltos2022' on page 5 undefined on input line 5.
+LaTeX Warning: Citation 'saltos2022' on page 7 undefined on input line 5.
 
-[5]
 \openout5 = `main_apa7.fff'.
 
-(main_apa7.fff) [6]
+(main_apa7.fff) [7]
 
-LaTeX Warning: Citation 'izaurralde2013' on page 7 undefined on input line 31.
+LaTeX Warning: Citation 'izaurralde2013' on page 8 undefined on input line 31.
 
+[8]
 
-LaTeX Warning: Citation 'lozano2018' on page 7 undefined on input line 66.
-
-
-LaTeX Warning: Citation 'saltos2022' on page 7 undefined on input line 68.
-
-[7]
-
-LaTeX Warning: Citation 'izaurralde2013' on page 8 undefined on input line 78.
+LaTeX Warning: Citation 'lozano2018' on page 9 undefined on input line 66.
 
 
-LaTeX Warning: Citation 'cein2025' on page 8 undefined on input line 90.
+LaTeX Warning: Citation 'saltos2022' on page 9 undefined on input line 68.
 
-[8]) (./sections/03_metodologia.tex [9] [10] [11] [12] [13] [14] [15]) (./secti
-ons/04_implementacion.tex [16] [17] [18] [19]
+
+Underfull \vbox (badness 1867) has occurred while \output is active []
+
+[9]
+
+LaTeX Warning: Citation 'izaurralde2013' on page 10 undefined on input line 78.
+
+
+
+LaTeX Warning: Citation 'cein2025' on page 10 undefined on input line 90.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[10]) (./sections/03_metodologia.tex [11] [12] [13] [14] [15] [16] [17] [18]) (
+./sections/04_implementacion.tex [19] [20] [21] [22] [23]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[20] [21] [22] [23] (./tables/frameworks_comparison.tex
+[24] [25] [26] [27] (./tables/frameworks_comparison.tex
 \openout4 = `main_apa7.ttt'.
 
-(main_apa7.ttt))) (./sections/05_resultados.tex [24] [25] [26] [27] [28]) (./se
-ctions/06_discusion.tex [29] [30] [31] [32]) (./sections/07_conclusiones.tex [3
-3] [34] [35] [36]) (./sections/A1_apendices.tex [37] (build/main_apa7.ttt
+(main_apa7.ttt)) [28] [29] [30]) (./sections/05_resultados.tex [31] [32] [33] [
+34] [35] [36] [37]) (./sections/06_discusion.tex [38] [39] [40] [41] [42] [43])
+(./sections/07_conclusiones.tex [44] [45] [46] [47] [48]) (./sections/A1_apendi
+ces.tex [49] (build/main_apa7.ttt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1346,18 +1354,20 @@ Overfull \hbox (20.53812pt too wide) in paragraph at lines 23--23
 []|\TU/lmr/m/n/10 Token/Autenticación| 
  []
 
-[38
+[50
 
-] [39
+] [51
 
-] [40
+] [52
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 []|\TU/lmr/bx/n/10 Cobertura (Unita-
  []
 
-[41
+[53
+
+] [54
 
 ]
 Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=t
@@ -1368,27 +1378,27 @@ Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=
 ex-text;!
 Missing character: There is no ✓ (U+2713) in font [lmroman12-regular]:mapping=t
 ex-text;!
-) [42
+) [55
 
 ] (build/main_apa7.fff
 File: graphics/estudio sobre metodologias de desarrollo y su impacto en la prod
 uctividad.png Graphic file (type bmp)
 <graphics/estudio sobre metodologias de desarrollo y su impacto en la productiv
 idad.png>
-[43
+[56
 
 ]
 File: graphics/practica de lenguaje de programacion java y nuevas tecnologias.p
 ng Graphic file (type bmp)
 <graphics/practica de lenguaje de programacion java y nuevas tecnologias.png>
-[44
+[57
 
 ]
 File: graphics/analisis prospectivo de la industria de desarrollo de software e
 n colombia.png Graphic file (type bmp)
 <graphics/analisis prospectivo de la industria de desarrollo de software en col
 ombia.png>
-[45
+[58
 
 ]
 File: graphics/una revision comparativa de la literatura acerca de metadologias
@@ -1396,29 +1406,41 @@ File: graphics/una revision comparativa de la literatura acerca de metadologias
  bmp)
 <graphics/una revision comparativa de la literatura acerca de metadologias trad
 icionales y modernas de desarrolladores de software.png>
-[46
+[59
 
 ]
 File: graphics/tecnologias frontend y backend en tendencia.png Graphic file (ty
 pe bmp)
 <graphics/tecnologias frontend y backend en tendencia.png>
-[47
+[60
 
 ]
 File: graphics/Especificando una arquitectura de software.png Graphic file (typ
 e bmp)
 <graphics/Especificando una arquitectura de software.png>
-) [48
+) [61
 
-] [49
+] [62
+
+] [63] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68] [69] [70]
+File: graphics/Especificando una arquitectura de software.png Graphic file (typ
+e bmp)
+<graphics/Especificando una arquitectura de software.png>
+[71
 
 ])
 
 LaTeX Warning: Empty bibliography on input line 28.
 
-AED endfloat: Processing end Figures and Tables [50
-
-] (build/main_apa7.aux
+AED endfloat: Processing end Figures and Tables [72] (build/main_apa7.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1431,7 +1453,7 @@ L3 programming layer <2025-11-14>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_apa7.out' has not changed.
-(rerunfilecheck)             Checksum: CD8B6B7EA1336F88F32982E06145EE2B;23334.
+(rerunfilecheck)             Checksum: BC5DF4FE8D33B818E4E084ECFB640EA0;33840.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_apa7
@@ -1442,12 +1464,12 @@ Package logreq Info: Writing requests to 'main_apa7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43503 strings out of 468179
- 926350 string characters out of 5435043
- 1904609 words of memory out of 5000000
- 71625 multiletter control sequences out of 15000+600000
+ 43527 strings out of 468179
+ 926780 string characters out of 5435042
+ 1914789 words of memory out of 5000000
+ 71649 multiletter control sequences out of 15000+600000
  674546 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,12n,118p,1006b,4557s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_apa7.xdv (50 pages, 553740 bytes).
+Output written on build/main_apa7.xdv (72 pages, 794392 bytes).

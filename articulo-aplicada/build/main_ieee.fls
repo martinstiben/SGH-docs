@@ -318,6 +318,9 @@ INPUT ./sections/A1_apendices.tex
 INPUT ./sections/A1_apendices.tex
 INPUT ./sections/A1_apendices.tex
 INPUT sections/A1_apendices.tex
+INPUT ./graphics/Especificando una arquitectura de software.png
+INPUT ./graphics/Especificando una arquitectura de software.png
+INPUT ./graphics/Especificando una arquitectura de software.png
 INPUT build/main_ieee.aux
 INPUT build/main_ieee.out
 INPUT build/main_ieee.out

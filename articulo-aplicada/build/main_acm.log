@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  14 DEC 2025 01:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.14)  14 DEC 2025 21:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1701,27 +1701,27 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \@temptokenb=\toks38
 ) Special comment 'acks') (./includes/preamble_common.tex (/opt/texlive/texdir/
 texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count345
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
+on input line 2076.
 LaTeX Encoding Info:    Redeclaring text command \dj (encoding OT1) on input li
-ne 2076.
+ne 2094.
 LaTeX Encoding Info:    Redeclaring text command \DJ (encoding OT1) on input li
-ne 2077.
+ne 2095.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+on input line 2101.
 \U@D=\dimen260
 \l@unhyphenated=\language90
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/xebabel.def)
@@ -1729,7 +1729,7 @@ on input line 2083.
 \bbl@dirlevel=\count346
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4298.
+(babel)             from babel-es.ini. Reported on input line 4320.
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks39
@@ -2078,13 +2078,7 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 10.95pt on input line 32.
 (./sections/00_abstract.tex) (./sections/01_introduccion.tex
-Overfull \hbox (4.62376pt too wide) in paragraph at lines 38--39
-[]\TU/LinLibertine(0)/b/n/9 Contenerización\TU/LinLibertine(0)/m/n/9 : Docker p
-ara despliegue consistente y por-
- []
-
-
-Underfull \vbox (badness 1342) has occurred while \output is active []
+Underfull \vbox (badness 1259) has occurred while \output is active []
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -2092,20 +2086,40 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) [1.1
 
-]) (./sections/02_relacionados.tex
+]
+Overfull \hbox (4.62376pt too wide) in paragraph at lines 38--39
+[]\TU/LinLibertine(0)/b/n/9 Contenerización\TU/LinLibertine(0)/m/n/9 : Docker p
+ara despliegue consistente y por-
+ []
+
+
+Overfull \hbox (8.20052pt too wide) in paragraph at lines 63--64
+\TU/LinLibertine(0)/m/n/9 king y heurísticas para resolución de problemas NP-co
+mpletos
+ []
+
+
+Overfull \hbox (2.88377pt too wide) in paragraph at lines 65--66
+[]\TU/LinLibertine(0)/b/n/9 Arquitectura cloud-native\TU/LinLibertine(0)/m/n/9 
+: Preparación para escalabilidad
+ []
+
+) (./sections/02_relacionados.tex
 
 Package natbib Warning: Citation `saltos2022' on page 2 undefined on input line
  5.
 
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 6.
+[2.2]
 File: graphics/estudio sobre metodologias de desarrollo y su impacto en la prod
 uctividad.png Graphic file (type bmp)
 <graphics/estudio sobre metodologias de desarrollo y su impacto en la productiv
 idad.png>
 
 Class acmart Warning: A possible image without description on input line 12.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: graphics/practica de lenguaje de programacion java y nuevas tecnologias.p
 ng Graphic file (type bmp)
@@ -2114,7 +2128,10 @@ ng Graphic file (type bmp)
 Class acmart Warning: A possible image without description on input line 24.
 
 
-Package natbib Warning: Citation `izaurralde2013' on page 2 undefined on input 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `izaurralde2013' on page 3 undefined on input 
 line 31.
 
 File: graphics/analisis prospectivo de la industria de desarrollo de software e
@@ -2124,11 +2141,6 @@ ombia.png>
 
 Class acmart Warning: A possible image without description on input line 38.
 
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 38.
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 38.
-[2.2]
 File: graphics/una revision comparativa de la literatura acerca de metadologias
  tradicionales y modernas de desarrolladores de software.png Graphic file (type
  bmp)
@@ -2137,6 +2149,10 @@ icionales y modernas de desarrolladores de software.png>
 
 Class acmart Warning: A possible image without description on input line 45.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3.3]
 File: graphics/tecnologias frontend y backend en tendencia.png Graphic file (ty
 pe bmp)
 <graphics/tecnologias frontend y backend en tendencia.png>
@@ -2144,18 +2160,17 @@ pe bmp)
 Class acmart Warning: A possible image without description on input line 61.
 
 
-Package natbib Warning: Citation `lozano2018' on page 3 undefined on input line
+Package natbib Warning: Citation `lozano2018' on page 4 undefined on input line
  66.
 
 
-Package natbib Warning: Citation `saltos2022' on page 3 undefined on input line
+Package natbib Warning: Citation `saltos2022' on page 4 undefined on input line
  68.
 
 
-Package natbib Warning: Citation `izaurralde2013' on page 3 undefined on input 
+Package natbib Warning: Citation `izaurralde2013' on page 4 undefined on input 
 line 78.
 
-[3.3]
 File: graphics/Especificando una arquitectura de software.png Graphic file (typ
 e bmp)
 <graphics/Especificando una arquitectura de software.png>
@@ -2166,22 +2181,22 @@ Class acmart Warning: A possible image without description on input line 85.
 Package natbib Warning: Citation `cein2025' on page 4 undefined on input line 9
 0.
 
-) (./sections/03_metodologia.tex
+) (./sections/03_metodologia.tex [4.4]
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/it' will be
 (Font)              scaled to size 9.0pt on input line 9.
-[4.4]
+
 Overfull \hbox (8.11552pt too wide) in paragraph at lines 68--70
  \TU/LinBiolinum(0)/m/it/9 3.2.2. Tecnologías Seleccionadas.[] \TU/LinLibertine
 (0)/b/n/9 Backend - Java con Spring Boot: 
  []
 
-
+[5.5]
 Overfull \hbox (7.0808pt too wide) in paragraph at lines 156--157
 []\TU/LinLibertine(0)/b/n/9 Consulta de horarios\TU/LinLibertine(0)/m/n/9 : Vis
 ualización personalizada por usua-
  []
 
-) (./sections/04_implementacion.tex [5.5]
+[6.6]) (./sections/04_implementacion.tex
 Overfull \hbox (2.7915pt too wide) in paragraph at lines 25--26
 []\TU/LinLibertine(0)/m/n/9 ScheduleGenerationService para algoritmos de optimi
 zación 
@@ -2191,7 +2206,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `inconsolata' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[6.6]
+[7.7]
 Overfull \hbox (6.49203pt too wide) in paragraph at lines 148--149
 []\TU/inconsolata(0)/m/n/9 GET/POST/PUT/DELETE /api/professors \TU/LinLibertine
 (0)/m/n/9 - Gestión de maes-
@@ -2215,7 +2230,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 []|\TU/LinLibertine(0)/m/n/7 Integridad, relaciones,
  []
 
-)) (./sections/05_resultados.tex [7.7]
+) [8.8]) (./sections/05_resultados.tex
 
 LaTeX Warning: Reference `tab:resultados_web' on page 1 undefined on input line
  7.
@@ -2224,9 +2239,26 @@ LaTeX Warning: Reference `tab:resultados_web' on page 1 undefined on input line
 LaTeX Warning: Reference `tab:resultados_backend' on page 1 undefined on input 
 line 7.
 
-[8.8]
+[9.9]
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 []|\TU/LinLibertine(0)/b/n/7 Cobertura (Unita-
+ []
+
+[10.10]
+Overfull \hbox (56.19154pt too wide) in paragraph at lines 225--240
+ [][] 
+ []
+
+
+Overfull \hbox (3.49278pt too wide) in paragraph at lines 251--252
+[]\TU/LinLibertine(0)/b/n/9 Escalabilidad\TU/LinLibertine(0)/m/n/9 : Arquitectu
+ra preparada para crecimiento ins-
+ []
+
+
+Overfull \hbox (10.25552pt too wide) in paragraph at lines 308--309
+[]\TU/LinLibertine(0)/m/n/9 Reprogramación de emergencia por enfermedad docente
+ (tiem-
  []
 
 ) (./sections/06_discusion.tex
@@ -2235,13 +2267,12 @@ Overfull \hbox (1.67998pt too wide) in paragraph at lines 15--16
 démicos. Aun-
  []
 
-
+[11.11]
 Overfull \hbox (2.79352pt too wide) in paragraph at lines 19--20
  \TU/LinBiolinum(0)/m/it/9 6.1.3. Enfoque Multiplataforma.[] \TU/LinLibertine(0
 )/m/n/9 La implementación simultánea de
  []
 
-[9.9]
 Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
 t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
 Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
@@ -2250,16 +2281,25 @@ Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scri
 t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
 Missing character: There is no ✓ (U+2713) in font [LinLibertine_R.otf]/OT:scrip
 t=latn;language=dflt;+tnum;+lnum;mapping=tex-text;!
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+[12.12]
+Overfull \hbox (3.09451pt too wide) in paragraph at lines 118--119
+[]\TU/LinLibertine(0)/m/n/9 Estudios de accesibilidad y usabilidad con diversid
+ad de usua-
+ []
+
 ) (./sections/07_conclusiones.tex
 Overfull \hbox (3.45906pt too wide) in paragraph at lines 8--9
 \TU/LinLibertine(0)/m/n/9 efectividad del stack tecnológico elegido (Spring Boo
 t, Next.js, React
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10.10]
+[13.13]
 Overfull \hbox (8.2935pt too wide) in paragraph at lines 44--45
 []\TU/LinLibertine(0)/m/n/9 Implementación de algoritmos de optimización híbrid
 os (back-
@@ -2271,7 +2311,10 @@ Overfull \hbox (4.07251pt too wide) in paragraph at lines 55--56
 ademia
  []
 
-) [11.11]
+)
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+[14.14]
 Overfull \hbox (16.0005pt too wide) in paragraph at lines 53--54
 \TU/LinLibertine(0)/m/n/9 cuperado de https://repository.ustaae8f-4b01-a066-849
 fcb70e15f 
@@ -2298,28 +2341,39 @@ Overfull \hbox (156.55647pt too wide) in paragraph at lines 58--59
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 5.4pt on input line 71.
 (./sections/A1_apendices.tex
-Overfull \hbox (92.90248pt too wide) in paragraph at lines 16--17
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+[15.15]
+Overfull \hbox (92.90248pt too wide) in paragraph at lines 97--98
 \TU/LinLibertine(0)/m/n/9 nologias. (2025). Recuperado de https://repositorio.u
 tp.edu.co/entities/publication/192d53ab-
  []
 
 
-Overfull \hbox (157.78949pt too wide) in paragraph at lines 18--19
+Overfull \hbox (157.78949pt too wide) in paragraph at lines 99--100
 \TU/LinLibertine(0)/m/n/9 en Colombia. (2020). Recuperado de https://revistas.p
 oligran.edu.co/index.php/puntodevista/article/view/1415 
  []
 
-)
-Overfull \hbox (131.20647pt too wide) in paragraph at lines 22--74
+
+Overfull \hbox (131.20647pt too wide) in paragraph at lines 103--104
 \TU/LinLibertine(0)/m/n/9 productividad. (2020). Recuperado de https://revistas
-.udistrital.edu.co/index.php/tia/article/view/13364
+.udistrital.edu.co/index.php/tia/article/view/13364 
+ []
+
+[16.16]
+File: graphics/Especificando una arquitectura de software.png Graphic file (typ
+e bmp)
+<graphics/Especificando una arquitectura de software.png>
+
+Overfull \hbox (163.89005pt too wide) in paragraph at lines 236--237
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--74
+Class acmart Warning: A possible image without description on input line 239.
 
- []
-
+)
 
 Package natbib Warning: There were undefined citations.
 
@@ -2342,9 +2396,9 @@ ence can ingest your work..
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[12.12]
+[17.17]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 12).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 17).
                Rerun to correct this.
 
 (build/main_acm.aux
@@ -2368,15 +2422,15 @@ Package rerunfilecheck Warning: File `main_acm.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main_acm.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  444C77640E13E53285ABD0F9E6878DC0;13465.
+(rerunfilecheck)             After:  E94D86EA29741FCC0065786C61DDC33F;21492.
  ) 
 Here is how much of TeX's memory you used:
- 41794 strings out of 468179
- 857049 string characters out of 5435043
- 1385646 words of memory out of 5000000
- 69865 multiletter control sequences out of 15000+600000
+ 41810 strings out of 468179
+ 857339 string characters out of 5435042
+ 1386340 words of memory out of 5000000
+ 69881 multiletter control sequences out of 15000+600000
  634537 words of font info for 140 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,12n,131p,1005b,33009s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,13n,131p,1005b,33061s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_acm.xdv (12 pages, 575544 bytes).
+Output written on build/main_acm.xdv (17 pages, 803440 bytes).

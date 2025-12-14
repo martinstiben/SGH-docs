@@ -1,19 +1,19 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
-[1] Config.pm:331> INFO - Logfile is 'build/main_ieee.blg'
-[133] biber:342> INFO - === Sun Dec 14, 2025, 01:27:14
-[173] Biber.pm:421> INFO - Reading 'build/main_ieee.bcf'
-[270] Biber.pm:1002> INFO - Found 4 citekeys in bib section 0
-[289] Biber.pm:4487> INFO - Processing section 0
-[303] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/references.bib' for section 0
-[326] bibtex.pm:1713> INFO - LaTeX decoding ...
-[336] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/references.bib'
-[347] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[348] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[350] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[351] bbl.pm:676> INFO - Writing 'build/main_ieee.bbl' with encoding 'UTF-8'
-[351] bbl.pm:779> INFO - Output to build/main_ieee.bbl
-[353] Biber.pm:132> WARN - I didn't find a database entry for 'saltos2022' (section 0)
-[353] Biber.pm:132> WARN - I didn't find a database entry for 'izaurralde2013' (section 0)
-[354] Biber.pm:132> WARN - I didn't find a database entry for 'lozano2018' (section 0)
-[355] Biber.pm:132> WARN - I didn't find a database entry for 'cein2025' (section 0)
-[355] Biber.pm:134> INFO - WARNINGS: 4
+[0] Config.pm:331> INFO - Logfile is 'build/main_ieee.blg'
+[83] biber:342> INFO - === Sun Dec 14, 2025, 21:42:58
+[113] Biber.pm:421> INFO - Reading 'build/main_ieee.bcf'
+[176] Biber.pm:1002> INFO - Found 4 citekeys in bib section 0
+[191] Biber.pm:4487> INFO - Processing section 0
+[201] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/references.bib' for section 0
+[214] bibtex.pm:1713> INFO - LaTeX decoding ...
+[221] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/references.bib'
+[231] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[231] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[231] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[232] bbl.pm:676> INFO - Writing 'build/main_ieee.bbl' with encoding 'UTF-8'
+[232] bbl.pm:779> INFO - Output to build/main_ieee.bbl
+[233] Biber.pm:132> WARN - I didn't find a database entry for 'saltos2022' (section 0)
+[234] Biber.pm:132> WARN - I didn't find a database entry for 'izaurralde2013' (section 0)
+[234] Biber.pm:132> WARN - I didn't find a database entry for 'lozano2018' (section 0)
+[234] Biber.pm:132> WARN - I didn't find a database entry for 'cein2025' (section 0)
+[234] Biber.pm:134> INFO - WARNINGS: 4

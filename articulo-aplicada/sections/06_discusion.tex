@@ -90,9 +90,37 @@ Este trabajo contribuye al campo del desarrollo de software educativo en Colombi
 \item \textbf{Soluciones open-source}: Contribuye al ecosistema de software educativo colombiano con una alternativa accesible.
 \end{itemize}
 
-\subsection{Limitaciones del Estudio}
+\subsection{Limitaciones Metodológicas y Áreas de Investigación Futura}
+
+\subsubsection{Limitaciones del Estudio}
 
 Las limitaciones incluyen el alcance académico del proyecto y la evaluación con una muestra pequeña de usuarios. Además, la complejidad algorítmica podría no escalar eficientemente para universidades masivas. Se recomienda investigación futura con algoritmos de optimización avanzada y estudios longitudinales en entornos de producción.
+
+\subsubsection{Limitaciones Algorítmicas}
+
+Los algoritmos implementados, aunque funcionales para escenarios de mediana complejidad, presentan limitaciones teóricas inherentes a problemas de optimización combinatoria. El algoritmo de backtracking, si bien efectivo, puede experimentar explosión combinatoria en instancias con alta densidad de restricciones. Futuras implementaciones podrían beneficiarse de:
+
+\begin{itemize}
+\item Técnicas de programación lineal entera para modelado más preciso de restricciones
+\item Algoritmos metaheurísticos como recocido simulado o colonia de hormigas
+\item Aprendizaje automático para predicción de patrones de demanda horaria
+\item Optimización multi-objetivo considerando satisfacción estudiantil y eficiencia docente
+\end{itemize}
+
+\subsubsection{Limitaciones de Evaluación}
+
+La evaluación preliminar con usuarios, aunque positiva, se realizó con una muestra pequeña y en condiciones controladas. Aspectos como la usabilidad a largo plazo, la adopción organizacional y el impacto real en la productividad requieren estudios más extensos. Se recomienda:
+
+\begin{itemize}
+\item Estudios de caso longitudinales en instituciones reales
+\item Análisis comparativos con sistemas comerciales existentes
+\item Evaluación de impacto económico y ROI
+\item Estudios de accesibilidad y usabilidad con diversidad de usuarios
+\end{itemize}
+
+\subsubsection{Limitaciones Técnicas}
+
+Aunque el stack tecnológico demostró ser robusto, ciertas decisiones de diseño podrían limitar la escalabilidad futura. La dependencia de MySQL para datos relacionales complejos, si bien apropiada, podría beneficiarse de arquitecturas híbridas que incorporen bases de datos NoSQL para ciertos tipos de datos. Además, la limitación a Android en la aplicación móvil restringe el alcance en mercados con predominancia iOS.
 
 \subsection{Recomendaciones para Implementación}
 

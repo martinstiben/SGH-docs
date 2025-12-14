@@ -256,3 +256,112 @@ El componente más crítico de SGH es el algoritmo de generación automática de
 La selección de tecnologías se basó en criterios de madurez, comunidad, rendimiento y adecuación al dominio educativo colombiano. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
 
 \input{tables/frameworks_comparison.tex}
+
+\subsection{Detalles de Implementación Técnica}
+
+\subsubsection{Patrones de Diseño Implementados}
+
+Se aplicaron patrones de diseño reconocidos para mantener la calidad del código:
+
+\textbf{Patrones Creacionales:}
+\begin{itemize}
+\item \textbf{Singleton}: Para gestión de conexiones de base de datos
+\item \textbf{Factory}: Para creación de servicios de algoritmos
+\item \textbf{Builder}: Para construcción de objetos complejos como horarios
+\end{itemize}
+
+\textbf{Patrones Estructurales:}
+\begin{itemize}
+\item \textbf{Adapter}: Para integración con APIs externas
+\item \textbf{Decorator}: Para extensión funcional de componentes
+\item \textbf{Facade}: Para simplificación de interfaces complejas
+\end{itemize}
+
+\textbf{Patrones de Comportamiento:}
+\begin{itemize}
+\item \textbf{Strategy}: Para algoritmos de optimización intercambiables
+\item \textbf{Observer}: Para notificaciones y eventos del sistema
+\item \textbf{Command}: Para operaciones undo/redo en la interfaz
+\end{itemize}
+
+\subsubsection{Gestión de Estado y Concurrencia}
+
+\textbf{Gestión de Estado en Backend:}
+\begin{itemize}
+\item Contextos transaccionales con Spring @Transactional
+\item Manejo de concurrencia optimista con versiones de entidad
+\item Caché de segundo nivel con Hibernate
+\item Sesiones stateless para escalabilidad
+\end{itemize}
+
+\textbf{Gestión de Estado en Frontend:}
+\begin{itemize}
+\item React Context para estado global de aplicación
+\item Redux Toolkit para estado complejo en móvil
+\item React Query para sincronización de datos del servidor
+\item Optimización con React.memo y useMemo
+\end{itemize}
+
+\subsubsection{Seguridad Implementada}
+
+\textbf{Autenticación y Autorización:}
+\begin{itemize}
+\item JWT con algoritmo HS256 y expiración configurable
+\item Refresh tokens para sesiones extendidas
+\item Control de acceso basado en roles con anotaciones @PreAuthorize
+\item Rate limiting con Bucket4j
+\end{itemize}
+
+\textbf{Protección de Datos:}
+\begin{itemize}
+\item Cifrado de contraseñas con BCrypt (strength 12)
+\item Validación de entrada con Bean Validation
+\item Protección XSS con Content Security Policy
+\item Headers de seguridad HTTP con Spring Security
+\end{itemize}
+
+\subsubsection{Integración y APIs}
+
+\textbf{Diseño de APIs REST:}
+\begin{itemize}
+\item Principios RESTful con recursos bien definidos
+\item Versionado semántico (/api/v1/)
+\item HATEOAS para navegación de recursos
+\item Documentación automática con OpenAPI 3.0
+\end{itemize}
+
+\textbf{Integración de Servicios:}
+\begin{itemize}
+\item Cliente HTTP con WebClient de Spring
+\item Manejo de errores con Resilience4j
+\item Circuit breaker para protección contra fallos
+\item Métricas de integración con Micrometer
+\end{itemize}
+
+\subsubsection{Internacionalización y Localización}
+
+\textbf{Soporte Multiidioma:}
+\begin{itemize}
+\item Mensajes localizados con Spring MessageSource
+\item Formatos de fecha/hora adaptados a Colombia
+\item Validación de entrada en español
+\item Interfaz responsive para diferentes dispositivos
+\end{itemize}
+
+\subsubsection{Logging y Monitoreo}
+
+\textbf{Estrategia de Logging:}
+\begin{itemize}
+\item Niveles estructurados con SLF4J
+\item Logs contextuales con MDC
+\item Rotación automática de archivos
+\item Integración con ELK stack para análisis
+\end{itemize}
+
+\textbf{Monitoreo y Observabilidad:}
+\begin{itemize}
+\item Métricas con Spring Boot Actuator
+\item Health checks automáticos
+\item Tracing distribuido con Spring Cloud Sleuth
+\item Dashboards con Grafana + Prometheus
+\end{itemize}

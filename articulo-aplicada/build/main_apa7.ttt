@@ -102,6 +102,30 @@ APIs REST & - / 85\% / 75\% \\
 \ifnextchar[{\eatarg}{}
 [h]
 \centering
+\caption{Comparación con métodos tradicionales}
+\label{tab:comparacion_tradicional}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Aspecto} & \textbf{Método Manual} & \textbf{Sistemas Básicos} & \textbf{SGH} \\
+\hline
+Tiempo de planificación & 40-120 horas & 20-60 horas & 2-8 horas \\
+\hline
+Tasa de conflictos & 23\% & 12\% & <2\% \\
+\hline
+Acceso a información & Limitado & Parcial & Universal \\
+\hline
+Costo por usuario/año & \$0 & \$50-200 & \$10-50 \\
+\hline
+Flexibilidad de cambios & Baja & Media & Alta \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
 \caption{Comparación con soluciones comerciales colombianas}
 \label{tab:comparacion_soluciones}
 \begin{tabular}{|l|c|c|}
